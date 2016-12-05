@@ -10,10 +10,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161205155739) do
+ActiveRecord::Schema.define(version: 20161205160350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "answers", force: :cascade do |t|
+    t.text     "text"
+    t.string   "status"
+    t.string   "picture"
+    t.integer  "team_id"
+    t.integer  "challenge_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["challenge_id"], name: "index_answers_on_challenge_id", using: :btree
+    t.index ["team_id"], name: "index_answers_on_team_id", using: :btree
+  end
+
+  create_table "challenges", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "address"
+    t.integer  "score"
+    t.string   "good_answer"
+    t.string   "bad_answers"
+    t.string   "hint"
+    t.string   "input_type"
+    t.string   "picture"
+    t.integer  "cost"
+    t.string   "gift"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "cities", force: :cascade do |t|
+    t.string   "name"
+    t.text     "advice"
+    t.string   "country"
+    t.string   "picture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "members", force: :cascade do |t|
     t.integer  "score"
@@ -23,6 +60,15 @@ ActiveRecord::Schema.define(version: 20161205155739) do
     t.datetime "updated_at", null: false
     t.index ["team_id"], name: "index_members_on_team_id", using: :btree
     t.index ["user_id"], name: "index_members_on_user_id", using: :btree
+  end
+
+  create_table "team_challenges", force: :cascade do |t|
+    t.integer  "challenge_id"
+    t.integer  "team_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["challenge_id"], name: "index_team_challenges_on_challenge_id", using: :btree
+    t.index ["team_id"], name: "index_team_challenges_on_team_id", using: :btree
   end
 
   create_table "teams", force: :cascade do |t|
@@ -54,6 +100,10 @@ ActiveRecord::Schema.define(version: 20161205155739) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "answers", "challenges"
+  add_foreign_key "answers", "teams"
   add_foreign_key "members", "teams"
   add_foreign_key "members", "users"
+  add_foreign_key "team_challenges", "challenges"
+  add_foreign_key "team_challenges", "teams"
 end
