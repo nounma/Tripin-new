@@ -14,9 +14,10 @@ class Team < ApplicationRecord
   def assign_challenges
 
     trip_length = self.end_date - self.start_date #transform string en date
-    #trip_length = string_to_date(start_date).to_i - string_to_date(end_date).to_i
+    trip_length = string_to_date(start_date).to_i - string_to_date(end_date).to_i
 
-    if trip_length > 3
+
+     if trip_length > 3
       num_challenge = 20
     else trip_length < 3
       num_challenge = 50
