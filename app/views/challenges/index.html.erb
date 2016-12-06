@@ -3,22 +3,47 @@
 <% @team_challenges.each do |challenge| %>
 <ul>
   <li>
-    <%= challenge.title %> <%= challenge.score %>
+    <%= link_to challenge.title , team_challenge_path(@team.id, challenge.id) %>
+    - <%= challenge.score %> points
 
-    if challenge.answer.status == "done" || challenge.gift == ""
-      <i class="fa fa-check-circle"></i>
 
-    elsif challenge.answer.status == "done" || challenge.gift != ""
-      <i class="fa fa-gift"></i> <!-- +link to promocode page  -->
+    <% if challenge.answer.status == "completed" || challenge.gift == "" %>
+    <i class="fa fa-check-circle"></i>
 
-    else challenge.answer.status == "pending"
-      <i class="fa fa-paper-plane"></i>
+    <% elsif challenge.answer.status == "completed" || challenge.gift != "" %>
+    <!--  <i class="fa fa-gift"></i> --> <!-- +link to promocode page  -->
+
+    <%= link_to "#myModal", "data-toggle" => "modal" do %>
+    <i class="fa fa-gift"></i>
+    <% end %>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Congrats !</h4>
+          </div>
+          <div class="modal-body">
+            <p><%= challenge.gift %></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <% else challenge.answer.status == "pending" %>
+    <i class="fa fa-paper-plane"></i>
 
     <% end %>
-
-  <% end %>
-
 
   </li>
 </ul>
 <% end %>
+
+
+

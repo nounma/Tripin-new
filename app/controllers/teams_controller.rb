@@ -5,24 +5,18 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
+
     total_score = 0
-    # @team.answers.each do |a|
-    #   if a.status == "Done"
-    #     @total_score = @total_score + @challenges.score
-    #   else
-    #     @total_score
-    #   end
-    # end
+
     @team.challenges.each do |challenge|
 
       if challenge.answer.status == Answer::COMPLETED
         total_score += challenge.score
-       else
-        puts "error"
       end
     end
 
     @total_score=total_score
+
   end
 
   def new
@@ -36,13 +30,31 @@ class TeamsController < ApplicationController
     @team.city_id = @city.id
 
     @team.save
-    redirect_to user_team_path(current_user, @team)
+
+    # create memner from currentuser
+    Member.create(user: current_user, team: @team)
+
+    redirect_to team_path(@team)
   end
 
   def edit
+    @team = Team.find(params[:id])
+  end
+
+  def add_member
+    @team = Team.find(params[:team_id])
+    @user = User.find_by_email(params[:member][:email])
+    if @user
+      Member.create(user: @user, team: @team)
+      flash[:success] = "Member added"
+    else
+      flash[:error] = "User not found"
+    end
+    redirect_to user_team_path(current_user, @team)
   end
 
   def update
+    @team = Team.find(params[:id])
   end
 
   def destroy
