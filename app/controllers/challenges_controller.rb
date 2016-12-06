@@ -5,16 +5,16 @@ class ChallengesController < ApplicationController
     @user = @team.user
     @team_challenges = @team.challenges
 
-  # @user = User.find(params[:user_id])
-  # @team = Team.find(params[:team_id])
-  # @team_challenges = @team.challenges
+  @user = User.find(params[:user_id])
+  @team = Team.find(params[:team_id])
+  @team_challenges = @team.challenges
 
     @challenges = Challenge.where.not(latitude: nil, longitude: nil)
 
     @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
       marker.lat flat.latitude
       marker.lng flat.longitude
-      # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
+      marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
     end
 
 

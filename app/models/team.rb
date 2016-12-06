@@ -23,7 +23,7 @@ class Team < ApplicationRecord
     end
     challenges = Challenge.where(city_id: self.city_id).limit(num_challenge)
     challenges.each do |challenge|
-      TeamChallenges.create(team_id: self.id, challenge_id: challenge.id)
+      TeamChallenge.create(team_id: self.id, challenge_id: challenge.id)
     end
     #team.challenges = tous les challenges de la self team!
 
