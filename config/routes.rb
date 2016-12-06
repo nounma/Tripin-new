@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :challenges, only: [:index, :show] do
         resources :answers, only: [:show]
       end
+        post '/add_member', to: 'teams#add_member'
     end
   end
   resources :cities, only: [:index, :show]
