@@ -4,13 +4,14 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :users, only: [:new, :create, :edit, :update, :destroy, :show] do
-    resources :teams, only: [:index, :new, :create, :show, :edit, :update, :destroy] do
-      resources :challenges, only: [:index, :show] do
-        resources :answers, only: [:show]
-      end
-        post '/add_member', to: 'teams#add_member'
+
+  resources :users
+  resources :teams, only: [:index, :new, :create, :show, :edit, :update, :destroy] do
+    resources :challenges, only: [:index, :show] do
+      resources :answers
+
     end
+    post '/add_member', to: 'teams#add_member'
   end
   resources :cities, only: [:index, :show]
 

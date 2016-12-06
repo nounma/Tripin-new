@@ -1,4 +1,14 @@
 
+<h1>Teams#show</h1>
+<p>Find me in app/views/teams/show.html.erb</p>
+
+<h1>READY TO GO </h1>
+
+<%= (Date.parse(@team.start_date) - Date.today).to_i %> days before your trip
+
+
+<<p>Your actual score = <% @challenges %> </p>
+
 <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
 
 <h2><%= @team.title.capitalize %></h2>
@@ -17,3 +27,4 @@
     <%= f.input :email, placeholder: "Enter the email of your team mate" %>
     <%= f.submit %>
   <% end %>
+
