@@ -1,6 +1,6 @@
 class City < ApplicationRecord
 
-  CITIES = %w ( Brussels Paris Amsterdam London )
+  CITIES = %w(Brussels Paris Amsterdam London)
   
   has_many :challenges
   

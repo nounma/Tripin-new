@@ -1,2 +1,27 @@
-<h1>Teams#new</h1>
-<p>Find me in app/views/teams/new.html.erb</p>
+<div class="container">
+<h1>Where do you want to go?</h1>
+
+  <%= simple_form_for @team, url: new_user_team_path do |f| %>
+
+    <%= f.input :city, collection: City::CITIES, prompt: "Choose your city"  %>
+
+    <h1>Choose the dates of your trip:</h1>
+
+    <%= f.input :start_date, placeholder: "Start date"%>
+    <%= f.input :end_date, placeholder: "End date"%>
+
+    <h1>Create your team:</h1>
+
+    <%= f.input :title, placeholder: "Team name"%>
+    
+    <%= f.input :team_picture %>
+    <%= f.input :team_picture_cache, as: :hidden %>
+
+    <%= input :first_member, placeholder: "First team member"%>
+
+
+    <%= f.submit %>
+  <% end %>
+
+  </form>
+</div>

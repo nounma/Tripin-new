@@ -1,5 +1,8 @@
 class Team < ApplicationRecord
-has_many :users, through: :members
+  
+  mount_uploader :team_picture, PhotoUploader
+  
+  has_many :users, through: :members
   has_many :answers
   has_many :challenges, through: :team_challenges
     after_create :assign_challenges
