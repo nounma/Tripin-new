@@ -6,12 +6,9 @@ class TeamsController < ApplicationController
   def show
     @team = Team.find(params[:id])
 
-score_total = 0
-# if challenges.status == "done"
-# score_total + challenge.score
-
-
-end
+    score_total = 0
+    # if challenges.status == "done"
+    # score_total + challenge.score
   end
 
   def new
@@ -25,7 +22,11 @@ end
     @team.city_id = @city.id
 
     @team.save
-    redirect_to user_team_path(current_user, @team)
+    
+    # create memner from currentuser
+    Member.create(user: current_user, team: @team)
+    
+    redirect_to team_path(@team)
   end
   
   def edit
