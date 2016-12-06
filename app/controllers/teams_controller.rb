@@ -5,6 +5,13 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
+
+score_total = 0
+# if challenges.status == "done"
+# score_total + challenge.score
+
+
+end
   end
 
   def new
@@ -25,10 +32,10 @@ class TeamsController < ApplicationController
 
   def destroy
   end
-  
+
   private
-  
+
   def team_params
-    params.require(:team).permit(:title, :team_picture, :start_date, :end_date, :city, :team_picture_cache )
+    params.require(:team).permit(:title, :team_picture, :start_date, :end_date, :city, :team_picture_cache, :id )
   end
 end
