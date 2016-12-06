@@ -1,4 +1,9 @@
 class Team < ApplicationRecord
+
+
+  mount_uploader :team_picture, PhotoUploader
+
+
   has_many :users, through: :members
   has_many :answers
   has_many :challenges, through: :team_challenges
