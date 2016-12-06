@@ -20,18 +20,23 @@ end
 
 private
 
-def find_user
-  @user = User.find(params[:id])
-end
+  def find_user
+    @user = User.find(params[:id])
+  end
 
-def user_params
-  params.require(:user).permit(:id)
-end
+ def user_params
+    params.require(:user).permit(:id)
+  end
+def team_params
+    params.require(:user).permit(:start_date, :end_date)
+  end
+
  # def user_params
  #    params.require(:user).permit(:id)
  #  end
 # def team_params
 #     params.require(:team).permit(:start_date, :end_date)
 #   end
+
 
 end
