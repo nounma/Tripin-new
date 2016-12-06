@@ -11,7 +11,20 @@
 
 <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
 
-<h2><%= @team.title.capitalize %>
+<h2><%= @team.title.capitalize %></h2>
 <p><b>Start time: </b><%= @team.start_date %></p>
 <p><b>End time: </b><%= @team.end_date %></p>
+
+<ul>
+<% @team.members.each do |member| %>
+
+<li><p><%= member.user.email %></p></li>
+<% end %>
+</ul>
+
+  <h2>Add team members</h2>
+  <%= simple_form_for Member.new , url: user_team_add_member_path(current_user, @team), method: :post do |f| %>
+    <%= f.input :email, placeholder: "Enter the email of your team mate" %>
+    <%= f.submit %>
+  <% end %>
 
