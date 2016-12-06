@@ -7,10 +7,13 @@
 <%= (@team.start_date.to_date - Date.today).to_i %> days before your trip
 
 
-<p>Your actual score = <% @challenges %> </p>
 <% unless @team.team_picture.nil?  %>
 <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
 <% end %>
+<p>Your actual score = <%= @total_score %> </p>
+
+<%#= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
+
 <h2><%= @team.title.capitalize %></h2>
 <p><b>Start time: </b><%= @team.start_date %></p>
 <p><b>End time: </b><%= @team.end_date %></p>
