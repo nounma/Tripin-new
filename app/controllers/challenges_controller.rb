@@ -10,6 +10,7 @@ class ChallengesController < ApplicationController
 
   # @team_challenges = @team.challenges
 
+
 end
 
 def show
