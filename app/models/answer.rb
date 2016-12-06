@@ -24,5 +24,4 @@ class Answer < ApplicationRecord
     self.status = NOT_COMPLETED
     self.save
   end
-
 end
