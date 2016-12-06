@@ -5,13 +5,24 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
+    total_score = 0
+    # @team.answers.each do |a|
+    #   if a.status == "Done"
+    #     @total_score = @total_score + @challenges.score
+    #   else
+    #     @total_score
+    #   end
+    # end
+    @team.challenges.each do |challenge|
 
-score_total = 0
-# if challenges.status == "done"
-# score_total + challenge.score
+      if challenge.answer.status == Answer::COMPLETED
+        total_score += challenge.score
+       else
+        puts "error"
+      end
+    end
 
-
-end
+    @total_score=total_score
   end
 
   def new

@@ -4,7 +4,6 @@ class Team < ApplicationRecord
   mount_uploader :team_picture, PhotoUploader
 
 
-  belongs_to :user
   has_many :answers
   has_many :team_challenges
   has_many :challenges, through: :team_challenges
@@ -13,10 +12,14 @@ class Team < ApplicationRecord
 
   def assign_challenges
 
-trip_length = self.end_date - self.start_date #transform string en date
+# trip_length = self.end_date - self.start_date #transform string en date
 
-   trip_lenght = string_to_date(start_date).to_i - string_to_date(end_date).to_i
+   # trip_lenght = string_to_date(start_date).to_i - string_to_date(end_date).to_i
 
+
+ # A RETIRER EN CONFLIT !!!!!!!!!!!!!!!!!
+
+trip_length = 2
 
     if trip_length > 3
       num_challenge = 20
@@ -26,7 +29,7 @@ trip_length = self.end_date - self.start_date #transform string en date
 
     challenges = Challenge.where(city_id: self.city_id).limit(num_challenge)
     challenges.each do |challenge|
-      TeamChallenges.create(team_id: self.id, challenge_id: challenge.id)
+      TeamChallenge.create(team_id: self.id, challenge_id: challenge.id)
     end
     #team.challenges = tous les challenges de la self team!
 

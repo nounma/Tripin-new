@@ -28,8 +28,8 @@ challenge2 = Challenge.create!(title: "Question 2", description: "Find the answe
 
 team1 = Team.create!(title: "Les blondes", team_picture: "", start_date: Date.tomorrow, end_date: Date.tomorrow, city_id: brussels.id)
 
-Answer.create!(text: "bonbon", status: "Done", picture: "", team_id: team1.id, challenge_id: challenge1.id)
-Answer.create!(text: "bonbon", status: "Gift", picture: "", team_id: team1.id, challenge_id: challenge2.id)
+Answer.create!(text: "bonbon", status: Answer::COMPLETED, picture: "", team_id: team1.id, challenge_id: challenge1.id)
+Answer.create!(text: "bonbon", status: Answer::COMPLETED, picture: "", team_id: team1.id, challenge_id: challenge2.id)
 
 
 
