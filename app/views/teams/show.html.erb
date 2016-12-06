@@ -1,2 +1,6 @@
-<h1>Teams#show</h1>
-<p>Find me in app/views/teams/show.html.erb</p>
+
+<%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
+
+<h2><%= @team.title.capitalize %>
+<p><b>Start time: </b><%= @team.start_date %></p>
+<p><b>End time: </b><%= @team.end_date %></p>
