@@ -5,13 +5,13 @@
   <li>
     <%= challenge.title %> <%= challenge.score %>
 
-    if challenge.answer.status == "done" || challenge.gift == ""
+    <% if challenge.answer.status == "done" || challenge.gift == "" %>
       <i class="fa fa-check-circle"></i>
 
-    elsif challenge.answer.status == "done" || challenge.gift != ""
+    <% elsif challenge.answer.status == "done" || challenge.gift != "" %>
       <i class="fa fa-gift"></i> <!-- +link to promocode page  -->
 
-    else challenge.answer.status == "pending"
+    <% else challenge.answer.status == "pending" %>
       <i class="fa fa-paper-plane"></i>
 
     <% end %>
