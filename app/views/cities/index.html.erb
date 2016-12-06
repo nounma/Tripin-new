@@ -1,13 +1,9 @@
 <h1>Where do you want to go</h1>
-<p>Find me in app/views/cities/index.html.erb</p>
-
-
-
 
 <div class="row">
   <div class="col-xs-7">
     <%@cities.each do |cit| %>
-    <p><%= image_tag cit.picture, height: 50, width: 150, crop: :fill %> - <%= cit.name %></p>
+    <p><%= image_tag cit.picture, height: 50, width: 150, crop: :fill %> - <%=link_to cit.name, city_path(cit.id) %></p>
     <% end %>
 
   </div>
