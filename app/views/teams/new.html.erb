@@ -1,7 +1,7 @@
 <div class="container">
 <h1>Where do you want to go?</h1>
 
-  <%= simple_form_for [current_user, @team] do |f| %>
+  <%= simple_form_for @team do |f| %>
 
     <%= f.input :city_id, collection: City::CITIES, prompt: "Choose your city"  %>
 

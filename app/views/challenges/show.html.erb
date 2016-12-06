@@ -1,3 +1,8 @@
+<h1>Challenges#show</h1>
+<p>Find me in app/views/challenges/show.html.erb</p>
+
+<%=score_total %>
+
 <div class="container">
  <div class="row">
   <div class="col-xs-12 col-sm-6">
@@ -6,7 +11,30 @@
    <p><%= image_tag(@challenge.picture) %></p>
    <p><%= @challenge.description %></p>
    <p>points: <b><%= @challenge.score %></b></p>
-   <p>hint: <%= @challenge.hint %></p>
+
+   <%= link_to "#myModal", "data-toggle" => "modal" do %>
+    <p> want a hint ?</p>
+    <% end %>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Your hint is : </h4>
+          </div>
+          <div class="modal-body">
+            <p><%= @challenge.hint %></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
    <p>cost: <%= @challenge.cost%></p>
 
 
