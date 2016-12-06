@@ -22,3 +22,4 @@ private
 def team_params
     params.require(:user).permit(:start_date, :end_date)
   end
+end

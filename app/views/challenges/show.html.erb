@@ -1,2 +1,26 @@
-<h1>Challenges#show</h1>
-<p>Find me in app/views/challenges/show.html.erb</p>
+<div class="container">
+ <div class="row">
+  <div class="col-xs-12 col-sm-6">
+   <h2><%= @challenge.title.capitalize %></h2>
+   <p><%= link_to @challenge.address, googlemap_path%></p>
+   <p><%= image_tag(@challenge.picture) %></p>
+   <p><%= @challenge.description %></p>
+   <p><b><%= @challenge.score %></b></p>
+   <p><%= @challenge.hint %></p>
+   <p><%= @challenge.cost * "€"%></p>
+
+   <%= simple_form_for @user do |f| %>
+   <% if @challenge.input_type == text %>
+   <%= f.input :answer %>
+   <% elsif @challenge.input_type == picture %>
+   <%= f.input :profile_picture %>
+   <% else @challenge.input_type == both %>
+   <%= f.input :answer %>
+   <%= f.input :profile_picture %>
+   <% end %>
+   <%= f.button :submit %>
+   <% end %>
+
+ </div>
+</div>
+</div>
