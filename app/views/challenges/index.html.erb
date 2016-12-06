@@ -2,6 +2,6 @@
 <% @team_challenges.each do |challenge| %>
 <ul>
   <li>
-    <%= challenge.title %> <%= challenge.score %> <%= Answer.where(team_id: @team.id && challenge_id: challenge.id) %>
+    <%= challenge.title %> <%= challenge.score %> <%= challenge.answer.status %>
   </li>
 </ul>

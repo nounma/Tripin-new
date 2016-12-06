@@ -6,8 +6,6 @@ class ChallengesController < ApplicationController
 
   @team_challenges = @team.challenges
 
-  Answer.where(team_id: @team.id && challenge)
-
   end
 
   def show

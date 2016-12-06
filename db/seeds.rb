@@ -13,18 +13,22 @@ Team.destroy_all
 TeamChallenge.destroy_all
 User.destroy_all
 
-challenge1 = Challenge.create!(title: "Question 1", description: "Find the good answer !", address: "123 avenue molière 1050 Belgium", score: 10, good_answer: "Pix", bad_answers: ["Pix", "Loo", "Poux"], hint: "start with P", input_type: "text", picture: "", cost: 1, gift: "Promo code 1234")
-challenge2 = Challenge.create!(title: "Question 2", description: "Find the answer !", address: "180 avenue de floréal 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: ["Pix", "Loo", "Poux"], hint: "start with P", input_type: "picture", picture: "", cost: 1, gift: "Promo code 13")
+user1 = User.create!(email: "manon@lol.me", password: "FGHJKL")
 
-team1 = Team.create!(title: "Les blondes", team_picture: "", start_date: Date.today, end_date: Date.today )
+brussels = City.create!(name: "Brussels", advice:"fghjkl", country:"Belgium", picture: "")
+
+challenge1 = Challenge.create!(title: "Question 1", description: "Find the good answer !", address: "123 avenue molière 1050 Belgium", score: 10, good_answer: "Pix", bad_answers: ["Pix", "Loo", "Poux"], hint: "start with P", input_type: "text", picture: "", cost: 1, gift: "Promo code 1234", city_id: brussels.id)
+challenge2 = Challenge.create!(title: "Question 2", description: "Find the answer !", address: "180 avenue de floréal 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: ["Pix", "Loo", "Poux"], hint: "start with P", input_type: "picture", picture: "", cost: 1, gift: "Promo code 13", city_id: brussels.id)
+
+team1 = Team.create!(title: "Les blondes", team_picture: "", start_date: Date.today, end_date: Date.today, city_id: brussels.id)
 
 Answer.create!(text: "bonbon", status: "Done", picture: "", team_id: team1.id, challenge_id: challenge1.id)
 Answer.create!(text: "bonbon", status: "Gift", picture: "", team_id: team1.id, challenge_id: challenge2.id)
 
 
 
-Member.create!(score: 120, user_id: 1, team_id: 1)
+Member.create!(score: 120, user_id: user1.id, team_id: team1.id)
 
 
-TeamChallenge.create!(challenge_id: 1, team_id: 1)
+TeamChallenge.create!(challenge_id: challenge1.id, team_id: team1.id)
 
