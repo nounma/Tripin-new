@@ -1,8 +1,24 @@
 <h1>Challenges List</h1>
+
 <% @team_challenges.each do |challenge| %>
 <ul>
   <li>
-    <%= challenge.title %> <%= challenge.score %> <%= challenge.answer.status %>
+    <%= challenge.title %> <%= challenge.score %>
+
+    if challenge.answer.status == "done" || challenge.gift == ""
+      <i class="fa fa-check-circle"></i>
+
+    elsif challenge.answer.status == "done" || challenge.gift != ""
+      <i class="fa fa-gift"></i> <!-- +link to promocode page  -->
+
+    else challenge.answer.status == "pending"
+      <i class="fa fa-paper-plane"></i>
+
+    <% end %>
+
+  <% end %>
+
+
   </li>
 </ul>
 <% end %>

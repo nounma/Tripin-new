@@ -1,14 +1,14 @@
 <div class="container">
 <h1>Where do you want to go?</h1>
 
-  <%= simple_form_for @team, url: new_user_team_path do |f| %>
+  <%= simple_form_for [current_user, @team] do |f| %>
 
-    <%= f.input :city, collection: City::CITIES, prompt: "Choose your city"  %>
+    <%= f.input :city_id, collection: City::CITIES, prompt: "Choose your city"  %>
 
     <h1>Choose the dates of your trip:</h1>
 
-    <%= f.input :start_date, placeholder: "Start date"%>
-    <%= f.input :end_date, placeholder: "End date"%>
+    <%= f.input :start_date, as: :date, placeholder: "Start date"%>
+    <%= f.input :end_date, as: :date, placeholder: "End date"%>
 
     <h1>Create your team:</h1>
 
@@ -16,9 +16,6 @@
     
     <%= f.input :team_picture %>
     <%= f.input :team_picture_cache, as: :hidden %>
-
-    <%= input :first_member, placeholder: "First team member"%>
-
 
     <%= f.submit %>
   <% end %>
