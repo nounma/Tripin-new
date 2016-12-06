@@ -1,2 +1,7 @@
-<h1>Challenges#index</h1>
-<p>Find me in app/views/challenges/index.html.erb</p>
+<h1>Challenges List</h1>
+<% @team_challenges.each do |challenge| %>
+<ul>
+  <li>
+    <%= challenge.title %> <%= challenge.score %> <%= challenge.answer.status %>
+  </li>
+</ul>
