@@ -14,7 +14,7 @@
 <h2><%= @team.title.capitalize %></h2>
 
 <% unless @team.team_picture.nil?  %>
-<%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
+  <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
 <% end %>
 
 <p><b>Start time: </b><%= @team.start_date %></p>
@@ -22,12 +22,13 @@
 
 <h2>Your team member:</h2>
 <ul>
-<% @team.members.each do |member| %>
+  <% @team.members.each do |member| %>
 
-<li><p><%= member.user.email %></p></li>
-<% end %>
+    <li><p><%= member.user.email %> <%= link_to "delete", team_member_path(@team, member), method: :delete %></p></li>
+    
+  <% end %>
 </ul>
 
 <p><%= link_to "Edit", edit_team_path(@team), method: :get %></p>
 
-<p><%= link_to "Add a member", team_members_new_path(@team), method: :get %></p>
+<p><%= link_to "Add a member",  new_team_member_path(@team), method: :get %></p>

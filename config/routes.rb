@@ -11,9 +11,7 @@ Rails.application.routes.draw do
     resources :challenges, only: [:index, :show] do
       resources :answers
     end
-
-    post '/add_member', to: 'teams#add_member'
-    get '/members/new', to: 'members#new'
+    resources :members, only: [:new, :create, :destroy]
   end
   resources :cities, only: [:index, :show]
 
