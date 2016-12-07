@@ -1,24 +1,39 @@
+
+<div class="bigtext">
 <div class="container">
+
 <h1>Where do you want to go?</h1>
+
+</br>
 
   <%= simple_form_for @team do |f| %>
 
     <%= f.input :city_id, collection: City::CITIES, prompt: "Choose your city"  %>
+</div>
+</br>
+</br>
+</br>
+</br>
+
+<div class="container">
 
     <h1>Choose the dates of your trip:</h1>
 
     <%= f.input :start_date, as: :date, placeholder: "Start date"%>
     <%= f.input :end_date, as: :date, placeholder: "End date"%>
+</div>
+<div class="container">
 
     <h1>Create your team:</h1>
 
     <%= f.input :title, placeholder: "Team name"%>
-    
+
     <%= f.input :team_picture %>
     <%= f.input :team_picture_cache, as: :hidden %>
-
+</div>
     <%= f.submit %>
   <% end %>
 
   </form>
+  </div>
 </div>
