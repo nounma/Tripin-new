@@ -1,11 +1,16 @@
-<h3>Edit your team:</h3>
+<div class="container">
 
-<%= simple_form_for @team, url: team_path do |f| %>
-  <%= f.input :title, placeholder: "Your team's name."%>
-  <%= f.input :start_date, as: :date, placeholder: "Start date"%>
-  <%= f.input :end_date, as: :date, placeholder: "End date"%>
-  <%= f.input :team_picture %>
-  <%= f.input :team_picture_cache, as: :hidden %>
-  <%= f.submit %>
+  <h3>Edit your team:</h3>
 
-<% end %>
+  <%= simple_form_for @team, url: team_path do |f| %>
+    <%= f.input :title, placeholder: "Your team's name."%>
+    <%= f.input :start_date, as: :date, placeholder: "Start date"%>
+    <%= f.input :end_date, as: :date, placeholder: "End date"%>
+    <%= f.input :team_picture %>
+    <%= f.input :team_picture_cache, as: :hidden %>
+    <%= f.submit %>
+  <% end %>
+
+  <%= link_to 'Go Back', team_path(@team) %>
+
+</div>
