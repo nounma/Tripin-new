@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   devise :omniauthable, omniauth_providers: [:facebook]
 
+  mount_uploader :profile_picture, PhotoUploader
+
   has_many :members
   has_many :teams, through: :members
 def self.find_for_facebook_oauth(auth)
