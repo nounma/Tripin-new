@@ -1,34 +1,36 @@
-<h1>READY TO GO </h1>
+<div class="container">
 
+  <h1>READY TO GO </h1>
 
-<%#= (Date.parse(@team.start_date) - Date.today).to_i %> days before your trip
+  <%= countdown = (@team.start_date.to_date - Date.today).to_i %> days before your trip
 
-<%= (@team.start_date.to_date - Date.today).to_i %> days before your trip
+  <p>Your actual score = <%= @total_score %> </p>
 
+  <h2><%= @team.title.capitalize %></h2>
 
-
-
-<p>Your actual score = <%= @total_score %> </p>
-
-
-<h2><%= @team.title.capitalize %></h2>
-
-<% unless @team.team_picture.nil?  %>
-  <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
-<% end %>
-
-<p><b>Start time: </b><%= @team.start_date %></p>
-<p><b>End time: </b><%= @team.end_date %></p>
-
-<h2>Your team member:</h2>
-<ul>
-  <% @team.members.each do |member| %>
-
-    <li><p><%= member.user.email %> <%= link_to "delete", team_member_path(@team, member), method: :delete %></p></li>
-    
+  <% unless @team.team_picture.nil?  %>
+    <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
   <% end %>
-</ul>
 
-<p><%= link_to "Edit", edit_team_path(@team), method: :get %></p>
+  <p><b>Start time: </b><%= @team.start_date %></p>
+  <p><b>End time: </b><%= @team.end_date %></p>
 
-<p><%= link_to "Add a member",  new_team_member_path(@team), method: :get %></p>
+  <h2>Your team member:</h2>
+  <ul>
+    <% @team.members.each do |member| %>
+
+      <li><p><%= member.user.first_name %> <%= member.user.last_name %>, <%= member.user.email %> <%= link_to "Delete", team_member_path(@team, member), method: :delete %> <%= link_to "Show", user_path(member.user.id) %></p></li>
+    
+    <% end %>
+  </ul>
+
+  <p><%= link_to "Edit", edit_team_path(@team), method: :get %></p>
+
+  <p><%= link_to "Add a member",  new_team_member_path(@team), method: :get %></p>
+
+  <% if countdown == 0 %>
+    <%= link_to "List of challenges", team_challenges_path(@team), method: :get %>
+  <% end %>
+</div>
+<br>
+<br>
