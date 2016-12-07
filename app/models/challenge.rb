@@ -3,7 +3,7 @@ class Challenge < ApplicationRecord
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
 
-  INPUT_TYPE = %w(picture text both)
+  INPUT_TYPE = %w(picture text both auto)
   belongs_to :city
   has_many :team_challenges
   has_many :teams, through: :team_challenges
@@ -24,7 +24,7 @@ class Challenge < ApplicationRecord
   end
 
   def answer_auto?
-    true
+    input_type == 'auto'
   end
 
 end

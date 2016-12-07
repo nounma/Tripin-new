@@ -23,6 +23,9 @@ gem "coffee-rails"
 gem "gmaps4rails"
 gem 'omniauth-facebook'
 
+# multiple select box
+gem 'select2-rails'
+
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 
