@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-category"><%= challenge.input_type %></div>
+  <div class="card-description">
+    <h2><%= challenge.title %></h2>
+  </div>
+  <div class="card-user avatar"><%= challenge.score %></div>
+
+  <div class="card-user avatar"><%= challenge.answer.status %></div>
+  <%= link_to "", team_challenge_path(@team.id, challenge.id), class: "card-link" %>
+</div>
+
+
+<div>
+  <% if challenge.answer.status == "completed" || challenge.gift == "" %>
+  <i class="fa fa-check-circle"></i>
+
+  <% elsif challenge.answer.status == "completed" || challenge.gift != "" %>
+  <i class="fa fa-gift"></i> <!-- +link to promocode page  -->
+
+  <% else challenge.answer.status == "pending" %>
+  <i class="fa fa-paper-plane"></i>
+  <% end %>
+
+  <div style="width: 100px, height: 50px, background-color: blue">
+
+    <p>  <%= challenge.gift %>   </p>
+
+  </div>
+
+</div>
