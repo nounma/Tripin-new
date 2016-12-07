@@ -26,5 +26,4 @@ class Challenge < ApplicationRecord
   def answer_auto?
     true
   end
-
 end
