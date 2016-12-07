@@ -1,8 +1,15 @@
 <h1>READY TO GO </h1>
 
+
 <%#= (Date.parse(@team.start_date) - Date.today).to_i %> days before your trip
 
+<%= (@team.start_date.to_date - Date.today).to_i %> days before your trip
 
+
+
+<% unless @team.team_picture.nil?  %>
+<%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
+<% end %>
 <p>Your actual score = <%= @total_score %> </p>
 
 
@@ -22,5 +29,4 @@
 </ul>
 
 <p><%= link_to "Add a member", team_members_new_path(@team), method: :get %></p>
-
 

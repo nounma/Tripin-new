@@ -50,7 +50,7 @@ class TeamsController < ApplicationController
     else
       flash[:error] = "User not found"
     end
-    redirect_to team_path( @team)
+    redirect_to team_path(@team)
   end
 
   def update
