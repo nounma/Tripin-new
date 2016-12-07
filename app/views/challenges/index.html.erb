@@ -1,17 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-4">
-      <h1>Challenges List</h1>
+      <h1 class="text-center">Your challenges</h1>
 
       <% @team_challenges.each do |challenge| %>
-
       <%= render "card", challenge: challenge %>
 
-      <%#= link_to challenge.title , team_challenge_path(@team.id, challenge.id) %>
-      <%#= challenge.score %>
       <% end %>
-
-
     </div>
   </div>
 </div>
