@@ -5,6 +5,7 @@ class Challenge < ApplicationRecord
 
   INPUT_TYPE = %w(picture text both)
   belongs_to :city
+  has_many :team_challenges
   has_many :teams, through: :team_challenges
   # has_many :answers
   has_one :answer
