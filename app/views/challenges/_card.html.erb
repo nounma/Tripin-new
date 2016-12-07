@@ -5,7 +5,9 @@
   </div>
   <div class="bottom-right"><%= challenge.score %></div>
 
-  <div class="upper-right"><%= challenge.answer.status %></div>
+  <% if !challenge.answer.nil? %>
+    <div class="upper-right"><%= challenge.answer.status %></div>
+  <% end %>
   <%= link_to "", team_challenge_path(@team.id, challenge.id), class: "card-link" %>
 </div>
 
