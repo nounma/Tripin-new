@@ -43,6 +43,13 @@
    <%= f.input :text, input_html: {value: @answer.text} %>
    <% elsif @challenge.answer_picture? %>
    <%= f.input :picture %>
+    <% elsif @challenge.answer_auto? %>
+<%= f.input :text, label: false,
+                      collection: bad_answers(@challenge),
+                   include_blank: "-- Choose an answer --",
+                      selected: @answer.text,
+                      input_html: { id: "select2" } %>
+
    <% else @challenge.answer_both? %>
    <%= f.input :text %>
    <%= f.input :picture %>

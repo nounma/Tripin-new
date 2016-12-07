@@ -5,6 +5,7 @@ class ProcessAnswer
   end
 
   def process
+
     if @challenge.answer_auto?
       if @answer.text == @challenge.good_answer
         @answer.completed!

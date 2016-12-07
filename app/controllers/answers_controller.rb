@@ -18,6 +18,8 @@ class AnswersController < ApplicationController
     team = Team.find(params[:team_id])
     answer = Answer.find(params[:id])
 
+    answer.update(answer_params)
+
     ProcessAnswer.new(answer, challenge).process
 
     redirect_to team_challenges_path(params[:team_id])
