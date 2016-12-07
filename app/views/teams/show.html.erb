@@ -7,15 +7,15 @@
 
 
 
-<% unless @team.team_picture.nil?  %>
-<%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
-<% end %>
+
 <p>Your actual score = <%= @total_score %> </p>
 
 
 <h2><%= @team.title.capitalize %></h2>
 
+<% unless @team.team_picture.nil?  %>
 <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
+<% end %>
 
 <p><b>Start time: </b><%= @team.start_date %></p>
 <p><b>End time: </b><%= @team.end_date %></p>
@@ -29,4 +29,3 @@
 </ul>
 
 <p><%= link_to "Add a member", team_members_new_path(@team), method: :get %></p>
-
