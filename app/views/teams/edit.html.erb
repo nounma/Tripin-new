@@ -1,4 +1,11 @@
-<h1>Teams#edit</h1>
-<p>Find me in app/views/teams/edit.html.erb</p>
+<h3>Edit your team:</h3>
 
+<%= simple_form_for @team, url: team_path do |f| %>
+  <%= f.input :title, placeholder: "Your team's name."%>
+  <%= f.input :start_date, as: :date, placeholder: "Start date"%>
+  <%= f.input :end_date, as: :date, placeholder: "End date"%>
+  <%= f.input :team_picture %>
+  <%= f.input :team_picture_cache, as: :hidden %>
+  <%= f.submit %>
 
+<% end %>

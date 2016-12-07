@@ -1,0 +1,5 @@
+  <h2>Add team members</h2>
+  <%= simple_form_for @member , url: team_add_member_path(@team), method: :post do |f| %>
+    <%= f.input :email, placeholder: "Enter the email of your team mate" %>
+    <%= f.submit %>
+  <% end %>

@@ -15,6 +15,7 @@ class Team < ApplicationRecord
 
 
     trip_length = self.end_date - self.start_date #transform string en date
+
     # trip_length = string_to_date(start_date).to_i - string_to_date(end_date).to_i
 
 
