@@ -17,11 +17,9 @@ class MembersController < ApplicationController
   end
 
   def destroy
-    if(Member.exists?(params[:id]))
-      @member = Member.find(params[:id])
-      @team = @member.team
-      @member.destroy
-    end
+    @member = Member.find(params[:id])
+    @team = @member.team
+    @member.destroy
     redirect_to team_path(@team)
   end
 end
