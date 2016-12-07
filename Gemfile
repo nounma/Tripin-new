@@ -21,6 +21,7 @@ gem 'carrierwave'
 gem "geocoder"
 gem "coffee-rails"
 gem "gmaps4rails"
+gem 'omniauth-facebook'
 
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
