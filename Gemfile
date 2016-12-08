@@ -23,6 +23,8 @@ gem "coffee-rails"
 gem "gmaps4rails"
 gem 'omniauth-facebook'
 
+gem "paperclip", "~> 5.0.0"
+
 # multiple select box
 gem 'select2-rails'
 
