@@ -1,0 +1,17 @@
+<h1> All Your Answers </h1>
+
+<% @team_answers.each do |team_answer| %>
+<ul>
+  <li>
+    <%=team_answer.challenge.title%> - <%=team_answer.challenge.description%> -
+    <% if  team_answer.text.nil? %>
+    <%=team_answer.picture%>
+    <% else %>
+    <%=team_answer.text%>
+    <% end %>
+    - <%=team_answer.status%></li>
+  </ul>
+
+  <% end %>
+
+  <%= link_to 'Go Back', team_path(@team) %>
