@@ -1,39 +1,65 @@
+<header>
+<div class="text-center">
+  <nav>
+    <a href="#city"><i class="fa fa-circle" aria-hidden="true"></i>
+</a>
+    <a href="#dates"><i class="fa fa-circle" aria-hidden="true"></i>
+</a>
+    <a href="#team"><i class="fa fa-circle" aria-hidden="true"></i>
+</a>
+  </nav>
+  </div>
+</header>
+<div class="content">
 
-<div class="bigtext">
-<div class="container">
 
-<h1>Where do you want to go?</h1>
+  <div class="bigtext">
+  <section id="city">
+      <div class="bigcontainer">
 
-</br>
+        <h1>Where do you want to go?</h1>
 
-  <%= simple_form_for @team do |f| %>
 
-    <%= f.input :city_id, collection: City::CITIES, prompt: "Choose your city"  %>
-</div>
-</br>
-</br>
-</br>
-</br>
+        <div class="needspace styled-input">
 
-<div class="container">
+          <%= simple_form_for @team do |f| %>
 
-    <h1>Choose the dates of your trip:</h1>
+          <%= f.input :city_id, collection: City::CITIES, prompt: "Pick your city", label: false, input_html: { class: "disable-form-control" }  %>
+        </div>
+      </div>
+    </section>
+  <section id="dates">
 
-    <%= f.input :start_date, as: :date, placeholder: "Start date"%>
-    <%= f.input :end_date, as: :date, placeholder: "End date"%>
-</div>
-<div class="container">
+    <div class="bigcontainer">
 
-    <h1>Create your team:</h1>
+      <h1>Pick your dates</h1>
+      <div class="needspace styled-input">
 
-    <%= f.input :title, placeholder: "Team name"%>
+        <%= f.input :start_date, as: :date, placeholder: "Start date"%>
+        <%= f.input :end_date, as: :date, placeholder: "End date"%>
+      </div>
+    </div>
+        </section>
+  <section id="team">
 
-    <%= f.input :team_picture %>
-    <%= f.input :team_picture_cache, as: :hidden %>
-</div>
-    <%= f.submit %>
-  <% end %>
+    <div class="bigcontainer">
 
-  </form>
+      <h1>Create your team</h1>
+      <div class="needspace">
+        <%= f.input :title, placeholder: "Team name"%>
+        <%= f.input :team_picture %>
+        <%= f.input :team_picture_cache, as: :hidden %>
+
+      </div>
+      <div class="needspace">
+        <div class="btn-medium text-center">
+          <%= f.submit %></div></div>
+          <% end %>
+        </div>
+        </section>
+
+      </form>
+    </div>
   </div>
 </div>
+

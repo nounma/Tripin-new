@@ -56,6 +56,15 @@ class TeamsController < ApplicationController
     redirect_to user_path(current_user)
   end
 
+def team_answers
+  @team = Team.find(params[:team_id])
+@team_answers = @team.answers
+
+
+end
+
+
+
   private
 
   def team_params

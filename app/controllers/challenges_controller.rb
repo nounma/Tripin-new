@@ -22,8 +22,13 @@ class ChallengesController < ApplicationController
   def show
     @challenge = Challenge.find(params[:id])
     @team = Team.find(params[:team_id])
-    @answer = Answer.where(team_challenge: @team_challenge, team_challenge: @team_challenge).first_or_initialize
+
+#    @answer = Answer.where(team_challenge: @team_challenge, team_challenge: @team_challenge).first_or_initialize
+    
+    @team_challenge = TeamChallenge.find_by(team: @team, challenge: @challenge)
+    @answer = Answer.where(team_challenge: @team_challenge).first_or_initialize
     authorize @team
+
   end
 
   private

@@ -4,5 +4,5 @@
 //= require_tree .
 //= require underscore
 //= require gmaps/google
+//= require select2-full
 
-//= require select2
