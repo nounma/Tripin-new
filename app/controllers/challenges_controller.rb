@@ -2,24 +2,28 @@ class ChallengesController < ApplicationController
   def index
 
     @team = Team.find(params[:team_id])
+    authorize @team
     # @users = @team.users
     @team_challenges = @team.team_challenges
 
     @user = current_user
 
     @challenges = Challenge.where.not(latitude: nil, longitude: nil)
-
+    @challenges = policy_scope(@challenges)
+    
     @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
       marker.lat challenge.latitude
       marker.lng challenge.longitude
       #marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
     end
+
   end
 
   def show
     @challenge = Challenge.find(params[:id])
     @team = Team.find(params[:team_id])
     @answer = Answer.where(team_challenge: @team_challenge, team_challenge: @team_challenge).first_or_initialize
+    authorize @team
   end
 
   private
