@@ -8,6 +8,7 @@
        <p><%#= link_to @challenge.address, googlemap_path%></p>
        <p><%= image_tag(@challenge.picture) %></p>
        <p><%= @challenge.description %></p>
+       <%= image_tag @challenge.cover_pic %>
        <p>points: <b><%= @challenge.score %></b></p>
 
        <p>cost: <%= @challenge.cost%></p>

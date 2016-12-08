@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161207102946) do
+ActiveRecord::Schema.define(version: 20161208100712) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,11 +39,15 @@ ActiveRecord::Schema.define(version: 20161207102946) do
     t.string   "picture"
     t.integer  "cost"
     t.string   "gift"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.string   "city_id"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "cover_pic_file_name"
+    t.string   "cover_pic_content_type"
+    t.integer  "cover_pic_file_size"
+    t.datetime "cover_pic_updated_at"
   end
 
   create_table "cities", force: :cascade do |t|
@@ -51,8 +55,12 @@ ActiveRecord::Schema.define(version: 20161207102946) do
     t.text     "advice"
     t.string   "country"
     t.string   "picture"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "cover_pic_file_name"
+    t.string   "cover_pic_content_type"
+    t.integer  "cover_pic_file_size"
+    t.datetime "cover_pic_updated_at"
   end
 
   create_table "members", force: :cascade do |t|

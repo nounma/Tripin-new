@@ -2,6 +2,7 @@ class Answer < ApplicationRecord
   belongs_to :team
   belongs_to :challenge
 
+
   COMPLETED = "completed"
   PENDING = "pending"
   NOT_COMPLETED = "not_completed"
