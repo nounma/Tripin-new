@@ -1,0 +1,50 @@
+
+* {
+  // margin: 0;
+  // padding: 0;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+/* Select style here */
+
+.disable-form-control {
+border: none;
+box-shadow: none;
+transition: all .2s;
+border-radius: 0px;
+}
+
+select {
+  margin: 0 auto;
+  color: #3A5CBE;
+  width: 310px;
+  padding: 15px;
+  height: 50px;
+  cursor: pointer;
+  background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px no-repeat white;
+}
+
+select:hover {
+  background-color: transparent;
+  color: white;
+  padding: 15px 5px 15px 25px;
+}
+
+select option {
+  background-color: white;
+  color: gray;
+  width: 310px;
+  padding: 10px 15px;
+  height: 45px;
+  cursor: pointer;
+}
+
+select option:hover {
+  padding-left: 25px;
+  width: 270px;
+  color: #EC6F66;
+}

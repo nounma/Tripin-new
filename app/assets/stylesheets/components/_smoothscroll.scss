@@ -1,0 +1,65 @@
+/*
+Reset
+*/
+
+*, *:before, *:after{
+box-sizing: border-box;
+}
+
+body, html, div, p{
+margin: 0;
+padding: 0;
+}
+
+/*
+Styles
+*/
+
+header{
+position: fixed;
+width: 100%;
+top:0;
+left: 0;
+z-index: 1000;
+text-align: center;
+background-color: black;
+}
+
+header nav{
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+header a{
+color: white;
+text-decoration: none;
+margin-right: 30px;
+}
+
+header a:last-child{
+margin-right: 0;
+}
+
+.content{
+margin-top: 48px;
+width: 100%;
+}
+
+.content section{
+min-height: 900px;
+}
+
+.content section:nth-child(1){
+}
+
+.content section:nth-child(2){
+}
+
+.content section:nth-child(3){
+}
+
+.content section:nth-child(4){
+}
+
+.content section:nth-child(5){
+}
