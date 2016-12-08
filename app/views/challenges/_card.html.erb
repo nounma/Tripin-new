@@ -1,14 +1,14 @@
 <div class="card">
-  <div class="card-category"><%= challenge.input_type %></div>
+  <div class="card-category"><%= team_challenge.challenge.input_type %></div>
   <div class="card-description">
-    <h2><%= challenge.title %></h2>
+    <h2><%= team_challenge.challenge.title %></h2>
   </div>
-  <div class="bottom-right"><%= challenge.score %></div>
+  <div class="bottom-right"><%= team_challenge.challenge.score %></div>
 
-  <% if !challenge.answer.nil? %>
-    <div class="upper-right"><%= challenge.answer.status %></div>
+  <% if !team_challenge.answer.nil? %>
+    <div class="upper-right"><%= team_challenge.answer.status %></div>
   <% end %>
-  <%= link_to "", team_challenge_path(@team.id, challenge.id), class: "card-link" %>
+  <%= link_to "", team_challenge_path(@team.id, team_challenge.challenge.id), class: "card-link" %>
 </div>
 
 

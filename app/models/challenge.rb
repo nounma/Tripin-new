@@ -11,7 +11,7 @@ class Challenge < ApplicationRecord
   has_many :team_challenges
   has_many :teams, through: :team_challenges
   # has_many :answers
-  has_one :answer
+  # has_one :answer
   validates :input_type, presence: true, inclusion: { in: INPUT_TYPE }
   validates :title, presence: true
   validates :description, presence: true
