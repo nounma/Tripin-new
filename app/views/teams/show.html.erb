@@ -4,6 +4,9 @@
 
   <% if !(@team.start_date.to_date - Date.today).to_i == 0 %>
   <%= countdown = (@team.start_date.to_date - Date.today).to_i %> days before your trip
+  <%else %>
+  You still have <%= -(Date.today - @team.end_date.to_date).to_i %> days to realise the challenge
+
   <% end %>
 
   <p>Your actual score = <%= @total_score %> </p>
