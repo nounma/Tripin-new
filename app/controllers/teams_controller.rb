@@ -8,12 +8,10 @@ class TeamsController < ApplicationController
 
 
       total_score = 0
-    @team.challenges.each do |challenge|
-      if !challenge.answer.nil?
-        if !challenge.answer.status == Answer::PENDING
-          if challenge.answer.status == Answer::COMPLETED
-          total_score += challenge.score
-        end
+    @team.team_challenges.each do |team_challenge|
+      if !team_challenge.answer.nil?
+          if team_challenge.answer.status == Answer::COMPLETED
+          total_score += team_challenge.challenge.score
       end
     end
 end

@@ -26,6 +26,7 @@ london = City.create!(name: "London", picture: 'london.jpeg')
 challenge1 = Challenge.create!(title: "Question 1", description: "Find the good answer !", address: "123 avenue molière 1050 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "text", picture: "", cost: 1, gift: "Promo code 1234", city_id: brussels.id)
 challenge2 = Challenge.create!(title: "Question 2", description: "Find the answer !", address: "180 avenue de floréal 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "picture", picture: "", cost: 1, gift: "Promo code 13", city_id: brussels.id)
 challenge3 = Challenge.create!(title: "Question 3", description: "Find the answer !", address: "170 avenue de galaxie 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "auto", picture: "", cost: 5, gift: "Promo code 14", city_id: brussels.id)
+
 team1 = Team.create!(title: "Les blondes", team_picture: "", start_date: Date.tomorrow, end_date: Date.tomorrow, city_id: brussels.id)
 
 # Answer.create!(text: "bonbon", status: Answer::COMPLETED, picture: "", team_id: team1.id, challenge_id: challenge1.id)

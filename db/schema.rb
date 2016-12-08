@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161208100712) do
+ActiveRecord::Schema.define(version: 20161208121455) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,9 +21,11 @@ ActiveRecord::Schema.define(version: 20161208100712) do
     t.string   "picture"
     t.integer  "team_id"
     t.integer  "challenge_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.integer  "team_challenge_id"
     t.index ["challenge_id"], name: "index_answers_on_challenge_id", using: :btree
+    t.index ["team_challenge_id"], name: "index_answers_on_team_challenge_id", using: :btree
     t.index ["team_id"], name: "index_answers_on_team_id", using: :btree
   end
 
@@ -121,6 +123,7 @@ ActiveRecord::Schema.define(version: 20161208100712) do
   end
 
   add_foreign_key "answers", "challenges"
+  add_foreign_key "answers", "team_challenges"
   add_foreign_key "answers", "teams"
   add_foreign_key "members", "teams"
   add_foreign_key "members", "users"
