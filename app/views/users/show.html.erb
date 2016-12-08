@@ -18,7 +18,7 @@
   <h3>Your teams:</h3>
   <ul>
     <% @user.members.each do |member| %>
-      <li><%= member.team.title %> <%= link_to "Show", team_path(member.team.id) %></li>
+      <li><%= member.team.title %> <%= link_to "Delete", team_path(member.team), method: :delete %> <%= link_to "Show", team_path(member.team.id) %></li>
     <% end %>
   </ul>
 </div>
