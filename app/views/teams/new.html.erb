@@ -20,7 +20,7 @@
         <h1>Where do you want to go?</h1>
 
 
-        <div class="needspace">
+        <div class="needspace styled-input">
 
           <%= simple_form_for @team do |f| %>
 
@@ -33,7 +33,7 @@
     <div class="bigcontainer">
 
       <h1>Pick your dates</h1>
-      <div class="needspace">
+      <div class="needspace styled-input">
 
         <%= f.input :start_date, as: :date, placeholder: "Start date"%>
         <%= f.input :end_date, as: :date, placeholder: "End date"%>
