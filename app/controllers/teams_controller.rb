@@ -6,17 +6,18 @@ class TeamsController < ApplicationController
   def show
     @team = Team.find(params[:id])
 
-    total_score = 0
 
+      total_score = 0
     @team.challenges.each do |challenge|
       if !challenge.answer.nil?
-        if challenge.answer.status == Answer::COMPLETED
+        if !challenge.answer.status == Answer::PENDING
+          if challenge.answer.status == Answer::COMPLETED
           total_score += challenge.score
         end
       end
     end
-
-    @total_score=total_score
+end
+    @total_score = total_score
 
   end
 

@@ -4,8 +4,12 @@
 
   <% if @team.start_date.to_date > Date.today %>
   <%= countdown = (@team.start_date.to_date - Date.today).to_i %> days before your trip
-  <%else %>
+  <%elsif @team.in_trip?%>
+
   You still have <%= -(Date.today - @team.end_date.to_date).to_i+1 %> days to realise the challenge
+
+  <%else%>
+  CONGRATULATION YOU FINISHED YOUR TRIP
   <% end %>
 
   <p>Your actual score = <%= @total_score %> </p>
@@ -16,8 +20,8 @@
     <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
   <% end %>
 
-  <p><b>Start time: </b><%= @team.start_date %></p>
-  <p><b>End time: </b><%= @team.end_date %></p>
+  <p><b>Start time: </b><%= @team.start_date.to_date %></p>
+  <p><b>End time: </b><%= @team.end_date.to_date %></p>
 
   <h2>Your team member:</h2>
   <ul>
@@ -32,7 +36,7 @@
 
   <p><%= link_to "Add a member",  new_team_member_path(@team), method: :get %></p>
 
-  <% if @team.start_date <= Date.today %>
+  <% if @team.in_trip? %>
     <%= link_to "List of challenges", team_challenges_path(@team), method: :get %>
   <% end %>
 </div>

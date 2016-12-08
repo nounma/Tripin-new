@@ -19,7 +19,7 @@ class Team < ApplicationRecord
     # trip_length = string_to_date(start_date).to_i - string_to_date(end_date).to_i
 
 
-     if trip_length > 3
+    if trip_length > 3
       num_challenge = 20
     else trip_length < 3
       num_challenge = 50
@@ -37,4 +37,7 @@ class Team < ApplicationRecord
   #   DateTime.parse(date)
   # end
 
+  def in_trip?
+    start_date.to_date <= Date.today && end_date.to_date >= Date.today
+  end
 end
