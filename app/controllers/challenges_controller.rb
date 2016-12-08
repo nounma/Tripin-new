@@ -3,11 +3,9 @@ class ChallengesController < ApplicationController
 
     @team = Team.find(params[:team_id])
     # @users = @team.users
-    @team_challenges = @team.challenges
+    @team_challenges = @team.team_challenges
 
     @user = current_user
-    @team = Team.find(params[:team_id])
-    @team_challenges = @team.challenges
 
     @challenges = Challenge.where.not(latitude: nil, longitude: nil)
 
@@ -21,7 +19,8 @@ class ChallengesController < ApplicationController
   def show
     @challenge = Challenge.find(params[:id])
     @team = Team.find(params[:team_id])
-    @answer = Answer.where(challenge: @challenge, team: @team).first_or_initialize
+    @team_challenge = TeamChallenge.find_by(team: @team, challenge: @challenge)
+    @answer = Answer.where(team_challenge: @team_challenge).first_or_initialize
   end
 
   private

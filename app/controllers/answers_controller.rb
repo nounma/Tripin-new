@@ -6,7 +6,8 @@ class AnswersController < ApplicationController
   def create
     challenge = Challenge.find(params[:challenge_id])
     team = Team.find(params[:team_id])
-    answer = Answer.create!(answer_params.merge(team: team, challenge: challenge))
+    team_challenge = TeamChallenge.find_by(team: team, challenge: challenge)
+    answer = Answer.create!(answer_params.merge(team: team, team_challenge: team_challenge))
 
     ProcessAnswer.new(answer, challenge).process
 

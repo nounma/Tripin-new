@@ -6,17 +6,16 @@ class TeamsController < ApplicationController
   def show
     @team = Team.find(params[:id])
 
-    total_score = 0
 
-    @team.challenges.each do |challenge|
-      if !challenge.answer.nil?
-        if challenge.answer.status == Answer::COMPLETED
-          total_score += challenge.score
-        end
+      total_score = 0
+    @team.team_challenges.each do |team_challenge|
+      if !team_challenge.answer.nil?
+          if team_challenge.answer.status == Answer::COMPLETED
+          total_score += team_challenge.challenge.score
       end
     end
-
-    @total_score=total_score
+end
+    @total_score = total_score
 
   end
 
@@ -49,6 +48,9 @@ class TeamsController < ApplicationController
   end
 
   def destroy
+    @team = Team.find(params[:id])
+    @team.destroy
+    redirect_to user_path(current_user)
   end
 
   private
