@@ -12,13 +12,23 @@
   <p><b>E-mail: </b><%= @user.email %></p>
   <p><b>Address: </b><%= @user.address %></p>
 
+<% if policy(@user).update? %>
   <p><%= link_to "Edit", edit_user_path(@user), method: :get %></p>
+<% end %>
 </div>
 <div class="container">
   <h3>Your teams:</h3>
   <ul>
     <% @user.members.each do |member| %>
-      <li><%= member.team.title %> <%= link_to "Delete", team_path(member.team), method: :delete %> <%= link_to "Show", team_path(member.team.id) %></li>
+      <li>
+        <%= member.team.title %> 
+        <% if policy(member.team).destroy? %>
+          <%= link_to "Delete", team_path(member.team), method: :delete %> 
+        <% end %>
+        <% if policy(member.team).show? %>
+          <%= link_to "Show", team_path(member.team.id) %>
+        <% end %>
+      </li>
     <% end %>
   </ul>
 </div>

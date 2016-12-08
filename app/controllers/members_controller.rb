@@ -2,6 +2,7 @@ class MembersController < ApplicationController
   def new
     @team = Team.find(params[:team_id])
     @member = Member.new
+    authorize @team
   end
   
   def create
@@ -13,6 +14,7 @@ class MembersController < ApplicationController
     else
       flash[:error] = "User not found"
     end
+    authorize @team
     redirect_to team_path(@team)
   end
 

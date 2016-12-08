@@ -1,6 +1,6 @@
 class AnswersController < ApplicationController
   def show
-
+    authorize @team
   end
 
   def create
@@ -10,6 +10,8 @@ class AnswersController < ApplicationController
     answer = Answer.create!(answer_params.merge(team: team, team_challenge: team_challenge))
 
     ProcessAnswer.new(answer, challenge).process
+
+    authorize team
 
     redirect_to team_challenges_path(params[:team_id])
   end
@@ -22,6 +24,7 @@ class AnswersController < ApplicationController
     answer.update(answer_params)
 
     ProcessAnswer.new(answer, challenge).process
+    authorize answer
 
     redirect_to team_challenges_path(params[:team_id])
   end
