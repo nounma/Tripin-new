@@ -10,15 +10,15 @@ class UsersController < ApplicationController
   end
 
   def update
-  @user = User.find(params[:id])
-  @user.update(user_params)
-  redirect_to user_path(@user)
-  authorize @user
+    @user = User.find(params[:id])
+    @user.update(user_params)
+    redirect_to user_path(@user)
+    authorize @user
   end
-  
+
   private
-  
+
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :address, :profile_picture, :profile_picture_cache, :id)
+    params.require(:user).permit(:first_name, :last_name, :email, :id)
   end
 end

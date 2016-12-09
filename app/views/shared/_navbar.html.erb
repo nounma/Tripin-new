@@ -41,6 +41,11 @@
             <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
             <% end %>
           </li>
+
+     <% current_user.teams.each do |t| %>
+     <li><%= link_to t.title, team_challenges_path(t), method: :get if t.in_trip? %></li>
+     <%end%>
+
         </ul>
       </div>
     </div>
