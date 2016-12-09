@@ -16,6 +16,9 @@ class Team < ApplicationRecord
   validates :start_date, presence: true
 
 
+  def has_team_member?(user)
+    users.include?(user)
+  end
 
   def assign_challenges
 

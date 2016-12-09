@@ -28,7 +28,10 @@
           </b><%= @user.address %></p>
           <br/>
 
+          <% if policy(@user).update? %>
+
           <p><%= link_to "Edit profile", edit_user_path(@user), class: "btn-blue", method: :get %></p>
+          <% end %>
         </div>
       </div>
 

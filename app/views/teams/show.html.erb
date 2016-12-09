@@ -37,6 +37,7 @@
   <% if @team.in_trip? %>
     <%= link_to "List of challenges", team_challenges_path(@team), method: :get %>
   <% end %>
+  <p><%= link_to "challenge Answers", team_team_answers_path(@team), method: :get %></p>
 </div>
 </div>
 </div>
