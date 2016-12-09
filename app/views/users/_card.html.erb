@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-description">
+    <h2><%= member.team.title %></h2>
+  </div>
+  <div class="bottom-right"><%= link_to "Delete", team_path(member.team), method: :delete %>
+</div>
+  <%= link_to "", team_path(member.team.id), class: "card-link" %>
+</div>
