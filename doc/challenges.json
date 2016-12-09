@@ -1,0 +1,4542 @@
+[
+  {
+    "id": 27,
+    "title": "Latte",
+    "description": "Ask a local what's a \"latte\".",
+    "address": "Place Eugène Flagey, 1050 Ixelles",
+    "score": 20,
+    "good_answer": "Ruler",
+    "bad_answers": "Hot beverage, Vegetable, Ruler, Mushroom, Color, Skirt, Tent",
+    "hint": "You should ask to somebody who went to school.",
+    "input_type": "auto",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-08T16:15:34.918Z",
+    "updated_at": "2016-12-08T16:15:34.918Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [],
+    "teams": []
+  },
+  {
+    "id": 26,
+    "title": "Jacques Brel ?",
+    "description": "You are in front of the magnificent Museum of Musical Instruments. \r\nWrite a song about your trip in brussels.",
+    "address": "Rue Montagne de la Cour 2, 1000 Bruxelles",
+    "score": 30,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "text",
+    "picture": "",
+    "cost": 0,
+    "gift": "You just won a 10% discount on your Museum of Musical Instruments entry ! Promo code : 5263HN2",
+    "created_at": "2016-12-08T16:08:13.818Z",
+    "updated_at": "2016-12-08T16:08:13.818Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [],
+    "teams": []
+  },
+  {
+    "id": 25,
+    "title": "Selfie inception",
+    "description": "Take a selfie for you taking a selfie.",
+    "address": "Mont des Arts, 1000 bruxelles",
+    "score": 0,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "you need two smartphones",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-08T16:02:17.763Z",
+    "updated_at": "2016-12-08T16:02:17.763Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [],
+    "teams": []
+  },
+  {
+    "id": 24,
+    "title": "Sprout to be belgian",
+    "description": "Only on wesnesday !!!!\r\nFind a brussels sprout on the market and send us a picture.",
+    "address": "Place du Châtelain 5, 1050 Ixelles",
+    "score": 20,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 1,
+    "gift": "",
+    "created_at": "2016-12-08T15:57:04.668Z",
+    "updated_at": "2016-12-08T15:57:04.668Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/system/challenges/cover_pics/000/000/024/original/naturafrost-choux-bruxelles-fiche-produit.jpg?1481212624",
+    "team_challenges": [],
+    "teams": []
+  },
+  {
+    "id": 23,
+    "title": "Doctor Vinyl",
+    "description": "Find a vinyl from 1992.",
+    "address": "Rue de la Grande Ile 1, 1000 Bruxelles",
+    "score": 10,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-08T15:30:45.204Z",
+    "updated_at": "2016-12-08T15:30:45.204Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 200,
+        "created_at": "2016-12-09T10:36:27.131Z",
+        "updated_at": "2016-12-09T10:36:27.131Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "At night",
+    "description": "We dare you to do a light graffiti picture, in front of this amazing view.\r\n(light painting on internet)",
+    "address": "Rue des Quatre Bras 90357 1000 Bruxelles",
+    "score": 35,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "http://lightpaintingbrushes.com/pages/light-painting-tutorials",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 30,
+    "gift": "You won 30% discount on a Brussels by night bus tour. Promo code: 36783H",
+    "created_at": "2016-12-08T14:30:05.472Z",
+    "updated_at": "2016-12-08T14:30:05.472Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 199,
+        "created_at": "2016-12-09T10:36:27.129Z",
+        "updated_at": "2016-12-09T10:36:27.129Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Barefoot",
+    "description": "Dare to do a picture barefoot on Brussels cobblestones ?",
+    "address": "Place du Grand Sablon 49 1000 Bruxelles",
+    "score": 20,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-08T14:25:55.245Z",
+    "updated_at": "2016-12-08T14:25:55.245Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 198,
+        "created_at": "2016-12-09T10:36:27.127Z",
+        "updated_at": "2016-12-09T10:36:27.127Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Pigeon",
+    "description": "The city of brussels is hunting pigeons.\r\nTake a creative picture with a pigeon and your shadow... ",
+    "address": "Place du Béguinage 7 1000 Bruxelles",
+    "score": 15,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-08T14:23:07.911Z",
+    "updated_at": "2016-12-08T14:23:07.911Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 197,
+        "created_at": "2016-12-09T10:36:27.125Z",
+        "updated_at": "2016-12-09T10:36:27.125Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "It's raining man !",
+    "description": "Belgians are used to rain... \r\nTake a group selfie in a puddle ",
+    "address": "Place Sainte-Catherine 11 1000 Bruxelles",
+    "score": 25,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "You won 1€ discount on a umbrella at IGOUGNOU shop ! Promo code : 6728GHJKL",
+    "created_at": "2016-12-08T14:07:07.048Z",
+    "updated_at": "2016-12-08T14:07:07.048Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 195,
+        "created_at": "2016-12-09T10:36:27.120Z",
+        "updated_at": "2016-12-09T10:36:27.120Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Papaoutai",
+    "description": "In honor of our belgian singer Stromae : find one of your teammate lookalike and take a picture of both of them next to each other.",
+    "address": "Place Saint-Géry 25-26 1000 Bruxelles",
+    "score": 40,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "You won a 10 % discount on the bill of the Les Fils à Papa restaurant ! Promo code : 627893J3",
+    "created_at": "2016-12-08T14:01:33.324Z",
+    "updated_at": "2016-12-08T14:09:13.844Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 196,
+        "created_at": "2016-12-09T10:36:27.122Z",
+        "updated_at": "2016-12-09T10:36:27.122Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Nail it",
+    "description": "Go into this shop and paint your nail according to the belgian flag. \r\nShow us how it looks !",
+    "address": "Anspach Shopping Brussels, Grétrystraat 12, 1000 Brussel",
+    "score": 25,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "You won 5€ for every 30€ spended in this shop ! Promo code : ETYHE783",
+    "created_at": "2016-12-08T13:58:44.873Z",
+    "updated_at": "2016-12-08T13:58:44.873Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 194,
+        "created_at": "2016-12-09T10:36:27.118Z",
+        "updated_at": "2016-12-09T10:36:27.118Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Superman",
+    "description": "Find the nearest bench, lie on your stomach and  do the superman pose.",
+    "address": "l'imperatrice, Keizerinlaan 1, 1000 Brussel",
+    "score": 25,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "You won a 50% on a ticket for the House of the Comic Strip",
+    "created_at": "2016-12-08T13:54:59.699Z",
+    "updated_at": "2016-12-08T13:54:59.699Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 193,
+        "created_at": "2016-12-09T10:36:27.116Z",
+        "updated_at": "2016-12-09T10:36:27.116Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Carnaval",
+    "description": "You are in front of one of the most famousshop of central brussels... now try one costume (or many) and send us the picture !",
+    "address": "Rue du Lombard 66, 1000 Bruxelles",
+    "score": 40,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-08T13:46:58.395Z",
+    "updated_at": "2016-12-08T13:46:58.395Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/system/challenges/cover_pics/000/000/015/original/o.jpg?1481204818",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 192,
+        "created_at": "2016-12-09T10:36:27.114Z",
+        "updated_at": "2016-12-09T10:36:27.114Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Waff Waffe",
+    "description": "All of your team member must take a bite of the same belgian waffle !",
+    "address": "Avenue de la Toison d'Or 30D 1050 Ixelles",
+    "score": 20,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "The smell will guide you...",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 1,
+    "gift": "",
+    "created_at": "2016-12-08T13:40:16.693Z",
+    "updated_at": "2016-12-08T13:40:16.693Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/system/challenges/cover_pics/000/000/014/original/belgium-brussels-wafel-truck-300x225.jpg?1481204416",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 191,
+        "created_at": "2016-12-09T10:36:27.112Z",
+        "updated_at": "2016-12-09T10:36:27.112Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Ninja Turtles",
+    "description": "Take a picture of at least a little turtle... they hide very well.",
+    "address": "Henri Michaux Square 155 1050 Ixelles",
+    "score": 20,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "They hide in the biggest pond of the park.",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "You have sharp eyes... You just won a 20% discount on a Pairidaiza ticket !!",
+    "created_at": "2016-12-08T13:36:24.099Z",
+    "updated_at": "2016-12-08T13:36:24.099Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/system/challenges/cover_pics/000/000/013/original/t-floride-m.jpg?1481204183",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 190,
+        "created_at": "2016-12-09T10:36:27.110Z",
+        "updated_at": "2016-12-09T10:36:27.110Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Job interview",
+    "description": "Among all these statues representing 48 different profession, take a picture of the carpenter.",
+    "address": "Square du Petit Sablon, 1000 bruxelles",
+    "score": 15,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "On the left of the fountain",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-08T13:28:54.919Z",
+    "updated_at": "2016-12-08T13:28:54.919Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/system/challenges/cover_pics/000/000/012/original/stock-photo-statue-of-egmont-and-hoorne-on-petit-sablon-kleine-zavel-square-in-brussels-belgium-147581594.jpg?1481203734",
+    "team_challenges": [],
+    "teams": []
+  },
+  {
+    "id": 11,
+    "title": "Be Flexible",
+    "description": "Find the Fatboy's Sporst Bar & Grill\r\nAnd take a picture that imitate that acronym pose. ",
+    "address": "Avenue de Cortenbergh 12 1040 Bruxelles",
+    "score": 20,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": -1,
+    "gift": "Yessss ! You deserve your 10% discount on the final bill ! Promo code : 345678BB",
+    "created_at": "2016-12-08T13:15:20.880Z",
+    "updated_at": "2016-12-08T13:15:20.880Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/system/challenges/cover_pics/000/000/011/original/4-ACROSPORT-DUO-R-5.jpg?1481202920",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 153,
+        "created_at": "2016-12-08T13:16:43.098Z",
+        "updated_at": "2016-12-08T13:16:43.098Z"
+      },
+      {
+        "id": 162,
+        "created_at": "2016-12-08T13:18:29.740Z",
+        "updated_at": "2016-12-08T13:18:29.740Z"
+      },
+      {
+        "id": 171,
+        "created_at": "2016-12-08T13:18:52.710Z",
+        "updated_at": "2016-12-08T13:18:52.710Z"
+      },
+      {
+        "id": 180,
+        "created_at": "2016-12-08T13:22:32.243Z",
+        "updated_at": "2016-12-08T13:22:32.243Z"
+      },
+      {
+        "id": 189,
+        "created_at": "2016-12-09T10:36:27.107Z",
+        "updated_at": "2016-12-09T10:36:27.107Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Always on time",
+    "description": "Find the clock at the Grand Place.\r\nTake a selfie in front of it at 15h23.",
+    "address": "La grand place 1000 Bruxelles",
+    "score": 20,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "In the City Hall",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-07T17:27:45.992Z",
+    "updated_at": "2016-12-07T17:27:45.992Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 72,
+        "created_at": "2016-12-07T18:31:43.707Z",
+        "updated_at": "2016-12-07T18:31:43.707Z"
+      },
+      {
+        "id": 80,
+        "created_at": "2016-12-07T18:34:02.395Z",
+        "updated_at": "2016-12-07T18:34:02.395Z"
+      },
+      {
+        "id": 88,
+        "created_at": "2016-12-07T18:44:21.177Z",
+        "updated_at": "2016-12-07T18:44:21.177Z"
+      },
+      {
+        "id": 96,
+        "created_at": "2016-12-07T19:16:02.625Z",
+        "updated_at": "2016-12-07T19:16:02.625Z"
+      },
+      {
+        "id": 104,
+        "created_at": "2016-12-07T19:16:50.544Z",
+        "updated_at": "2016-12-07T19:16:50.544Z"
+      },
+      {
+        "id": 112,
+        "created_at": "2016-12-08T04:16:45.449Z",
+        "updated_at": "2016-12-08T04:16:45.449Z"
+      },
+      {
+        "id": 120,
+        "created_at": "2016-12-08T09:42:23.333Z",
+        "updated_at": "2016-12-08T09:42:23.333Z"
+      },
+      {
+        "id": 128,
+        "created_at": "2016-12-08T12:22:07.554Z",
+        "updated_at": "2016-12-08T12:22:07.554Z"
+      },
+      {
+        "id": 136,
+        "created_at": "2016-12-08T12:56:21.883Z",
+        "updated_at": "2016-12-08T12:56:21.883Z"
+      },
+      {
+        "id": 144,
+        "created_at": "2016-12-08T13:14:38.182Z",
+        "updated_at": "2016-12-08T13:14:38.182Z"
+      },
+      {
+        "id": 152,
+        "created_at": "2016-12-08T13:16:43.096Z",
+        "updated_at": "2016-12-08T13:16:43.096Z"
+      },
+      {
+        "id": 161,
+        "created_at": "2016-12-08T13:18:29.738Z",
+        "updated_at": "2016-12-08T13:18:29.738Z"
+      },
+      {
+        "id": 170,
+        "created_at": "2016-12-08T13:18:52.708Z",
+        "updated_at": "2016-12-08T13:18:52.708Z"
+      },
+      {
+        "id": 179,
+        "created_at": "2016-12-08T13:22:32.241Z",
+        "updated_at": "2016-12-08T13:22:32.241Z"
+      },
+      {
+        "id": 188,
+        "created_at": "2016-12-09T10:36:27.105Z",
+        "updated_at": "2016-12-09T10:36:27.105Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Undergroud fashion",
+    "description": "Dare to wrap yourself into toilet paper and do the mummy ?\r\nProve it.",
+    "address": "Rue de la Bourse 9 1000 Bruxelles",
+    "score": 100,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "You won a free UGC ticket ! Promo code : FYHJZ562",
+    "created_at": "2016-12-07T17:23:16.527Z",
+    "updated_at": "2016-12-07T17:23:16.527Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 71,
+        "created_at": "2016-12-07T18:31:43.705Z",
+        "updated_at": "2016-12-07T18:31:43.705Z"
+      },
+      {
+        "id": 79,
+        "created_at": "2016-12-07T18:34:02.389Z",
+        "updated_at": "2016-12-07T18:34:02.389Z"
+      },
+      {
+        "id": 87,
+        "created_at": "2016-12-07T18:44:21.175Z",
+        "updated_at": "2016-12-07T18:44:21.175Z"
+      },
+      {
+        "id": 95,
+        "created_at": "2016-12-07T19:16:02.619Z",
+        "updated_at": "2016-12-07T19:16:02.619Z"
+      },
+      {
+        "id": 103,
+        "created_at": "2016-12-07T19:16:50.542Z",
+        "updated_at": "2016-12-07T19:16:50.542Z"
+      },
+      {
+        "id": 111,
+        "created_at": "2016-12-08T04:16:45.447Z",
+        "updated_at": "2016-12-08T04:16:45.447Z"
+      },
+      {
+        "id": 119,
+        "created_at": "2016-12-08T09:42:23.331Z",
+        "updated_at": "2016-12-08T09:42:23.331Z"
+      },
+      {
+        "id": 127,
+        "created_at": "2016-12-08T12:22:07.542Z",
+        "updated_at": "2016-12-08T12:22:07.542Z"
+      },
+      {
+        "id": 135,
+        "created_at": "2016-12-08T12:56:21.879Z",
+        "updated_at": "2016-12-08T12:56:21.879Z"
+      },
+      {
+        "id": 143,
+        "created_at": "2016-12-08T13:14:38.181Z",
+        "updated_at": "2016-12-08T13:14:38.181Z"
+      },
+      {
+        "id": 151,
+        "created_at": "2016-12-08T13:16:43.095Z",
+        "updated_at": "2016-12-08T13:16:43.095Z"
+      },
+      {
+        "id": 160,
+        "created_at": "2016-12-08T13:18:29.737Z",
+        "updated_at": "2016-12-08T13:18:29.737Z"
+      },
+      {
+        "id": 169,
+        "created_at": "2016-12-08T13:18:52.707Z",
+        "updated_at": "2016-12-08T13:18:52.707Z"
+      },
+      {
+        "id": 178,
+        "created_at": "2016-12-08T13:22:32.240Z",
+        "updated_at": "2016-12-08T13:22:32.240Z"
+      },
+      {
+        "id": 187,
+        "created_at": "2016-12-09T10:36:27.103Z",
+        "updated_at": "2016-12-09T10:36:27.103Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Breakfast at Tiffany's",
+    "description": "Take a picture that Audrey Hepburn is born in this street.",
+    "address": "Rue Keyenveld 29 1050 Ixelles",
+    "score": 10,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "You can divide the address number by 24",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-07T17:06:19.060Z",
+    "updated_at": "2016-12-07T17:06:19.060Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 52,
+        "created_at": "2016-12-07T17:07:25.121Z",
+        "updated_at": "2016-12-07T17:07:25.121Z"
+      },
+      {
+        "id": 58,
+        "created_at": "2016-12-07T17:11:24.299Z",
+        "updated_at": "2016-12-07T17:11:24.299Z"
+      },
+      {
+        "id": 64,
+        "created_at": "2016-12-07T17:13:16.670Z",
+        "updated_at": "2016-12-07T17:13:16.670Z"
+      },
+      {
+        "id": 70,
+        "created_at": "2016-12-07T18:31:43.703Z",
+        "updated_at": "2016-12-07T18:31:43.703Z"
+      },
+      {
+        "id": 78,
+        "created_at": "2016-12-07T18:34:02.385Z",
+        "updated_at": "2016-12-07T18:34:02.385Z"
+      },
+      {
+        "id": 86,
+        "created_at": "2016-12-07T18:44:21.173Z",
+        "updated_at": "2016-12-07T18:44:21.173Z"
+      },
+      {
+        "id": 94,
+        "created_at": "2016-12-07T19:16:02.617Z",
+        "updated_at": "2016-12-07T19:16:02.617Z"
+      },
+      {
+        "id": 102,
+        "created_at": "2016-12-07T19:16:50.539Z",
+        "updated_at": "2016-12-07T19:16:50.539Z"
+      },
+      {
+        "id": 110,
+        "created_at": "2016-12-08T04:16:45.444Z",
+        "updated_at": "2016-12-08T04:16:45.444Z"
+      },
+      {
+        "id": 118,
+        "created_at": "2016-12-08T09:42:23.329Z",
+        "updated_at": "2016-12-08T09:42:23.329Z"
+      },
+      {
+        "id": 126,
+        "created_at": "2016-12-08T12:22:07.532Z",
+        "updated_at": "2016-12-08T12:22:07.532Z"
+      },
+      {
+        "id": 134,
+        "created_at": "2016-12-08T12:56:21.876Z",
+        "updated_at": "2016-12-08T12:56:21.876Z"
+      },
+      {
+        "id": 142,
+        "created_at": "2016-12-08T13:14:38.179Z",
+        "updated_at": "2016-12-08T13:14:38.179Z"
+      },
+      {
+        "id": 150,
+        "created_at": "2016-12-08T13:16:43.093Z",
+        "updated_at": "2016-12-08T13:16:43.093Z"
+      },
+      {
+        "id": 159,
+        "created_at": "2016-12-08T13:18:29.735Z",
+        "updated_at": "2016-12-08T13:18:29.735Z"
+      },
+      {
+        "id": 168,
+        "created_at": "2016-12-08T13:18:52.705Z",
+        "updated_at": "2016-12-08T13:18:52.705Z"
+      },
+      {
+        "id": 177,
+        "created_at": "2016-12-08T13:22:32.238Z",
+        "updated_at": "2016-12-08T13:22:32.238Z"
+      },
+      {
+        "id": 186,
+        "created_at": "2016-12-09T10:36:27.101Z",
+        "updated_at": "2016-12-09T10:36:27.101Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 18,
+        "title": "Team Lune",
+        "created_at": "2016-12-07T17:07:25.109Z",
+        "updated_at": "2016-12-07T17:07:25.109Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 19,
+        "title": "les tartes aux fraises",
+        "created_at": "2016-12-07T17:11:24.288Z",
+        "updated_at": "2016-12-07T17:11:24.288Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481130685/ypo2m22epvizkltnxrfh.jpg"
+          }
+        }
+      },
+      {
+        "id": 20,
+        "title": "les chouettes copines",
+        "created_at": "2016-12-07T17:13:16.658Z",
+        "updated_at": "2016-12-07T17:14:14.167Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Delirious Barman",
+    "description": "Ask the barman for his/her secret ingredient...\r\nTell him/her we sent you ;-)",
+    "address": "Impasse de la Fidélité 4, 1000 Bruxelles",
+    "score": 40,
+    "good_answer": "Elephant's hair",
+    "bad_answers": "Pink Panter Spit, Elephant's hair, Tiger's Brain, Monkey's craziness",
+    "hint": "Best chocolate factory's logo",
+    "input_type": "auto",
+    "picture": "",
+    "cost": null,
+    "gift": "Happy hour time ! You won a free drink.",
+    "created_at": "2016-12-07T17:01:34.002Z",
+    "updated_at": "2016-12-07T17:01:34.002Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 51,
+        "created_at": "2016-12-07T17:07:25.119Z",
+        "updated_at": "2016-12-07T17:07:25.119Z"
+      },
+      {
+        "id": 57,
+        "created_at": "2016-12-07T17:11:24.298Z",
+        "updated_at": "2016-12-07T17:11:24.298Z"
+      },
+      {
+        "id": 63,
+        "created_at": "2016-12-07T17:13:16.669Z",
+        "updated_at": "2016-12-07T17:13:16.669Z"
+      },
+      {
+        "id": 69,
+        "created_at": "2016-12-07T18:31:43.701Z",
+        "updated_at": "2016-12-07T18:31:43.701Z"
+      },
+      {
+        "id": 77,
+        "created_at": "2016-12-07T18:34:02.382Z",
+        "updated_at": "2016-12-07T18:34:02.382Z"
+      },
+      {
+        "id": 85,
+        "created_at": "2016-12-07T18:44:21.170Z",
+        "updated_at": "2016-12-07T18:44:21.170Z"
+      },
+      {
+        "id": 93,
+        "created_at": "2016-12-07T19:16:02.614Z",
+        "updated_at": "2016-12-07T19:16:02.614Z"
+      },
+      {
+        "id": 101,
+        "created_at": "2016-12-07T19:16:50.537Z",
+        "updated_at": "2016-12-07T19:16:50.537Z"
+      },
+      {
+        "id": 109,
+        "created_at": "2016-12-08T04:16:45.441Z",
+        "updated_at": "2016-12-08T04:16:45.441Z"
+      },
+      {
+        "id": 117,
+        "created_at": "2016-12-08T09:42:23.327Z",
+        "updated_at": "2016-12-08T09:42:23.327Z"
+      },
+      {
+        "id": 125,
+        "created_at": "2016-12-08T12:22:07.524Z",
+        "updated_at": "2016-12-08T12:22:07.524Z"
+      },
+      {
+        "id": 133,
+        "created_at": "2016-12-08T12:56:21.870Z",
+        "updated_at": "2016-12-08T12:56:21.870Z"
+      },
+      {
+        "id": 141,
+        "created_at": "2016-12-08T13:14:38.178Z",
+        "updated_at": "2016-12-08T13:14:38.178Z"
+      },
+      {
+        "id": 149,
+        "created_at": "2016-12-08T13:16:43.091Z",
+        "updated_at": "2016-12-08T13:16:43.091Z"
+      },
+      {
+        "id": 158,
+        "created_at": "2016-12-08T13:18:29.734Z",
+        "updated_at": "2016-12-08T13:18:29.734Z"
+      },
+      {
+        "id": 167,
+        "created_at": "2016-12-08T13:18:52.704Z",
+        "updated_at": "2016-12-08T13:18:52.704Z"
+      },
+      {
+        "id": 176,
+        "created_at": "2016-12-08T13:22:32.231Z",
+        "updated_at": "2016-12-08T13:22:32.231Z"
+      },
+      {
+        "id": 185,
+        "created_at": "2016-12-09T10:36:27.099Z",
+        "updated_at": "2016-12-09T10:36:27.099Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 18,
+        "title": "Team Lune",
+        "created_at": "2016-12-07T17:07:25.109Z",
+        "updated_at": "2016-12-07T17:07:25.109Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 19,
+        "title": "les tartes aux fraises",
+        "created_at": "2016-12-07T17:11:24.288Z",
+        "updated_at": "2016-12-07T17:11:24.288Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481130685/ypo2m22epvizkltnxrfh.jpg"
+          }
+        }
+      },
+      {
+        "id": 20,
+        "title": "les chouettes copines",
+        "created_at": "2016-12-07T17:13:16.658Z",
+        "updated_at": "2016-12-07T17:14:14.167Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Crazy Duck",
+    "description": "Two ducks are in front of a duck, two ducks are behind a duck and a duck is in the middle. Take a picture of how many ducks we have in total...",
+    "address": "Étangs d'lxelles, 1050 Ixelles",
+    "score": 10,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "They have leaves ...",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-07T16:39:47.044Z",
+    "updated_at": "2016-12-07T16:39:47.044Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "team_challenges": [],
+    "teams": []
+  },
+  {
+    "id": 5,
+    "title": "Green on green",
+    "description": "Did you look up in the trees ?\r\nYou can see big birds nests. \r\nWhat is the exact name of this bird race ?",
+    "address": "Place Guy d'Arezzo, 1180 Uccle Belgium",
+    "score": 5,
+    "good_answer": "Myiopsitta monachus",
+    "bad_answers": "Platycercus elegans, Myiopsitta monachus, Platycercus venustus, Aratinga maculata, Platycercus icterotis",
+    "hint": "...-Lisa",
+    "input_type": "auto",
+    "picture": "",
+    "cost": 0,
+    "gift": "",
+    "created_at": "2016-12-07T16:32:33.420Z",
+    "updated_at": "2016-12-07T16:32:51.793Z",
+    "latitude": null,
+    "longitude": null,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 22,
+        "created_at": "2016-12-07T16:34:38.728Z",
+        "updated_at": "2016-12-07T16:34:38.728Z"
+      },
+      {
+        "id": 26,
+        "created_at": "2016-12-07T16:35:13.836Z",
+        "updated_at": "2016-12-07T16:35:13.836Z"
+      },
+      {
+        "id": 34,
+        "created_at": "2016-12-07T16:42:15.941Z",
+        "updated_at": "2016-12-07T16:42:15.941Z"
+      },
+      {
+        "id": 38,
+        "created_at": "2016-12-07T16:42:38.348Z",
+        "updated_at": "2016-12-07T16:42:38.348Z"
+      },
+      {
+        "id": 42,
+        "created_at": "2016-12-07T16:49:32.498Z",
+        "updated_at": "2016-12-07T16:49:32.498Z"
+      },
+      {
+        "id": 46,
+        "created_at": "2016-12-07T16:56:08.167Z",
+        "updated_at": "2016-12-07T16:56:08.167Z"
+      },
+      {
+        "id": 50,
+        "created_at": "2016-12-07T17:07:25.117Z",
+        "updated_at": "2016-12-07T17:07:25.117Z"
+      },
+      {
+        "id": 56,
+        "created_at": "2016-12-07T17:11:24.296Z",
+        "updated_at": "2016-12-07T17:11:24.296Z"
+      },
+      {
+        "id": 62,
+        "created_at": "2016-12-07T17:13:16.667Z",
+        "updated_at": "2016-12-07T17:13:16.667Z"
+      },
+      {
+        "id": 68,
+        "created_at": "2016-12-07T18:31:43.699Z",
+        "updated_at": "2016-12-07T18:31:43.699Z"
+      },
+      {
+        "id": 76,
+        "created_at": "2016-12-07T18:34:02.379Z",
+        "updated_at": "2016-12-07T18:34:02.379Z"
+      },
+      {
+        "id": 84,
+        "created_at": "2016-12-07T18:44:21.160Z",
+        "updated_at": "2016-12-07T18:44:21.160Z"
+      },
+      {
+        "id": 92,
+        "created_at": "2016-12-07T19:16:02.611Z",
+        "updated_at": "2016-12-07T19:16:02.611Z"
+      },
+      {
+        "id": 100,
+        "created_at": "2016-12-07T19:16:50.535Z",
+        "updated_at": "2016-12-07T19:16:50.535Z"
+      },
+      {
+        "id": 108,
+        "created_at": "2016-12-08T04:16:45.439Z",
+        "updated_at": "2016-12-08T04:16:45.439Z"
+      },
+      {
+        "id": 116,
+        "created_at": "2016-12-08T09:42:23.325Z",
+        "updated_at": "2016-12-08T09:42:23.325Z"
+      },
+      {
+        "id": 124,
+        "created_at": "2016-12-08T12:22:07.516Z",
+        "updated_at": "2016-12-08T12:22:07.516Z"
+      },
+      {
+        "id": 132,
+        "created_at": "2016-12-08T12:56:21.862Z",
+        "updated_at": "2016-12-08T12:56:21.862Z"
+      },
+      {
+        "id": 140,
+        "created_at": "2016-12-08T13:14:38.176Z",
+        "updated_at": "2016-12-08T13:14:38.176Z"
+      },
+      {
+        "id": 148,
+        "created_at": "2016-12-08T13:16:43.090Z",
+        "updated_at": "2016-12-08T13:16:43.090Z"
+      },
+      {
+        "id": 157,
+        "created_at": "2016-12-08T13:18:29.732Z",
+        "updated_at": "2016-12-08T13:18:29.732Z"
+      },
+      {
+        "id": 166,
+        "created_at": "2016-12-08T13:18:52.703Z",
+        "updated_at": "2016-12-08T13:18:52.703Z"
+      },
+      {
+        "id": 175,
+        "created_at": "2016-12-08T13:22:32.230Z",
+        "updated_at": "2016-12-08T13:22:32.230Z"
+      },
+      {
+        "id": 184,
+        "created_at": "2016-12-09T10:36:27.097Z",
+        "updated_at": "2016-12-09T10:36:27.097Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 10,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:34:38.710Z",
+        "updated_at": "2016-12-07T16:34:38.710Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128479/xodbujamgahmvnzxfgvt.jpg"
+          }
+        }
+      },
+      {
+        "id": 11,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:35:13.820Z",
+        "updated_at": "2016-12-07T16:35:13.820Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 13,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:42:15.928Z",
+        "updated_at": "2016-12-07T16:42:15.928Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 14,
+        "title": "",
+        "created_at": "2016-12-07T16:42:38.323Z",
+        "updated_at": "2016-12-07T16:42:38.323Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 15,
+        "title": "fghjk",
+        "created_at": "2016-12-07T16:49:32.483Z",
+        "updated_at": "2016-12-08T16:37:54.626Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-06T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 17,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:56:08.134Z",
+        "updated_at": "2016-12-07T17:09:10.768Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481129769/cbjv6qcwbfufwzsrv62v.jpg"
+          }
+        }
+      },
+      {
+        "id": 18,
+        "title": "Team Lune",
+        "created_at": "2016-12-07T17:07:25.109Z",
+        "updated_at": "2016-12-07T17:07:25.109Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 19,
+        "title": "les tartes aux fraises",
+        "created_at": "2016-12-07T17:11:24.288Z",
+        "updated_at": "2016-12-07T17:11:24.288Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481130685/ypo2m22epvizkltnxrfh.jpg"
+          }
+        }
+      },
+      {
+        "id": 20,
+        "title": "les chouettes copines",
+        "created_at": "2016-12-07T17:13:16.658Z",
+        "updated_at": "2016-12-07T17:14:14.167Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Do it like René",
+    "description": "Take a picture of your own version of one of the most famous painting of René Magritte : \"Le fils de l'homme\" (The man's son)\r\n\r\nOpening Time : \r\nWednesday\t10:00–17:00\r\nThursday\t10:00–17:00\r\nFriday\t10:00–17:00\r\nSaturday\t11:00–18:00\r\nSunday\t11:00–18:00\r\nMonday\tClosed\r\nSaturday\t10:00–17:00",
+    "address": "Rue de la Régence 3, 1000 Bruxelles",
+    "score": 30,
+    "good_answer": "",
+    "bad_answers": "",
+    "hint": "Did u think of using an apple and a hat ?",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 0,
+    "gift": "You won 20% on a hat at the Chapello shop 180 lion's avenue. Promo code : 157HEJDB#",
+    "created_at": "2016-12-07T14:56:25.699Z",
+    "updated_at": "2016-12-07T14:56:25.699Z",
+    "latitude": 50.8416797,
+    "longitude": 4.3582406,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 12,
+        "created_at": "2016-12-07T16:31:16.029Z",
+        "updated_at": "2016-12-07T16:31:16.029Z"
+      },
+      {
+        "id": 15,
+        "created_at": "2016-12-07T16:31:32.934Z",
+        "updated_at": "2016-12-07T16:31:32.934Z"
+      },
+      {
+        "id": 18,
+        "created_at": "2016-12-07T16:32:07.093Z",
+        "updated_at": "2016-12-07T16:32:07.093Z"
+      },
+      {
+        "id": 21,
+        "created_at": "2016-12-07T16:34:38.725Z",
+        "updated_at": "2016-12-07T16:34:38.725Z"
+      },
+      {
+        "id": 25,
+        "created_at": "2016-12-07T16:35:13.834Z",
+        "updated_at": "2016-12-07T16:35:13.834Z"
+      },
+      {
+        "id": 33,
+        "created_at": "2016-12-07T16:42:15.939Z",
+        "updated_at": "2016-12-07T16:42:15.939Z"
+      },
+      {
+        "id": 37,
+        "created_at": "2016-12-07T16:42:38.344Z",
+        "updated_at": "2016-12-07T16:42:38.344Z"
+      },
+      {
+        "id": 41,
+        "created_at": "2016-12-07T16:49:32.496Z",
+        "updated_at": "2016-12-07T16:49:32.496Z"
+      },
+      {
+        "id": 45,
+        "created_at": "2016-12-07T16:56:08.165Z",
+        "updated_at": "2016-12-07T16:56:08.165Z"
+      },
+      {
+        "id": 49,
+        "created_at": "2016-12-07T17:07:25.116Z",
+        "updated_at": "2016-12-07T17:07:25.116Z"
+      },
+      {
+        "id": 55,
+        "created_at": "2016-12-07T17:11:24.295Z",
+        "updated_at": "2016-12-07T17:11:24.295Z"
+      },
+      {
+        "id": 61,
+        "created_at": "2016-12-07T17:13:16.666Z",
+        "updated_at": "2016-12-07T17:13:16.666Z"
+      },
+      {
+        "id": 67,
+        "created_at": "2016-12-07T18:31:43.698Z",
+        "updated_at": "2016-12-07T18:31:43.698Z"
+      },
+      {
+        "id": 75,
+        "created_at": "2016-12-07T18:34:02.378Z",
+        "updated_at": "2016-12-07T18:34:02.378Z"
+      },
+      {
+        "id": 83,
+        "created_at": "2016-12-07T18:44:21.155Z",
+        "updated_at": "2016-12-07T18:44:21.155Z"
+      },
+      {
+        "id": 91,
+        "created_at": "2016-12-07T19:16:02.609Z",
+        "updated_at": "2016-12-07T19:16:02.609Z"
+      },
+      {
+        "id": 99,
+        "created_at": "2016-12-07T19:16:50.533Z",
+        "updated_at": "2016-12-07T19:16:50.533Z"
+      },
+      {
+        "id": 107,
+        "created_at": "2016-12-08T04:16:45.436Z",
+        "updated_at": "2016-12-08T04:16:45.436Z"
+      },
+      {
+        "id": 115,
+        "created_at": "2016-12-08T09:42:23.323Z",
+        "updated_at": "2016-12-08T09:42:23.323Z"
+      },
+      {
+        "id": 123,
+        "created_at": "2016-12-08T12:22:07.512Z",
+        "updated_at": "2016-12-08T12:22:07.512Z"
+      },
+      {
+        "id": 131,
+        "created_at": "2016-12-08T12:56:21.856Z",
+        "updated_at": "2016-12-08T12:56:21.856Z"
+      },
+      {
+        "id": 139,
+        "created_at": "2016-12-08T13:14:38.174Z",
+        "updated_at": "2016-12-08T13:14:38.174Z"
+      },
+      {
+        "id": 147,
+        "created_at": "2016-12-08T13:16:43.088Z",
+        "updated_at": "2016-12-08T13:16:43.088Z"
+      },
+      {
+        "id": 156,
+        "created_at": "2016-12-08T13:18:29.731Z",
+        "updated_at": "2016-12-08T13:18:29.731Z"
+      },
+      {
+        "id": 165,
+        "created_at": "2016-12-08T13:18:52.701Z",
+        "updated_at": "2016-12-08T13:18:52.701Z"
+      },
+      {
+        "id": 174,
+        "created_at": "2016-12-08T13:22:32.228Z",
+        "updated_at": "2016-12-08T13:22:32.228Z"
+      },
+      {
+        "id": 183,
+        "created_at": "2016-12-09T10:36:27.095Z",
+        "updated_at": "2016-12-09T10:36:27.095Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 7,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:31:16.015Z",
+        "updated_at": "2016-12-07T16:31:16.015Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128277/py6sdrjdeermeghnbnjv.jpg"
+          }
+        }
+      },
+      {
+        "id": 8,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:31:32.913Z",
+        "updated_at": "2016-12-07T16:31:32.913Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128294/mzzygsiz6nll5wpvjv1f.jpg"
+          }
+        }
+      },
+      {
+        "id": 9,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:32:07.077Z",
+        "updated_at": "2016-12-07T16:32:07.077Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128328/wkrfhlon5hfx2j9zykal.jpg"
+          }
+        }
+      },
+      {
+        "id": 10,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:34:38.710Z",
+        "updated_at": "2016-12-07T16:34:38.710Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128479/xodbujamgahmvnzxfgvt.jpg"
+          }
+        }
+      },
+      {
+        "id": 11,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:35:13.820Z",
+        "updated_at": "2016-12-07T16:35:13.820Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 13,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:42:15.928Z",
+        "updated_at": "2016-12-07T16:42:15.928Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 14,
+        "title": "",
+        "created_at": "2016-12-07T16:42:38.323Z",
+        "updated_at": "2016-12-07T16:42:38.323Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 15,
+        "title": "fghjk",
+        "created_at": "2016-12-07T16:49:32.483Z",
+        "updated_at": "2016-12-08T16:37:54.626Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-06T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 17,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:56:08.134Z",
+        "updated_at": "2016-12-07T17:09:10.768Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481129769/cbjv6qcwbfufwzsrv62v.jpg"
+          }
+        }
+      },
+      {
+        "id": 18,
+        "title": "Team Lune",
+        "created_at": "2016-12-07T17:07:25.109Z",
+        "updated_at": "2016-12-07T17:07:25.109Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 19,
+        "title": "les tartes aux fraises",
+        "created_at": "2016-12-07T17:11:24.288Z",
+        "updated_at": "2016-12-07T17:11:24.288Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481130685/ypo2m22epvizkltnxrfh.jpg"
+          }
+        }
+      },
+      {
+        "id": 20,
+        "title": "les chouettes copines",
+        "created_at": "2016-12-07T17:13:16.658Z",
+        "updated_at": "2016-12-07T17:14:14.167Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Question 2",
+    "description": "Find the answer ! 123",
+    "address": "180 avenue de floréal 1180 Belgium",
+    "score": 10,
+    "good_answer": "Pix",
+    "bad_answers": "[\"Pix\", \"Loo\", \"Poux\"]",
+    "hint": "start with P",
+    "input_type": "picture",
+    "picture": "",
+    "cost": 1,
+    "gift": "Promo code 13",
+    "created_at": "2016-12-07T13:26:03.783Z",
+    "updated_at": "2016-12-07T14:53:31.781Z",
+    "latitude": 50.8094038,
+    "longitude": 4.3445355,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 2,
+        "created_at": "2016-12-07T13:26:03.831Z",
+        "updated_at": "2016-12-07T13:26:03.831Z"
+      },
+      {
+        "id": 5,
+        "created_at": "2016-12-07T13:30:31.987Z",
+        "updated_at": "2016-12-07T13:30:31.987Z"
+      },
+      {
+        "id": 7,
+        "created_at": "2016-12-07T13:34:55.078Z",
+        "updated_at": "2016-12-07T13:34:55.078Z"
+      },
+      {
+        "id": 9,
+        "created_at": "2016-12-07T14:07:54.974Z",
+        "updated_at": "2016-12-07T14:07:54.974Z"
+      },
+      {
+        "id": 11,
+        "created_at": "2016-12-07T16:31:16.027Z",
+        "updated_at": "2016-12-07T16:31:16.027Z"
+      },
+      {
+        "id": 14,
+        "created_at": "2016-12-07T16:31:32.931Z",
+        "updated_at": "2016-12-07T16:31:32.931Z"
+      },
+      {
+        "id": 17,
+        "created_at": "2016-12-07T16:32:07.090Z",
+        "updated_at": "2016-12-07T16:32:07.090Z"
+      },
+      {
+        "id": 20,
+        "created_at": "2016-12-07T16:34:38.722Z",
+        "updated_at": "2016-12-07T16:34:38.722Z"
+      },
+      {
+        "id": 24,
+        "created_at": "2016-12-07T16:35:13.831Z",
+        "updated_at": "2016-12-07T16:35:13.831Z"
+      },
+      {
+        "id": 32,
+        "created_at": "2016-12-07T16:42:15.936Z",
+        "updated_at": "2016-12-07T16:42:15.936Z"
+      },
+      {
+        "id": 36,
+        "created_at": "2016-12-07T16:42:38.341Z",
+        "updated_at": "2016-12-07T16:42:38.341Z"
+      },
+      {
+        "id": 40,
+        "created_at": "2016-12-07T16:49:32.494Z",
+        "updated_at": "2016-12-07T16:49:32.494Z"
+      },
+      {
+        "id": 44,
+        "created_at": "2016-12-07T16:56:08.163Z",
+        "updated_at": "2016-12-07T16:56:08.163Z"
+      },
+      {
+        "id": 48,
+        "created_at": "2016-12-07T17:07:25.114Z",
+        "updated_at": "2016-12-07T17:07:25.114Z"
+      },
+      {
+        "id": 54,
+        "created_at": "2016-12-07T17:11:24.293Z",
+        "updated_at": "2016-12-07T17:11:24.293Z"
+      },
+      {
+        "id": 60,
+        "created_at": "2016-12-07T17:13:16.664Z",
+        "updated_at": "2016-12-07T17:13:16.664Z"
+      },
+      {
+        "id": 66,
+        "created_at": "2016-12-07T18:31:43.696Z",
+        "updated_at": "2016-12-07T18:31:43.696Z"
+      },
+      {
+        "id": 74,
+        "created_at": "2016-12-07T18:34:02.375Z",
+        "updated_at": "2016-12-07T18:34:02.375Z"
+      },
+      {
+        "id": 82,
+        "created_at": "2016-12-07T18:44:21.143Z",
+        "updated_at": "2016-12-07T18:44:21.143Z"
+      },
+      {
+        "id": 90,
+        "created_at": "2016-12-07T19:16:02.606Z",
+        "updated_at": "2016-12-07T19:16:02.606Z"
+      },
+      {
+        "id": 98,
+        "created_at": "2016-12-07T19:16:50.531Z",
+        "updated_at": "2016-12-07T19:16:50.531Z"
+      },
+      {
+        "id": 106,
+        "created_at": "2016-12-08T04:16:45.433Z",
+        "updated_at": "2016-12-08T04:16:45.433Z"
+      },
+      {
+        "id": 114,
+        "created_at": "2016-12-08T09:42:23.322Z",
+        "updated_at": "2016-12-08T09:42:23.322Z"
+      },
+      {
+        "id": 122,
+        "created_at": "2016-12-08T12:22:07.501Z",
+        "updated_at": "2016-12-08T12:22:07.501Z"
+      },
+      {
+        "id": 130,
+        "created_at": "2016-12-08T12:56:21.849Z",
+        "updated_at": "2016-12-08T12:56:21.849Z"
+      },
+      {
+        "id": 138,
+        "created_at": "2016-12-08T13:14:38.173Z",
+        "updated_at": "2016-12-08T13:14:38.173Z"
+      },
+      {
+        "id": 146,
+        "created_at": "2016-12-08T13:16:43.087Z",
+        "updated_at": "2016-12-08T13:16:43.087Z"
+      },
+      {
+        "id": 155,
+        "created_at": "2016-12-08T13:18:29.729Z",
+        "updated_at": "2016-12-08T13:18:29.729Z"
+      },
+      {
+        "id": 164,
+        "created_at": "2016-12-08T13:18:52.700Z",
+        "updated_at": "2016-12-08T13:18:52.700Z"
+      },
+      {
+        "id": 173,
+        "created_at": "2016-12-08T13:22:32.227Z",
+        "updated_at": "2016-12-08T13:22:32.227Z"
+      },
+      {
+        "id": 182,
+        "created_at": "2016-12-09T10:36:27.093Z",
+        "updated_at": "2016-12-09T10:36:27.093Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 1,
+        "title": "Les blondes",
+        "created_at": "2016-12-07T13:26:03.809Z",
+        "updated_at": "2016-12-07T13:26:03.809Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Pokemon Team",
+        "created_at": "2016-12-07T13:30:31.941Z",
+        "updated_at": "2016-12-07T13:30:31.941Z",
+        "city_id": 1,
+        "end_date": "2016-12-12T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481117432/nlgfib0c9uootldbq1ki.png"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "title": "Loulou",
+        "created_at": "2016-12-07T13:34:55.068Z",
+        "updated_at": "2016-12-07T13:34:55.068Z",
+        "city_id": 1,
+        "end_date": "2016-01-02T00:00:00.000Z",
+        "start_date": "2016-12-20T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 4,
+        "title": "The DreamTeam",
+        "created_at": "2016-12-07T14:07:54.920Z",
+        "updated_at": "2016-12-07T14:15:25.554Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 7,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:31:16.015Z",
+        "updated_at": "2016-12-07T16:31:16.015Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128277/py6sdrjdeermeghnbnjv.jpg"
+          }
+        }
+      },
+      {
+        "id": 8,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:31:32.913Z",
+        "updated_at": "2016-12-07T16:31:32.913Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128294/mzzygsiz6nll5wpvjv1f.jpg"
+          }
+        }
+      },
+      {
+        "id": 9,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:32:07.077Z",
+        "updated_at": "2016-12-07T16:32:07.077Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128328/wkrfhlon5hfx2j9zykal.jpg"
+          }
+        }
+      },
+      {
+        "id": 10,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:34:38.710Z",
+        "updated_at": "2016-12-07T16:34:38.710Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128479/xodbujamgahmvnzxfgvt.jpg"
+          }
+        }
+      },
+      {
+        "id": 11,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:35:13.820Z",
+        "updated_at": "2016-12-07T16:35:13.820Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 13,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:42:15.928Z",
+        "updated_at": "2016-12-07T16:42:15.928Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 14,
+        "title": "",
+        "created_at": "2016-12-07T16:42:38.323Z",
+        "updated_at": "2016-12-07T16:42:38.323Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 15,
+        "title": "fghjk",
+        "created_at": "2016-12-07T16:49:32.483Z",
+        "updated_at": "2016-12-08T16:37:54.626Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-06T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 17,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:56:08.134Z",
+        "updated_at": "2016-12-07T17:09:10.768Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481129769/cbjv6qcwbfufwzsrv62v.jpg"
+          }
+        }
+      },
+      {
+        "id": 18,
+        "title": "Team Lune",
+        "created_at": "2016-12-07T17:07:25.109Z",
+        "updated_at": "2016-12-07T17:07:25.109Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 19,
+        "title": "les tartes aux fraises",
+        "created_at": "2016-12-07T17:11:24.288Z",
+        "updated_at": "2016-12-07T17:11:24.288Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481130685/ypo2m22epvizkltnxrfh.jpg"
+          }
+        }
+      },
+      {
+        "id": 20,
+        "title": "les chouettes copines",
+        "created_at": "2016-12-07T17:13:16.658Z",
+        "updated_at": "2016-12-07T17:14:14.167Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Question 1",
+    "description": "Find the good answer !",
+    "address": "123 avenue molière 1050 Belgium",
+    "score": 10,
+    "good_answer": "Pix",
+    "bad_answers": "[\"Pix\", \"Loo\", \"Poux\"]",
+    "hint": "start with P",
+    "input_type": "text",
+    "picture": "",
+    "cost": 1,
+    "gift": "Promo code 1234",
+    "created_at": "2016-12-07T13:26:03.313Z",
+    "updated_at": "2016-12-07T13:26:03.313Z",
+    "latitude": 50.816088,
+    "longitude": 4.3457603,
+    "cover_pic": "/cover_pics/original/missing.png",
+    "city": {
+      "id": 1,
+      "name": "Brussels",
+      "advice": null,
+      "country": null,
+      "picture": "brussels.jpeg",
+      "created_at": "2016-12-07T13:26:02.562Z",
+      "updated_at": "2016-12-07T13:26:02.562Z",
+      "cover_pic": "/cover_pics/original/missing.png"
+    },
+    "team_challenges": [
+      {
+        "id": 1,
+        "created_at": "2016-12-07T13:26:03.827Z",
+        "updated_at": "2016-12-07T13:26:03.827Z"
+      },
+      {
+        "id": 3,
+        "created_at": "2016-12-07T13:26:03.903Z",
+        "updated_at": "2016-12-07T13:26:03.903Z"
+      },
+      {
+        "id": 4,
+        "created_at": "2016-12-07T13:30:31.984Z",
+        "updated_at": "2016-12-07T13:30:31.984Z"
+      },
+      {
+        "id": 6,
+        "created_at": "2016-12-07T13:34:55.075Z",
+        "updated_at": "2016-12-07T13:34:55.075Z"
+      },
+      {
+        "id": 8,
+        "created_at": "2016-12-07T14:07:54.967Z",
+        "updated_at": "2016-12-07T14:07:54.967Z"
+      },
+      {
+        "id": 10,
+        "created_at": "2016-12-07T16:31:16.022Z",
+        "updated_at": "2016-12-07T16:31:16.022Z"
+      },
+      {
+        "id": 13,
+        "created_at": "2016-12-07T16:31:32.928Z",
+        "updated_at": "2016-12-07T16:31:32.928Z"
+      },
+      {
+        "id": 16,
+        "created_at": "2016-12-07T16:32:07.086Z",
+        "updated_at": "2016-12-07T16:32:07.086Z"
+      },
+      {
+        "id": 19,
+        "created_at": "2016-12-07T16:34:38.719Z",
+        "updated_at": "2016-12-07T16:34:38.719Z"
+      },
+      {
+        "id": 23,
+        "created_at": "2016-12-07T16:35:13.828Z",
+        "updated_at": "2016-12-07T16:35:13.828Z"
+      },
+      {
+        "id": 31,
+        "created_at": "2016-12-07T16:42:15.934Z",
+        "updated_at": "2016-12-07T16:42:15.934Z"
+      },
+      {
+        "id": 35,
+        "created_at": "2016-12-07T16:42:38.337Z",
+        "updated_at": "2016-12-07T16:42:38.337Z"
+      },
+      {
+        "id": 39,
+        "created_at": "2016-12-07T16:49:32.491Z",
+        "updated_at": "2016-12-07T16:49:32.491Z"
+      },
+      {
+        "id": 43,
+        "created_at": "2016-12-07T16:56:08.160Z",
+        "updated_at": "2016-12-07T16:56:08.160Z"
+      },
+      {
+        "id": 47,
+        "created_at": "2016-12-07T17:07:25.112Z",
+        "updated_at": "2016-12-07T17:07:25.112Z"
+      },
+      {
+        "id": 53,
+        "created_at": "2016-12-07T17:11:24.292Z",
+        "updated_at": "2016-12-07T17:11:24.292Z"
+      },
+      {
+        "id": 59,
+        "created_at": "2016-12-07T17:13:16.662Z",
+        "updated_at": "2016-12-07T17:13:16.662Z"
+      },
+      {
+        "id": 65,
+        "created_at": "2016-12-07T18:31:43.693Z",
+        "updated_at": "2016-12-07T18:31:43.693Z"
+      },
+      {
+        "id": 73,
+        "created_at": "2016-12-07T18:34:02.373Z",
+        "updated_at": "2016-12-07T18:34:02.373Z"
+      },
+      {
+        "id": 81,
+        "created_at": "2016-12-07T18:44:21.136Z",
+        "updated_at": "2016-12-07T18:44:21.136Z"
+      },
+      {
+        "id": 89,
+        "created_at": "2016-12-07T19:16:02.604Z",
+        "updated_at": "2016-12-07T19:16:02.604Z"
+      },
+      {
+        "id": 97,
+        "created_at": "2016-12-07T19:16:50.529Z",
+        "updated_at": "2016-12-07T19:16:50.529Z"
+      },
+      {
+        "id": 105,
+        "created_at": "2016-12-08T04:16:45.430Z",
+        "updated_at": "2016-12-08T04:16:45.430Z"
+      },
+      {
+        "id": 113,
+        "created_at": "2016-12-08T09:42:23.319Z",
+        "updated_at": "2016-12-08T09:42:23.319Z"
+      },
+      {
+        "id": 121,
+        "created_at": "2016-12-08T12:22:07.493Z",
+        "updated_at": "2016-12-08T12:22:07.493Z"
+      },
+      {
+        "id": 129,
+        "created_at": "2016-12-08T12:56:21.835Z",
+        "updated_at": "2016-12-08T12:56:21.835Z"
+      },
+      {
+        "id": 137,
+        "created_at": "2016-12-08T13:14:38.171Z",
+        "updated_at": "2016-12-08T13:14:38.171Z"
+      },
+      {
+        "id": 145,
+        "created_at": "2016-12-08T13:16:43.085Z",
+        "updated_at": "2016-12-08T13:16:43.085Z"
+      },
+      {
+        "id": 154,
+        "created_at": "2016-12-08T13:18:29.727Z",
+        "updated_at": "2016-12-08T13:18:29.727Z"
+      },
+      {
+        "id": 163,
+        "created_at": "2016-12-08T13:18:52.698Z",
+        "updated_at": "2016-12-08T13:18:52.698Z"
+      },
+      {
+        "id": 172,
+        "created_at": "2016-12-08T13:22:32.225Z",
+        "updated_at": "2016-12-08T13:22:32.225Z"
+      },
+      {
+        "id": 181,
+        "created_at": "2016-12-09T10:36:27.091Z",
+        "updated_at": "2016-12-09T10:36:27.091Z"
+      }
+    ],
+    "teams": [
+      {
+        "id": 1,
+        "title": "Les blondes",
+        "created_at": "2016-12-07T13:26:03.809Z",
+        "updated_at": "2016-12-07T13:26:03.809Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 1,
+        "title": "Les blondes",
+        "created_at": "2016-12-07T13:26:03.809Z",
+        "updated_at": "2016-12-07T13:26:03.809Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Pokemon Team",
+        "created_at": "2016-12-07T13:30:31.941Z",
+        "updated_at": "2016-12-07T13:30:31.941Z",
+        "city_id": 1,
+        "end_date": "2016-12-12T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481117432/nlgfib0c9uootldbq1ki.png"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "title": "Loulou",
+        "created_at": "2016-12-07T13:34:55.068Z",
+        "updated_at": "2016-12-07T13:34:55.068Z",
+        "city_id": 1,
+        "end_date": "2016-01-02T00:00:00.000Z",
+        "start_date": "2016-12-20T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 4,
+        "title": "The DreamTeam",
+        "created_at": "2016-12-07T14:07:54.920Z",
+        "updated_at": "2016-12-07T14:15:25.554Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 7,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:31:16.015Z",
+        "updated_at": "2016-12-07T16:31:16.015Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128277/py6sdrjdeermeghnbnjv.jpg"
+          }
+        }
+      },
+      {
+        "id": 8,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:31:32.913Z",
+        "updated_at": "2016-12-07T16:31:32.913Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128294/mzzygsiz6nll5wpvjv1f.jpg"
+          }
+        }
+      },
+      {
+        "id": 9,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:32:07.077Z",
+        "updated_at": "2016-12-07T16:32:07.077Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128328/wkrfhlon5hfx2j9zykal.jpg"
+          }
+        }
+      },
+      {
+        "id": 10,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:34:38.710Z",
+        "updated_at": "2016-12-07T16:34:38.710Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481128479/xodbujamgahmvnzxfgvt.jpg"
+          }
+        }
+      },
+      {
+        "id": 11,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:35:13.820Z",
+        "updated_at": "2016-12-07T16:35:13.820Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 13,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:42:15.928Z",
+        "updated_at": "2016-12-07T16:42:15.928Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-10T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 14,
+        "title": "",
+        "created_at": "2016-12-07T16:42:38.323Z",
+        "updated_at": "2016-12-07T16:42:38.323Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 15,
+        "title": "fghjk",
+        "created_at": "2016-12-07T16:49:32.483Z",
+        "updated_at": "2016-12-08T16:37:54.626Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-06T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 17,
+        "title": "les religieuses",
+        "created_at": "2016-12-07T16:56:08.134Z",
+        "updated_at": "2016-12-07T17:09:10.768Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481129769/cbjv6qcwbfufwzsrv62v.jpg"
+          }
+        }
+      },
+      {
+        "id": 18,
+        "title": "Team Lune",
+        "created_at": "2016-12-07T17:07:25.109Z",
+        "updated_at": "2016-12-07T17:07:25.109Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 19,
+        "title": "les tartes aux fraises",
+        "created_at": "2016-12-07T17:11:24.288Z",
+        "updated_at": "2016-12-07T17:11:24.288Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481130685/ypo2m22epvizkltnxrfh.jpg"
+          }
+        }
+      },
+      {
+        "id": 20,
+        "title": "les chouettes copines",
+        "created_at": "2016-12-07T17:13:16.658Z",
+        "updated_at": "2016-12-07T17:14:14.167Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 21,
+        "title": "",
+        "created_at": "2016-12-07T18:31:43.663Z",
+        "updated_at": "2016-12-07T18:31:43.663Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 22,
+        "title": "m,",
+        "created_at": "2016-12-07T18:34:02.367Z",
+        "updated_at": "2016-12-07T18:34:02.367Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 23,
+        "title": "Mister E Team",
+        "created_at": "2016-12-07T18:44:21.124Z",
+        "updated_at": "2016-12-07T18:44:21.124Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481136261/iff58ivx8sa234rva7wb.jpg"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "title": "",
+        "created_at": "2016-12-07T19:16:02.594Z",
+        "updated_at": "2016-12-07T19:16:31.550Z",
+        "city_id": 1,
+        "end_date": "2016-12-30T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 25,
+        "title": "bxbdbd",
+        "created_at": "2016-12-07T19:16:50.525Z",
+        "updated_at": "2016-12-07T19:16:50.525Z",
+        "city_id": 1,
+        "end_date": "2016-12-08T00:00:00.000Z",
+        "start_date": "2016-12-07T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 27,
+        "title": "hhhh",
+        "created_at": "2016-12-08T04:16:45.380Z",
+        "updated_at": "2016-12-08T04:16:45.380Z",
+        "city_id": 1,
+        "end_date": "2016-12-09T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 28,
+        "title": "le logo",
+        "created_at": "2016-12-08T09:42:23.286Z",
+        "updated_at": "2016-12-08T09:42:23.286Z",
+        "city_id": 1,
+        "end_date": "2016-12-10T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": "http://res.cloudinary.com/alissadw/image/upload/v1481190143/yi17ppl3jb43qkgnjf69.png"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "title": "Les kikouilles",
+        "created_at": "2016-12-08T12:22:07.354Z",
+        "updated_at": "2016-12-08T12:22:07.354Z",
+        "city_id": 1,
+        "end_date": "2016-12-16T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 30,
+        "title": "ooooo",
+        "created_at": "2016-12-08T12:56:21.808Z",
+        "updated_at": "2016-12-08T12:56:21.808Z",
+        "city_id": 1,
+        "end_date": "2016-12-13T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 31,
+        "title": "Castor ninja",
+        "created_at": "2016-12-08T13:14:38.147Z",
+        "updated_at": "2016-12-08T13:14:38.147Z",
+        "city_id": 1,
+        "end_date": "2016-12-11T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 32,
+        "title": "les zouzou",
+        "created_at": "2016-12-08T13:16:43.081Z",
+        "updated_at": "2016-12-08T13:16:43.081Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 33,
+        "title": "Team Sun",
+        "created_at": "2016-12-08T13:18:29.723Z",
+        "updated_at": "2016-12-08T13:18:29.723Z",
+        "city_id": 1,
+        "end_date": "2016-12-18T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 34,
+        "title": "les loulous",
+        "created_at": "2016-12-08T13:18:52.694Z",
+        "updated_at": "2016-12-08T13:20:12.948Z",
+        "city_id": 1,
+        "end_date": "2016-12-14T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 35,
+        "title": "Castor anti-ninja",
+        "created_at": "2016-12-08T13:22:32.221Z",
+        "updated_at": "2016-12-08T13:22:32.221Z",
+        "city_id": 1,
+        "end_date": "2016-12-15T00:00:00.000Z",
+        "start_date": "2016-12-08T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      },
+      {
+        "id": 36,
+        "title": "crotte",
+        "created_at": "2016-12-09T10:36:27.086Z",
+        "updated_at": "2016-12-09T10:36:27.086Z",
+        "city_id": 1,
+        "end_date": "2016-12-24T00:00:00.000Z",
+        "start_date": "2016-12-09T00:00:00.000Z",
+        "team_picture": {
+          "team_picture": {
+            "url": null
+          }
+        }
+      }
+    ]
+  }
+]
