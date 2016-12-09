@@ -19,11 +19,19 @@ class TeamPolicy < ApplicationPolicy
     record.has_team_member?(user)
   end
   
+  def update?
+    record.has_team_member?(user)
+  end
+  
   def create?
     true
   end
   
   def destroy?
+    record.has_team_member?(user)
+  end
+  
+  def team_answers?
     record.has_team_member?(user)
   end
 end

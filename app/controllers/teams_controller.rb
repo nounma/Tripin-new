@@ -46,6 +46,7 @@ class TeamsController < ApplicationController
 
   def update
     @team = Team.find(params[:id])
+    authorize @team
     @team.update(team_params)
     redirect_to team_path(@team)
   end
@@ -57,12 +58,11 @@ class TeamsController < ApplicationController
     redirect_to user_path(current_user)
   end
 
-def team_answers
-  @team = Team.find(params[:team_id])
-@team_answers = @team.answers
-
-
-end
+  def team_answers
+    @team = Team.find(params[:team_id])
+    @team_answers = @team.answers
+    authorize @team
+  end
 
 
 
