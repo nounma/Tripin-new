@@ -1,37 +1,51 @@
 <div class="container">
-  <h2><%= @user.first_name %> <%= @user.last_name %></h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
 
-  <% if @user.facebook_picture_url.nil? %>
-   <% unless @user.profile_picture.nil?  %>
-    <%= cl_image_tag @user.profile_picture, height: 300, width: 400, crop: :fill %>
-  <% end %>
-   <%else %>
-   <%= image_tag @user.facebook_picture_url, height: 300, width: 400, crop: :fill %>
-  <% end %>
+      <div class="container text-center">
 
-  <p><b>E-mail: </b><%= @user.email %></p>
-  <p><b>Address: </b><%= @user.address %></p>
+        <div class="profilecard-top">
 
-<% if policy(@user).update? %>
-  <p><%= link_to "Edit", edit_user_path(@user), method: :get %></p>
-<% end %>
-</div>
-<div class="container">
-  <h3>Your teams:</h3>
-  <ul>
-    <% @user.members.each do |member| %>
-      <li>
-        <%= member.team.title %> 
-        <% if policy(member.team).destroy? %>
-          <%= link_to "Delete", team_path(member.team), method: :delete %> 
+          <div class="lilspace">
+
+            <% if @user.facebook_picture_url.nil? %>
+            <% unless @user.profile_picture.nil?  %>
+            <%= cl_image_tag @user.profile_picture, class: "avatar-large", crop: :fill %>
+            <% end %>
+            <%else %>
+            <%= image_tag @user.facebook_picture_url, class: "avatar-large", crop: :fill %>
+            <% end %>
+          </div>
+
+          <h2><%= @user.first_name %> <%= @user.last_name %></h2>
+        </div>
+
+        <div class="profilecard-bottom">
+
+          <p><b><i class="fa fa-envelope" aria-hidden="true"></i>
+          </b><%= @user.email %></p>
+          <p><b><i class="fa fa-map-marker" aria-hidden="true"></i>
+          </b><%= @user.address %></p>
+          <br/>
+
+          <% if policy(@user).update? %>
+
+          <p><%= link_to "Edit profile", edit_user_path(@user), class: "btn-blue", method: :get %></p>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <h1 class="text-center title-yo">MY TEAMS</h1>
+
+        <% @user.members.each do |member| %>
+        <%= render "card", member: member %>
+
         <% end %>
-        <% if policy(member.team).show? %>
-          <%= link_to "Show", team_path(member.team.id) %>
-        <% end %>
-      </li>
-    <% end %>
-  </ul>
-</div>
 
-<br>
-<br>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -4,7 +4,22 @@
   padding: 10px 15px;
   border-radius: 50px;
 }
+
 .btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #999999;
+}
+
+.btn-blue {
+  color: #3A5CBE;
+  border: 2px solid #3A5CBE;
+  padding: 7px 34px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+.btn-blue:hover {
   opacity: 1;
   text-decoration: none;
   color: #999999;
