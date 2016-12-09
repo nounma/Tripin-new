@@ -1,18 +1,22 @@
-<div class="card">
-  <div class="card-description">
-    <h2><%= member.team.title %></h2>
-  </div>
-          <% if policy(member.team).destroy? %>
+  <div class="row">
+    <div class="col-xs-10">
+      <div class="card">
+          <h2><%= member.team.title %></h2>
 
-  <div class="bottom-right"><%= link_to "Delete", team_path(member.team), method: :delete %>
-</div>
-            <% end %>
 
         <% if policy(member.team).show? %>
 
-  <%= link_to "", team_path(member.team.id), class: "card-link" %>
+          <%= link_to "", team_path(member.team.id), class: "card-link" %>
 
-              <% end %>
+        <% end %>
 
-</div>
-
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="delete-card">
+        <% if policy(member.team).destroy? %>
+          <%= link_to "Delete", team_path(member.team), method: :delete %>
+        <% end %>
+      </div>
+    </div>
+  </div>
