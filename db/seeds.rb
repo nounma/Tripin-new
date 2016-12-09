@@ -14,9 +14,8 @@ TeamChallenge.destroy_all
 User.destroy_all
 City.destroy_all
 
+user1 = User.create!(email: "manon@lol.me", password: "FGHJKL", first_name: "Manoune", last_name: "Cool")
 
-
-user1 = User.create!(email: "manon@lol.me", password: "FGHJKL")
 
 brussels = City.create!(name: "Brussels", picture: 'brussels.jpeg')
 paris = City.create!(name: "Paris", picture: 'paris.jpeg')
