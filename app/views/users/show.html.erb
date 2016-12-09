@@ -21,9 +21,9 @@
   <ul>
     <% @user.members.each do |member| %>
       <li>
-        <%= member.team.title %> 
+        <%= member.team.title %>
         <% if policy(member.team).destroy? %>
-          <%= link_to "Delete", team_path(member.team), method: :delete %> 
+          <%= link_to "Delete", team_path(member.team), method: :delete %>
         <% end %>
         <% if policy(member.team).show? %>
           <%= link_to "Show", team_path(member.team.id) %>
