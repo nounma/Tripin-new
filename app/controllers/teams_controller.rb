@@ -7,7 +7,6 @@ class TeamsController < ApplicationController
     @team = Team.find(params[:id])
     authorize @team
 
-
       total_score = 0
     @team.team_challenges.each do |team_challenge|
       if !team_challenge.answer.nil?
