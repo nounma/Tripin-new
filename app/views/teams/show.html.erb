@@ -1,13 +1,16 @@
 <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+<div class="container">
 
   <h1>READY TO GO </h1>
 
     <% if @team.start_date.to_date > Date.today %>
      <%= countdown = (@team.start_date.to_date - Date.today).to_i %> days before your trip
     <%elsif @team.in_trip?%>
-      You still have <%= -(Date.today - @team.end_date.to_date).to_i+1 %> days to realise the challenge
+      You still have <%= -(Date.today - @team.end_date.to_date).to_i+1 %> days to finish your challenges
     <%else%>
-      CONGRATULATION YOU FINISHED YOUR TRIP
+      CONGRATULATIONS, hope you had nice a holiday ! :)
     <% end %>
 
     <p>Your actual score = <%= @total_score %> </p>
@@ -15,20 +18,17 @@
   <h2><%= @team.title.capitalize %></h2>
 
     <% unless @team.team_picture.nil?  %>
-      <%= cl_image_tag @team.team_picture, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag @team.team_picture, height: 300, width: 300, crop: :fill %>
     <% end %>
 
   <p><b>Start time: </b><%= @team.start_date.to_date %></p>
   <p><b>End time: </b><%= @team.end_date.to_date %></p>
 
-  <h2>Your team member:</h2>
-  <ul>
+
+  <h2>Teammates</h2>
     <% @team.members.each do |member| %>
-
-      <li><p><%= member.user.first_name %> <%= member.user.last_name %>, <%= member.user.email %> <%= link_to "Delete", team_member_path(@team, member), method: :delete %> <%= link_to "Show", user_path(member.user.id) %></p></li>
-
+      <%= render "circle", member: member %>
     <% end %>
-  </ul>
 
   <p><%= link_to "Edit", edit_team_path(@team), method: :get %></p>
 
@@ -37,6 +37,8 @@
   <% if @team.in_trip? %>
     <%= link_to "List of challenges", team_challenges_path(@team), method: :get %>
   <% end %>
+  <p><%= link_to "challenge Answers", team_team_answers_path(@team), method: :get %></p>
 </div>
-<br>
-<br>
+</div>
+</div>
+</div>

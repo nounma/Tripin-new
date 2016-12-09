@@ -2,6 +2,7 @@ class Answer < ApplicationRecord
   belongs_to :team
   # belongs_to :challenge
   belongs_to :team_challenge
+  has_one :challenge, through: :team_challenge
 
   COMPLETED = "completed"
   PENDING = "pending"

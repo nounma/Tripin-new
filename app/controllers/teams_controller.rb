@@ -5,6 +5,7 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
+    authorize @team
 
 
       total_score = 0
@@ -14,13 +15,13 @@ class TeamsController < ApplicationController
           total_score += team_challenge.challenge.score
       end
     end
-end
+  end
     @total_score = total_score
-
   end
 
   def new
     @team = Team.new
+    authorize @team
   end
 
   def create
@@ -30,6 +31,7 @@ end
     @team.city_id = @city.id
 
     @team.save
+    authorize @team
 
     # create memner from currentuser
     Member.create(user: current_user, team: @team)
@@ -39,19 +41,30 @@ end
 
   def edit
     @team = Team.find(params[:id])
+    authorize @team
   end
 
   def update
     @team = Team.find(params[:id])
+    authorize @team
     @team.update(team_params)
     redirect_to team_path(@team)
   end
 
   def destroy
     @team = Team.find(params[:id])
+    authorize @team
     @team.destroy
     redirect_to user_path(current_user)
   end
+
+  def team_answers
+    @team = Team.find(params[:team_id])
+    @team_answers = @team.answers
+    authorize @team
+  end
+
+
 
   private
 

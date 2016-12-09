@@ -19,25 +19,26 @@
          wrong answer
        </div>
        <% end %>
-        <%= simple_form_for [@team, @challenge, @answer] do |f| %>
-   <% if @challenge.answer_text? %>
-   <%= f.input :text, input_html: {value: @answer.text} %>
-   <% elsif @challenge.answer_picture? %>
-   <%= f.input :picture %>
-    <% elsif @challenge.answer_auto? %>
-<%= f.input :text, label: false,
-                      collection: bad_answers(@challenge),
-                   include_blank: "-- Choose an answer --",
-                      selected: @answer.text,
-                      input_html: { id: "select2" } %>
-
-   <% else @challenge.answer_both? %>
-   <%= f.input :text %>
-   <%= f.input :picture %>
-   <% end %>
-   <%= f.button :submit %>
-   <% end %>
-  </div>
+       <%= simple_form_for [@team, @challenge, @answer] do |f| %>
+       <% if @challenge.answer_text? %>
+       <%= f.input :text, input_html: {value: @answer.text} %>
+       <% elsif @challenge.answer_picture? %>
+       <%= f.input :picture %>
+       <%= f.input :picture_cache, as: :hidden %>
+       <% elsif @challenge.answer_auto? %>
+       <%= f.input :text, label: false,
+       collection: bad_answers(@challenge),
+       include_blank: "-- Choose an answer --",
+       selected: @answer.text,
+       input_html: { id: "select2" } %>
+       <% else @challenge.answer_both? %>
+       <%= f.input :text %>
+       <%= f.input :picture %>
+       <%= f.input :picture_cache, as: :hidden %>
+       <% end %>
+       <%= f.button :submit %>
+       <% end %>
+     </div>
 
      <div class= "bottom-right">
        <%= link_to "#myModal", "data-toggle" => "modal" do %>
@@ -62,7 +63,14 @@
         </div>
       </div>
     </div>
+
+    <div class= "bottom-left">
+      <%= link_to 'Back', team_challenges_path(@team, @challenge) %></div>
   </div>
+  </div>
+
+
+
 
   <div id="map" style="width: 100%; height: 600px;"></div>
 
@@ -83,14 +91,6 @@ handler.getMap().setZoom(14);
 });
 <% end %>
 <% end %>
-<%= link_to 'Go Back', team_challenges_path(@team, @challenge) %>
 
 </div>
 </div>
-</div>
-
-
-
-<br>
-<br>
-
