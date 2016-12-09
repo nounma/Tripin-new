@@ -5,7 +5,7 @@ class Team < ApplicationRecord
   has_many :members, dependent: :destroy
   has_many :users, through: :members
   belongs_to :city
-  has_many :answers
+  has_many :answers, dependent: :destroy
   has_many :team_challenges, dependent: :destroy
   has_many :challenges, through: :team_challenges
 
