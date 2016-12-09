@@ -9,11 +9,20 @@ class ChallengesController < ApplicationController
 
     @challenges = Challenge.where.not(latitude: nil, longitude: nil)
 
+
     @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
       marker.lat challenge.latitude
       marker.lng challenge.longitude
       #marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
-    end
+
+    #order all the selected challenge by answer.status
+
+    @team_challenges.joins(:answer).order(
+      "answers.status = 'not_completed' desc",
+      "answers.status = 'pending' desc",
+      "answers.status = 'completed' desc"
+    )
+
   end
 
   def show
