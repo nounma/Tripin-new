@@ -19,6 +19,9 @@ class ApplicationController < ActionController::Base
   #
  # Flash messages
  #
+ def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name, :email])
+ end
 
   def bootstrap_class_for(flash_type)
     { success: "alert-success", error: "alert-danger", warning: "alert-warning", notice: "alert-info" }[flash_type.to_sym] || flash_type.to_s
