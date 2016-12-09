@@ -15,6 +15,10 @@ class TeamPolicy < ApplicationPolicy
     true
   end
   
+  def edit?
+    record.has_team_member?(user)
+  end
+  
   def create?
     true
   end

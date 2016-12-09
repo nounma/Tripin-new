@@ -41,6 +41,7 @@ class TeamsController < ApplicationController
 
   def edit
     @team = Team.find(params[:id])
+    authorize @team
   end
 
   def update
