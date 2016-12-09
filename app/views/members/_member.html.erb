@@ -1,0 +1,7 @@
+<% if user %>
+ <li>
+   <%= user.email %>, <%= user.first_name %> <%= user.last_name %>, <%= image_tag user.profile_picture, class: "avatar" %>
+ </li>
+<% elsif email %>
+ <li><%= email %>, <i class="fa fa-envelope-o"></i></li>
+<% end %>
