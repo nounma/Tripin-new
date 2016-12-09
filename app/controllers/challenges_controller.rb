@@ -1,6 +1,6 @@
 class ChallengesController < ApplicationController
   def index
-    @challenges = policy_scope(@challenges)
+    @challenges = policy_scope(Challenge)
 
     @team = Team.find(params[:team_id])
     authorize @team
