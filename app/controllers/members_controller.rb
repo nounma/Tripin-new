@@ -12,15 +12,19 @@ class MembersController < ApplicationController
       Member.create(user: @user, team: @team)
       flash[:success] = "Member added"
     else
-      flash[:error] = "User not found"
+      @email = params[:member][:email]
     end
     authorize @team
-    redirect_to team_path(@team)
+    respond_to do |format|
+      format.js
+      format.html {redirect_to team_path(@team)}
+    end
   end
 
   def destroy
     @member = Member.find(params[:id])
     @team = @member.team
+    authorize @team
     @member.destroy
     redirect_to team_path(@team)
   end

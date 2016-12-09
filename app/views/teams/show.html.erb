@@ -5,6 +5,8 @@
 
   <h1>READY TO GO </h1>
 
+      <h2>you are going to <b><%=  @team.city.name %></b></h2>
+
     <% if @team.start_date.to_date > Date.today %>
      <%= countdown = (@team.start_date.to_date - Date.today).to_i %> days before your trip
     <%elsif @team.in_trip?%>

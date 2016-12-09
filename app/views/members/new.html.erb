@@ -1,6 +1,10 @@
   <h2>Add team members</h2>
-  <%= simple_form_for @member , url: team_members_path(@team), method: :post do |f| %>
+  <%= simple_form_for @member , url: team_members_path(@team), method: :post, remote: true do |f| %>
     <%= f.input :email, placeholder: "Enter the email of your team mate" %>
     <%= f.submit %>
   <% end %>
 <%= link_to 'Go Back', team_path(@team) %>
+
+<ul class="members-list list-unstyled" >
+  <li></li>
+</ul>

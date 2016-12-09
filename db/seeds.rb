@@ -4,7 +4,6 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 
 Answer.destroy_all
@@ -15,8 +14,8 @@ TeamChallenge.destroy_all
 User.destroy_all
 City.destroy_all
 
+user1 = User.create!(email: "manon@lol.me", password: "FGHJKL", first_name: "Manoune", last_name: "Cool")
 
-user1 = User.create!(email: "manon@lol.me", password: "FGHJKL")
 
 brussels = City.create!(name: "Brussels", picture: 'brussels.jpeg')
 paris = City.create!(name: "Paris", picture: 'paris.jpeg')
@@ -24,8 +23,10 @@ amsterdam = City.create!(name: "Amsterdam", picture: 'amsterdam.jpeg')
 london = City.create!(name: "London", picture: 'london.jpeg')
 
 challenge1 = Challenge.create!(title: "Question 1", description: "Find the good answer !", address: "123 avenue molière 1050 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "text", picture: "", cost: 1, gift: "Promo code 1234", city_id: brussels.id)
-challenge2 = Challenge.create!(title: "Question 2", description: "Find the answer !", address: "180 avenue de floréal 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "picture", picture: "", cost: 1, gift: "Promo code 13", city_id: brussels.id)
-challenge3 = Challenge.create!(title: "Question 3", description: "Find the answer !", address: "170 avenue de galaxie 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "auto", picture: "", cost: 5, gift: "Promo code 14", city_id: brussels.id)
+challenge2 = Challenge.create!(title: "Question 2", description: "Find the answer !", address: "180 avenue de floréal 1180 Belgium", score: 10, good_answer: nil, bad_answers: nil, hint: nil, input_type: "picture", picture: "", cost: 1, gift: "Promo code 13", city_id: brussels.id)
+challenge3 = Challenge.create!(title: "Question 3", description: "Find the lkjhgfdanswer !", address: "170 avenue de galaxie 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "auto", picture: "", cost: 5, gift: "Promo code 14", city_id: brussels.id)
+challenge4 = Challenge.create!(title: "Question 3", description: "Find thelkjhgf answer !", address: "170 avenue de galaxie 1180 Belgium", score: 20, good_answer: nil, bad_answers: nil, hint: "start with P", input_type: "picture", picture: "", cost: 5, gift: "Promo code 14", city_id: brussels.id)
+
 
 team1 = Team.create!(title: "Les blondes", team_picture: "", start_date: Date.tomorrow, end_date: Date.tomorrow, city_id: brussels.id)
 

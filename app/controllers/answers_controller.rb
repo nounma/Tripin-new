@@ -32,7 +32,8 @@ class AnswersController < ApplicationController
   private
 
   def answer_params
-    params.require(:answer).permit(:text, :picture)
+    params.require(:answer).permit(:text, :picture, :picture_cache)
+
   end
 
 end
