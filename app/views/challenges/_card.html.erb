@@ -35,23 +35,16 @@
         </div>
       </div>
 
-
-
       <% else team_challenge.answer.status == "pending" %>
       <i class="fa fa-paper-plane"></i>
       <% end %>
 
-<div>
-
-
-
-
+      <div>
+      </div>
     </div>
-
+    <% end %>
+    <%= link_to "", team_challenge_path(@team.id, team_challenge.challenge.id), class: "card-link" %>
   </div>
-  <% end %>
-  <%= link_to "", team_challenge_path(@team.id, team_challenge.challenge.id), class: "card-link" %>
-</div>
 
 
 
