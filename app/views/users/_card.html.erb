@@ -1,6 +1,6 @@
+  <div class= "container">
   <div class="row">
-    <div class="col-xs-10">
-      <div class="card">
+    <div class="col-xs-9 left-card">
           <h2><%= member.team.title %></h2>
 
 
@@ -10,13 +10,13 @@
 
         <% end %>
 
-      </div>
     </div>
-    <div class="col-xs-2">
-      <div class="delete-card">
+    <div class="col-xs-3 delete-card">
         <% if policy(member.team).destroy? %>
-          <%= link_to "Delete", team_path(member.team), method: :delete %>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+
+          <%= link_to "", team_path(member.team), method: :delete, class: "card-link" %>
         <% end %>
-      </div>
     </div>
   </div>
+</div>
