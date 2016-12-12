@@ -1,6 +1,21 @@
+<div class="yellow-back">
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-4">
+<<<<<<< HEAD
+      <div class="challenge-top">
+        <div class="countdown">
+          <p>You got</p>
+          <h2><b><%= countdown = (@team.end_date.to_date - Date.today).to_i %></b></h2>
+          <p>days left</p>
+          <p>in <%= @team.city.name %></p>
+        </div>
+        <p class="text-left">YOUR CHALLENGES</p>
+      </div>
+      <% @team_challenges.each do |team_challenge| %>
+      <%= render "card", team_challenge: team_challenge %>
+
+=======
       <h1 class="text-center">Your challenges</h1>
       <% @team_challenges_not_completed.each do |team_challenge| %>
         <%= render "card", team_challenge: team_challenge %>
@@ -10,8 +25,13 @@
       <% end %>
       <% @team_challenges_completed.each do |team_challenge| %>
         <%= render "card", team_challenge: team_challenge %>
+>>>>>>> master
       <% end %>
-      <%= link_to 'Go Back', team_path(@team) %>
+      <div class="cross-back">
+        <%= link_to '', team_path(@team), class: "fa fa-times fa-lg", style: "color: white;" %>
+      </div>
+    </div>
+    </div>
     </div>
   </div>
 </div>

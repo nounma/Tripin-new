@@ -1,0 +1,62 @@
+.yellow-back{
+  background-color: #FDC945;
+  color: white;
+  height: auto;
+  background-size: cover !important;
+  position: relative;
+  padding: 15px;
+}
+
+.countdown {
+  margin-top: 20px;
+  margin-bot: 0;
+  font-size: 20px;
+}
+
+.countdown h2 {
+  font-size: 60px;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.countdown p {
+  margin-left: 20px;
+}
+
+.challenge-top {
+  // margin: 20px;
+}
+
+.cross-back {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  margin-right: 15px;
+  text-decoration: none;
+  
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.challenge-score {
+  color: #FDC945;
+  width: 100px;
+  top: -20px;
+  font-size: 40px;
+  position: absolute;
+    
+  h3 {
+    position: relative;
+  }
+}
+
+.challenge-score span {
+  font-size: 15px;
+  top: 25px;
+  left: 40px;
+  position: absolute;
+  color: #C4C4C4;
+}
