@@ -13,8 +13,6 @@ class Answer < ApplicationRecord
 
   mount_uploader :picture, PhotoUploader
 
-
-
   # def picture_or_text_must_exist
   #   if picture.nil? && text.nil?
   #     errors.add(:picture, 'Picture or text must exist')
