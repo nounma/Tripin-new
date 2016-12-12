@@ -2,6 +2,9 @@
   <div class="row">
     <div class="col-xs-12 col-sm-4">
       <h1 class="text-center">Your challenges</h1>
+      <% @team_challenges_not_answered.each do |team_challenge| %>
+        <%= render "card", team_challenge: team_challenge %>
+      <% end %>
       <% @team_challenges_not_completed.each do |team_challenge| %>
         <%= render "card", team_challenge: team_challenge %>
       <% end %>
