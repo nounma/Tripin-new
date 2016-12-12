@@ -19,12 +19,9 @@ class ChallengesController < ApplicationController
       end
 
     #order all the selected challenge by answer.status
-    @team_challenges.joins(:answer).order(
-      "answers.status = 'not_completed' desc",
-      "answers.status = 'pending' desc",
-      "answers.status = 'completed' desc"
-    )
-
+    @team_challenges_not_completed = TeamChallenge.joins(:answer).where(answers: {status:'not_completed'})
+    @team_challenges_pending = TeamChallenge.joins(:answer).where(answers: {status:'pending'})
+    @team_challenges_completed = TeamChallenge.joins(:answer).where(answers: {status:'completed'})
   end
 
   def show

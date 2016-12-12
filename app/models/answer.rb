@@ -1,5 +1,6 @@
 class Answer < ApplicationRecord
 
+  ANSWERS_TYPE = %w(completed not_completed pending)
   COMPLETED = "completed"
   PENDING = "pending"
   NOT_COMPLETED = "not_completed"
