@@ -1,9 +1,16 @@
 <div class="card">
-  <div class="card-category"><%= team_challenge.challenge.input_type %></div>
-  <div class="card-description">
-    <h2><%= team_challenge.challenge.title %></h2>
+  <div class="card-category">
+    <div class="challenge-score">
+      <h3><b><%= team_challenge.challenge.score %></b></h3> <span><sup>PT</sup></span>
+    </div>
   </div>
-  <div class="bottom-right"><%= team_challenge.challenge.score %></div>
+  <div class="team-score" style="color: black;">
+    <%= team_challenge.challenge.input_type %>
+  </div>
+
+  <div class="card-description">
+    <h2><b><%= team_challenge.challenge.title %></b></h2>
+  </div>
 
   <% if !team_challenge.answer.nil? %>
   <div class="upper-right"><%#= team_challenge.answer.status %>
