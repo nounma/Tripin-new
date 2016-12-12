@@ -64,7 +64,6 @@ class TeamsController < ApplicationController
   end
 
 
-
   private
 
   def team_params

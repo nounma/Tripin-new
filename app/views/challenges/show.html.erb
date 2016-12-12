@@ -13,7 +13,6 @@
 
        <p>cost: <%= @challenge.cost%></p>
 
-
        <% if @answer.not_completed? %>
        <div class= "alert alert-warning">
          wrong answer
@@ -66,7 +65,7 @@
 
     <div class= "bottom-left">
       <%= link_to 'Back', team_challenges_path(@team, @challenge) %></div>
-  </div>
+    </div>
   </div>
 
 
