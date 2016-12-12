@@ -29,7 +29,7 @@ challenge4 = Challenge.create!(title: "Question 4", description: "Find thelkjhgf
 challenge5 = Challenge.create!(title: "Question 5", description: "Good answer !", address: "123 avenue molière 1050 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "text", picture: "", cost: 1, gift: "Promo code 1234", city_id: brussels.id)
 challenge6 = Challenge.create!(title: "Question 6", description: "trouve la rep", address: "180 avenue de floréal 1180 Belgium", score: 10, good_answer: nil, bad_answers: nil, hint: nil, input_type: "picture", picture: "", cost: 1, gift: "Promo code 13", city_id: brussels.id)
 challenge7 = Challenge.create!(title: "Question 7", description: "Find the lkjhgfdanswer !", address: "170 avenue de galaxie 1180 Belgium", score: 10, good_answer: "Pix", bad_answers: "Pix, Loo, Poux", hint: "start with P", input_type: "auto", picture: "", cost: 5, gift: "Promo code 14", city_id: brussels.id)
-challenge8 = Challenge.create!(title: "Question 8", description: "Fiwer !", address: "170 avenue de galaxie 1180 Belgium", score: 20, good_answer: nil, bad_answers: nil, hint: "start with P", input_type: "picture", picture: "", cost: 5, gift: "Promo code 14", city_id: brussels.id)
+challenge8 = Challenge.create!(title: "Question 8", description: "Fiwer !", address: "5 place sainte gudule 1000 bruxelles Belgium", score: 20, good_answer: nil, bad_answers: nil, hint: "start with P", input_type: "picture", picture: "", cost: 5, gift: "Promo code 14", city_id: brussels.id)
 
 
 team1 = Team.create!(title: "Les blondes", team_picture: "", start_date: Date.tomorrow, end_date: Date.tomorrow, city_id: brussels.id)

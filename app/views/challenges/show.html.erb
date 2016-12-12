@@ -82,8 +82,8 @@
   <%= javascript_tag do %>
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 50.5039, lng: 4.4699},
-          zoom: 6
+          center: {lat: 50.8503, lng: 4.3517},
+          zoom: 15
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -111,8 +111,10 @@
             console.log(getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng))
 
             totalDistance = getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng).toFixed(3)
+            totalDistance = totalDistance.toString()
+            totalDistance = totalDistance.replace('.', ',')
 
-            $("#total-distance").append( + totalDistance + ' km ')
+            $("#total-distance").append( totalDistance + ' km ')
 
             infoWindow.setPosition(userPosition);
             infoWindow.setContent('Location found.');
