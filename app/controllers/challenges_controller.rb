@@ -5,7 +5,9 @@ class ChallengesController < ApplicationController
     @team = Team.find(params[:team_id])
     authorize @team
     # @users = @team.users
+
     @team_challenges = @team.team_challenges
+
     @user = current_user
 
     @challenges = Challenge.where.not(latitude: nil, longitude: nil)

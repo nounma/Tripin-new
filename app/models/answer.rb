@@ -7,6 +7,7 @@ class Answer < ApplicationRecord
   belongs_to :team_challenge
   has_one :challenge, through: :team_challenge
   validates :status, inclusion: { in: ANSWERS_TYPE }
+  # validate :picture_or_text_must_exist
 
   mount_uploader :picture, PhotoUploader
 
@@ -14,6 +15,12 @@ class Answer < ApplicationRecord
   COMPLETED = "completed"
   PENDING = "pending"
   NOT_COMPLETED = "not_completed"
+
+  # def picture_or_text_must_exist
+  #   if picture.nil? && text.nil?
+  #     errors.add(:picture, 'Picture or text must exist')
+  #   end
+  # end
 
   def not_completed?
     status == NOT_COMPLETED
