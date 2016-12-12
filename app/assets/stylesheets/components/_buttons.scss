@@ -26,6 +26,16 @@
 }
 
 .btn-white {
+  color: #FDF5E9;
+  border: 2px solid #FDF5E9;
+  padding: 7px 34px;
+  border-radius: 3px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.btn-white:hover {
+  text-decoration: none;
   color: #F9F7F1;
   border: 2px solid #F9F7F1;
   padding: 3px 14px;
@@ -33,7 +43,16 @@
   margin-top: 15px;
 }
 
-.btn-white:hover {
+.btn-blanc {
+  color: #FDF5E9;
+  border: 2px solid #FDF5E9;
+  padding: 7px 34px;
+  border-radius: 3px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.btn-blanc:hover {
   opacity: 1;
   text-decoration: none;
   color: #999999;
