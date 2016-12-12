@@ -1,6 +1,8 @@
 class Answer < ApplicationRecord
 
-    ANSWERS_TYPE = %w(completed pending not_completed)
+  COMPLETED = "completed"
+  PENDING = "pending"
+  NOT_COMPLETED = "not_completed"
 
   belongs_to :team
   # belongs_to :challenge
@@ -12,9 +14,6 @@ class Answer < ApplicationRecord
   mount_uploader :picture, PhotoUploader
 
 
-  COMPLETED = "completed"
-  PENDING = "pending"
-  NOT_COMPLETED = "not_completed"
 
   # def picture_or_text_must_exist
   #   if picture.nil? && text.nil?
