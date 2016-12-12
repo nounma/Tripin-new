@@ -2,3 +2,22 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:900');
+
+h5 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 90px;
+  color: #516DAC;
+  line-height: 80px;
+  font-style: bold;
+}
+
+.bigasscontent {
+  padding: 120px 0 120px 0;
+}
+
+.bigasscontent p {
+  color: #516DAC;
+  line-height: 15px;
+  font-size: 13px;
+}

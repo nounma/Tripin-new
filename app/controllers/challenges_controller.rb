@@ -5,7 +5,9 @@ class ChallengesController < ApplicationController
     @team = Team.find(params[:team_id])
     authorize @team
     # @users = @team.users
+
     @team_challenges = @team.team_challenges
+
     @user = current_user
 
     @challenges = Challenge.where.not(latitude: nil, longitude: nil)
@@ -17,12 +19,9 @@ class ChallengesController < ApplicationController
       end
 
     #order all the selected challenge by answer.status
-    @team_challenges.joins(:answer).order(
-      "answers.status = 'not_completed' desc",
-      "answers.status = 'pending' desc",
-      "answers.status = 'completed' desc"
-    )
-
+    @team_challenges_not_completed = TeamChallenge.joins(:answer).where(answers: {status:'not_completed'})
+    @team_challenges_pending = TeamChallenge.joins(:answer).where(answers: {status:'pending'})
+    @team_challenges_completed = TeamChallenge.joins(:answer).where(answers: {status:'completed'})
   end
 
   def show
@@ -33,6 +32,11 @@ class ChallengesController < ApplicationController
 
     @team_challenge = TeamChallenge.find_by(team: @team, challenge: @challenge)
     @answer = Answer.where(team_challenge: @team_challenge).first_or_initialize
+
+     @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
+      marker.lat challenge.latitude
+      marker.lng challenge.longitude
+end
     authorize @team
 
   end
