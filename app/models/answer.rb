@@ -1,14 +1,17 @@
 class Answer < ApplicationRecord
-  belongs_to :team
-  # belongs_to :challenge
-  belongs_to :team_challenge
-  has_one :challenge, through: :team_challenge
-  mount_uploader :picture, PhotoUploader
-
 
   COMPLETED = "completed"
   PENDING = "pending"
   NOT_COMPLETED = "not_completed"
+
+  belongs_to :team
+  # belongs_to :challenge
+  belongs_to :team_challenge
+  has_one :challenge, through: :team_challenge
+
+  mount_uploader :picture, PhotoUploader
+
+
 
   def not_completed?
     status == NOT_COMPLETED

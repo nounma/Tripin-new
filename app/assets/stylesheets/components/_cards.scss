@@ -66,9 +66,51 @@
 .delete-card {
   height: 125px;
   background-color: white;
+  margin: 10px 0 10px 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 40px 0;
+}
+
+.delete-card-outdate {
+  height: 125px;
+  color: #9E9E9E;
+  background-color: #E6E6E6;
+  margin: 10px 0 10px 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 40px 0;
 }
 
 .left-card {
   height: 125px;
   background-color: white;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
+
+.left-card-outdate {
+  height: 125px;
+  color: #9E9E9E;
+  background-color: #E6E6E6;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.avatar-link{
+  position: absolute;
+  z-index: 1;
+}
+
+.team-score{
+  position: absolute;
+  top: 33px;
+  right: 0;
+  margin-right: 10px;
+  color: #516DAC;
+}
+
