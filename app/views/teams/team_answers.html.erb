@@ -5,13 +5,16 @@
   <li>
     <%=team_answer.challenge.title%> - <%=team_answer.challenge.description%> -
     <% if  team_answer.text.nil? %>
-    <%=team_answer.picture%>
+      <%= cl_image_tag team_answer.picture %>
     <% else %>
     <%=team_answer.text%>
     <% end %>
     - <%=team_answer.status%></li>
   </ul>
 
+  <%= cl_image_tag team_answer.picture %>
+
   <% end %>
 
   <%= link_to 'Go Back', team_path(@team) %>
+
