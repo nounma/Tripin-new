@@ -1,19 +1,42 @@
+
+<div class="container">
+  <div class="row">
+        <div class="col-xs-12 col-sm-6">
+
 <h2>Sign up</h2>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), defaults: { input_html: { class: 'input-container' } }) do |f| %>
 <%= f.error_notification %>
 
-<div class="form-inputs">
-  <%= f.input :first_name, required: true %>
-  <%= f.input :last_name, required: true %>
-  <%= f.input :email, required: true, autofocus: true %>
-  <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-  <%= f.input :password_confirmation, required: true %>
+
+<div class="form-inputs login-input">
+  <%= f.input :first_name, required: true, label: 'First name', wrapper: :p_wrapper %>
+  <%= f.input :last_name, required: true, label: 'Last name', wrapper: :p_wrapper %>
+  <%= f.input :email, required: true, label: 'Email', autofocus: true, wrapper: :p_wrapper %>
+  <%= f.input :password, required: true, label: 'Password', hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), wrapper: :p_wrapper %>
+  <%= f.input :password_confirmation, label: 'Confirmation',required: true, wrapper: :p_wrapper %>
 </div>
+
 
 <div class="form-actions">
   <%= f.button :submit, "Sign up" %>
 </div>
 <% end %>
 
+
 <%= render "devise/shared/links" %>
+  </div>
+</div>
+
+<!-- Sample Container -->
+<div class="container">
+  <h2>Input Style</h2>
+  <p class="input-container">
+    <input type="text" id="input-username" class="login-input">
+    <label for="input-username" unselectable="on">Username</label>
+  </p>
+  <p class="input-container">
+    <input type="password" id="input-password" class="login-input">
+    <label for="input-password" unselectable="on">Password</label>
+  </p>
+</div>
