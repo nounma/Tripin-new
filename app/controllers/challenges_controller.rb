@@ -33,6 +33,11 @@ class ChallengesController < ApplicationController
 
     @team_challenge = TeamChallenge.find_by(team: @team, challenge: @challenge)
     @answer = Answer.where(team_challenge: @team_challenge).first_or_initialize
+
+     @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
+      marker.lat challenge.latitude
+      marker.lng challenge.longitude
+end
     authorize @team
 
   end
