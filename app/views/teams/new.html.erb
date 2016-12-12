@@ -14,7 +14,7 @@
 
         <%= simple_form_for @team do |f| %>
 
-        <%= f.input :city_id, collection: City::CITIES, prompt: "PICK A CITY", label: false, input_html: { class: "disable-form-control" }  %>
+        <%= f.input :city_id, collection: City.all, prompt: "PICK A CITY", label: false, input_html: { class: "disable-form-control" }  %>
       </div>
 
       <div class="text-center needspace">

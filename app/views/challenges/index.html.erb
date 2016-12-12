@@ -11,7 +11,9 @@
         </div>
         <p class="text-left">YOUR CHALLENGES</p>
       </div>
-
+      <% @team_challenges_not_answered.each do |team_challenge| %>
+        <%= render "card", team_challenge: team_challenge %>
+      <% end %>
       <% @team_challenges_not_completed.each do |team_challenge| %>
         <%= render "card", team_challenge: team_challenge %>
       <% end %>

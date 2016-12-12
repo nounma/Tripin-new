@@ -24,10 +24,10 @@ class TeamsController < ApplicationController
   end
 
   def create
-    @city = City.find_by_name(params[:team][:city_id])
+    @city = City.find(params[:team][:city_id])
 
     @team = Team.new(team_params)
-    @team.city_id = @city.id
+    @team.city = @city
 
     @team.save
     authorize @team
