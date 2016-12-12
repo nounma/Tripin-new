@@ -1,8 +1,13 @@
 class Answer < ApplicationRecord
+
+    ANSWERS_TYPE = %w(completed pending not_completed)
+
   belongs_to :team
   # belongs_to :challenge
   belongs_to :team_challenge
   has_one :challenge, through: :team_challenge
+  validates :status, inclusion: { in: ANSWERS_TYPE }
+
   mount_uploader :picture, PhotoUploader
 
 
