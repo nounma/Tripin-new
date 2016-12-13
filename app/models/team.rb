@@ -27,11 +27,13 @@ class Team < ApplicationRecord
     # trip_length = string_to_date(start_date).to_i - string_to_date(end_date).to_i
 
 
-    if trip_length > 3
-      num_challenge = 20
-    else trip_length < 3
-      num_challenge = 50
-    end
+    # if trip_length > 3
+    #   num_challenge = 20
+    # else trip_length < 3
+    #   num_challenge = 50
+    # end
+
+    # challenges = Challenge.where(city_id: self.city_id).limit(num_challenge)
     challenges = Challenge.where(city_id: self.city_id).limit(num_challenge)
     challenges.each do |challenge|
       TeamChallenge.create(team_id: self.id, challenge_id: challenge.id)
