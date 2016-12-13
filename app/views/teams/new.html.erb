@@ -12,7 +12,7 @@
 
       <div class="needlilspace styled-input">
 
-        <%= simple_form_for @team do |f| %>
+        <%= simple_form_for @team, defaults: { input_html: { class: 'input-container' } } do |f| %>
 
         <%= f.input :city_id, collection: City.all, prompt: "PICK A CITY", label: false, input_html: { class: "disable-form-control" }  %>
       </div>
@@ -54,7 +54,9 @@
     </div>
   </div>
   <div class="needspace">
-    <%= f.input :title, placeholder: "Team name"%>
+    <div class="form-inputs login-input">
+
+    <%= f.input :title, placeholder: "Team name", label: 'Team name', wrapper: :p_wrapper%>
     <%= f.input :team_picture %>
     <%= f.input :team_picture_cache, as: :hidden %>
 
