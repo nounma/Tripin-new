@@ -1,15 +1,16 @@
 .yellow-back{
   background-color: #FDC945;
   color: white;
-  height: auto;
+  min-height: 100vh;
   background-size: cover !important;
-  position: relative;
-  padding: 15px;
+  // position: relative;
+  padding: 70px 15px 15px 15px;
+  margin: -70px auto auto;
 }
 
 .countdown {
   margin-top: 20px;
-  margin-bot: 0;
+  margin-bottom: 0;
   font-size: 20px;
 }
 
@@ -21,6 +22,7 @@
 
 .countdown p {
   margin-left: 20px;
+  margin-bottom: 0px;
 }
 
 .challenge-top {

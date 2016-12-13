@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
   resources :teams, only: [:index, :new, :create, :show, :edit, :update, :destroy] do
     get '/team_answers', to: 'teams#team_answers'
-    resources :challenges, only: [:index, :show] do
+    resources :challenges, only: [:index, :show, :edit, :update] do
       resources :answers
     end
     resources :members, only: [:new, :create, :destroy]

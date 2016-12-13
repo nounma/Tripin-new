@@ -15,9 +15,11 @@
 
         <% end %>
         <div class="avatar-link">
+        <% member.team.users.each do |u| %>
           <%= link_to user_path do %>
-            <%= image_tag member.user.profile_picture, class: "avatar" %>
+            <%= image_tag u.profile_picture, class: "avatar" %>
           <% end %>
+        <% end %>
         </div>
         <div class="team-score">
           <h2>100 <sup>PT</sup></h2>

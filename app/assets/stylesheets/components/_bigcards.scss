@@ -7,9 +7,17 @@
   background-color: white;
   border-radius: 3px;
   margin-bottom: 5px;
+  background-color: #FAFAFA;
   // border-color: #3A5CBE;
   // border-style: solid 0.1px;
+  padding: 20px;
+  color: #516DAC;
 }
+.bigcard h2 {
+  font-family: 'Playfair Display SC', serif;
+  margin-top: -13px;
+}
+
 .bigcard-user {
   position: absolute;
   right: 10px;
@@ -32,7 +40,9 @@
 }
 .bigcard-description p {
   font-size: 9px;
+  display: inline;
   }
+
 .card-link {
   position: absolute;
   top: 0;
@@ -53,8 +63,34 @@
   right: 10px;
 }
 
+.top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .upper-right {
   position: absolute;
   top: 5px;
   right: 10px;
+}
+
+.inlining {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  padding: 10px;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 23px;
+  color: #FFC945;
+  padding-top: 20px;
+}
+
+.score sup {
+  font-size: 10px;
+  color: #C4C4C4;
+  font-weight: 900;
 }
