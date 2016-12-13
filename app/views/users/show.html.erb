@@ -1,18 +1,14 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-12">
+    <div class="col-xs-12 col-sm-12 text-center">
 
       <div class="container text-center">
 
         <div class="profilecard-top">
 
-          <div class="lilspace text-left">
-            <div class="user-score">
-             <h3>TOTAL SCORE</h3>
-             <p><%= @user.total_score %></p>
-           </div>
+          <div class="lilspace text-center">
 
-           <% if @user.facebook_picture_url.nil? %>
+          <% if @user.facebook_picture_url.nil? %>
            <% unless @user.profile_picture.nil?  %>
            <%= cl_image_tag @user.profile_picture, class: "avatar-large", crop: :fill %>
            <% end %>
@@ -20,20 +16,8 @@
            <%= image_tag @user.facebook_picture_url, class: "avatar-large", crop: :fill %>
            <% end %>
 
-           <h2><%= @user.first_name %> <%= @user.last_name %></h2>
-           <p><b><i class="fa fa-envelope" aria-hidden="true"></i>
-           </b><%= @user.email %></p>
-           <div class="row">
-            <div class="col-xs-6 col-sm-6">
-              <p><b><i class="fa fa-map-marker" aria-hidden="true"></i>
-              </b><%= @user.address %></p>
-            </div>
-          </div>
-
-          <% if policy(@user).update? %>
-
-          <p><%= link_to "Edit profile", edit_user_path(@user), class: "btn-blue", method: :get %></p>
-          <% end %>
+           <h2><%= @user.first_name %> <%= @user.last_name %> <%= link_to "", edit_user_path(@user),class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %></h2>
+           <p><p><%= @user.total_score %></p><p>253 points</p></p>
 
         </div>
 
@@ -57,3 +41,5 @@
     </div>
   </div>
 </div>
+
+
