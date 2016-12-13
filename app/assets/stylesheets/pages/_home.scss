@@ -21,7 +21,7 @@
   width: 100%;
 }
 
- .bigasscontent h4 {
+.bigasscontent h4 {
   font-family: 'Playfair Display SC', serif;
   font-size: 90px;
   color: #516DAC;
@@ -47,9 +47,15 @@
 }
 
 .bluecontainer {
-  background-color: #516DAC;
+  border-style: solid;
+  border-color: #516DAC;
+  border-width: 1px;
   padding: 15px;
-  color: white;
+  color: #516DAC;
   margin-bottom: 30px;
+  border-radius: 2px;
 }
 
+.textinside {
+  padding: 5px;
+}
