@@ -30,7 +30,7 @@
           </li>
 
           <% current_user.teams.each do |t| %>
-          <li><i class="fa fa-users" aria-hidden="true"></i><%= link_to t.title, team_challenges_path(t), method: :get if t.in_trip? %></li>
+          <li><%= link_to t.title, team_challenges_path(t), method: :get if t.in_trip? %></li>
           <%end%>
 
           <li>
@@ -60,7 +60,7 @@
         <li><%= link_to user_path(current_user) do %><i class="fa fa-user" aria-hidden="true"></i>
           Profile<% end %></li>
           <% current_user.teams.each do |t| %>
-          <li><%= link_to t.title, team_challenges_path(t), method: :get if t.in_trip? do %><i class="fa fa-users" aria-hidden="true"></i><% end %>
+          <li><%= link_to t.title, team_challenges_path(t), method: :get if t.in_trip? do %><% end %>
 </li>
           <%end%>
 

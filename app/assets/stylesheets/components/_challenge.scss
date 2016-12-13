@@ -1,10 +1,12 @@
 .yellow-back{
   background-color: #FDC945;
   color: white;
-  height: auto;
+  min-height: 100vh;
   background-size: cover !important;
   position: relative;
-  padding: 15px;
+  padding: 70px 15px 15px 15px;
+  margin-top: -70px;
+  z-index: -1;
 }
 
 .countdown {
