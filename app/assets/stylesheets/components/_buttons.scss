@@ -18,6 +18,7 @@
   padding: 3px 14px;
   border-radius: 3px;
   margin-top: 15px;
+  line-height: 225%;
 }
 
 .btn-blue:hover,
@@ -54,6 +55,16 @@
 .btn-blanc:focus {
   text-decoration: none;
 }
+
+.edit-button {
+    text-decoration: none;
+  
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
 
 .btn-clear {
   border-style: none;

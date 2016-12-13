@@ -24,6 +24,8 @@
   // border-color: #3A5CBE;
   // border-style: solid 0.1px;
   margin: 0 -200px;
+  // bottom: -85px;
+  min-height: 24vh;
 }
 
 .user-score{
@@ -58,4 +60,11 @@
 .title-yo {
   font-size: 15px;
   color: white;
+}
+
+.title-userteam {
+  font-size: 15px;
+  color: #516DAC;
+  position: relative;
+  top: 90px;
 }
