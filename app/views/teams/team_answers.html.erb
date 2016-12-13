@@ -5,14 +5,14 @@
   <li>
     <%=team_answer.challenge.title%> - <%=team_answer.challenge.description%> -
     <% if  team_answer.text.nil? %>
-      <%= cl_image_tag team_answer.picture %>
+      <%= cl_image_tag team_answer.picture, height: 300, width: 300, crop: :fill%>
     <% else %>
     <%=team_answer.text%>
     <% end %>
     - <%=team_answer.status%></li>
   </ul>
 
-  <%= cl_image_tag team_answer.picture %>
+  <%= cl_image_tag team_answer.picture, height: 300, width: 300, crop: :fill%>
 
   <% end %>
 
