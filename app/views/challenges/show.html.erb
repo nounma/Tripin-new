@@ -11,8 +11,8 @@
        <i class="fa fa-map-marker" aria-hidden="true"></i>
      </div>
      <h2><%= @challenge.title.capitalize %></h2>
-     <div class="col-xs-6 picture-challenge">
-       <p><%= image_tag(@challenge.picture) %></p>
+     <div class="col-xs-6">
+       <p><%= image_tag(@challenge.picture, :class => "picture-challenge") %></p>
      </div>
      <div class="col-xs-6 col-xs-offset-6">
        <p><%= @challenge.description %></p>
