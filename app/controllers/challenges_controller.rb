@@ -39,9 +39,22 @@ class ChallengesController < ApplicationController
      @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
       marker.lat challenge.latitude
       marker.lng challenge.longitude
-end
+      end
     authorize @team
 
+  end
+ def edit
+    @challenge = Challenge.find(params[:id])
+    authorize @challenge
+  end
+
+  def update
+    @challenge = Challenge.find(params[:id])
+    @team = Team.find(params[:team_id])
+
+    authorize @challenge
+    @challenge.update(challenge_params)
+    redirect_to team_challenge_path(@team, @challenge)
   end
 
   private
@@ -55,6 +68,10 @@ end
   end
   def team_params
     params.require(:user).permit(:start_date, :end_date)
+  end
+
+  def challenge_params
+    params.require(:challenge).permit(:id, :picture, :picture_cache)
   end
 
  # def user_params

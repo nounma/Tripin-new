@@ -4,8 +4,12 @@ class ChallengePolicy < ApplicationPolicy
       scope.all
     end
   end
-  
+
   def show?
+    true
+  end
+
+  def update?
     true
   end
 end

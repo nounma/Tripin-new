@@ -5,7 +5,7 @@
  @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:900');
 
  .imginhome {
- position: relative;
+   position: relative;
    width: 100%; /* for IE 6 */
  }
 
@@ -16,8 +16,20 @@
   line-height: 80px;
   font-style: bold;
   position: absolute;
-  top: 200px;
-  left: 0;
+  top: -68px;
+  left: -51px;
+  width: 100%;
+}
+
+.bigasscontent h4 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 90px;
+  color: #516DAC;
+  line-height: 80px;
+  font-style: bold;
+  position: absolute;
+  top: -68px;
+  left: 65px;
   width: 100%;
 }
 
@@ -29,5 +41,26 @@
   color: #516DAC;
   line-height: 15px;
   font-size: 13px;
+  position: absolute;
+  top: 124px;
+  right: 0;
 }
 
+.bluecontainer {
+  border-style: solid;
+  border-color: #516DAC;
+  border-width: 1px;
+  padding: 15px;
+  color: #516DAC;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.textinside {
+  padding: 5px;
+}
+
+
+.col-xs-offset-5 p {
+  top: 514px;
+}

@@ -6,6 +6,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       sign_in (@user)
       redirect_to user_path(current_user), notice: 'Signed in successfully.'
       set_flash_message(:notice, :success, :kind => "Facebook") if is_navigational_format?
+
     else
 
  session["devise.facebook_data"] = request.env["omniauth.auth"]

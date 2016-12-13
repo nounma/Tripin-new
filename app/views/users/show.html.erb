@@ -8,21 +8,22 @@
 
           <div class="lilspace text-left">
             <div class="user-score">
-              <p>Total score = <%= @user.total_score %></p>
-            </div>
+             <h3>TOTAL SCORE</h3>
+             <p><%= @user.total_score %></p>
+           </div>
 
-            <% if @user.facebook_picture_url.nil? %>
-            <% unless @user.profile_picture.nil?  %>
-            <%= cl_image_tag @user.profile_picture, class: "avatar-large", crop: :fill %>
-            <% end %>
-            <%else %>
-            <%= image_tag @user.facebook_picture_url, class: "avatar-large", crop: :fill %>
-            <% end %>
+           <% if @user.facebook_picture_url.nil? %>
+           <% unless @user.profile_picture.nil?  %>
+           <%= cl_image_tag @user.profile_picture, class: "avatar-large", crop: :fill %>
+           <% end %>
+           <%else %>
+           <%= image_tag @user.facebook_picture_url, class: "avatar-large", crop: :fill %>
+           <% end %>
 
-          <h2><%= @user.first_name %> <%= @user.last_name %></h2>
-          <p><b><i class="fa fa-envelope" aria-hidden="true"></i>
-          </b><%= @user.email %></p>
-          <div class="row">
+           <h2><%= @user.first_name %> <%= @user.last_name %></h2>
+           <p><b><i class="fa fa-envelope" aria-hidden="true"></i>
+           </b><%= @user.email %></p>
+           <div class="row">
             <div class="col-xs-6 col-sm-6">
               <p><b><i class="fa fa-map-marker" aria-hidden="true"></i>
               </b><%= @user.address %></p>
@@ -34,25 +35,25 @@
           <p><%= link_to "Edit profile", edit_user_path(@user), class: "btn-blue", method: :get %></p>
           <% end %>
 
-          </div>
-
-
         </div>
         <h1 class="text-left title-yo" style="color: #516DAC;"><b>MY TEAMS</b></h1>
 
       </div>
-      <div class="profilecard-bottom text-right">
+
+
+    </div>
+    <div class="profilecard-bottom text-right">
 
       <p><%= link_to "Create a new team", new_team_path, class: "btn-white" %>
-      <div class="container">
+        <div class="container">
 
         <% @user.members.each do |member| %>
         <%= render "card", member: member %>
 
-        <% end %>
+          <% end %>
 
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </div>
