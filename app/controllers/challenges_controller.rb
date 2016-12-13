@@ -39,7 +39,7 @@ class ChallengesController < ApplicationController
      @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
       marker.lat challenge.latitude
       marker.lng challenge.longitude
-end
+      end
     authorize @team
 
   end
