@@ -33,16 +33,16 @@
   text-transform: uppercase;
 }
 .card-description {
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
 }
 .card-description h2 {
   font-size: 22px;
 }
 .card-description p {
   font-size: 9px;
-  }
+}
 .card-link {
   position: absolute;
   top: 0;
@@ -136,4 +136,27 @@
 .usercard-left {
   position: absolute;
   left: 10px;
+}
+
+
+.card-index {
+  height: 110px;
+  // text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: black;
+  position: relative;
+  background-color: white;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-bottom: 5px;
+}
+
+
+.status-card {
+  height: 110px;
+  background-color: white;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 40px 0;
+  margin-left: -15px;
 }
