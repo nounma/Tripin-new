@@ -24,7 +24,9 @@ gem "coffee-rails"
 gem "gmaps4rails"
 gem 'omniauth-facebook'
 gem 'bootstrap-social-rails'
-gem 'bootstrap-datepicker-rails'
+# gem 'bootstrap-datepicker-rails'
+# gem 'jquery_datepicker'
+
 
 gem "paperclip", "~> 5.0.0"
 

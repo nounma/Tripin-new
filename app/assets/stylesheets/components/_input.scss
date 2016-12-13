@@ -5,6 +5,9 @@ p.input-container {
   top: 50px;
   margin-bottom: 25px;
 
+}
+
+.input-container {
   label {
     color: #CCC;
     position: absolute;
@@ -30,16 +33,6 @@ p.input-container {
   }
 
   //Input Animation Styles
-  .animation label {
-    transform: translateY(-55px);
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-
-  .animation-color label {
-    color: #516DAC;
-  }
 
   textarea {
     width: 100%;
@@ -54,5 +47,17 @@ p.input-container {
       border-bottom: 1px solid #516DAC;
     }
   }
+
+
 }
 
+  .animation label {
+    transform: translateY(-55px);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .animation-color label {
+    color: #516DAC;
+  }
