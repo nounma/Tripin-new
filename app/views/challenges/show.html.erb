@@ -2,46 +2,50 @@
  <div class="row">
   <div class="col-xs-12 col-sm-6">
     <div class="bigcard">
-      <div class= "text-center">
 
-       <h2><%= @challenge.title.capitalize %></h2>
-       <p><%= @challenge.address%></p>
-       <p><%= image_tag(@challenge.picture) %></p>
-       <p><%= @challenge.description %></p>
-       <%= image_tag @challenge.cover_pic %>
-       <p>points: <b><%= @challenge.score %></b></p>
+     <p><%#= link_to @challenge.address, googlemap_path%></p>
 
-       <p>cost: <%= @challenge.cost%></p>
 
-       <% if @answer.not_completed? %>
-       <div class= "alert alert-warning">
-         wrong answer
-       </div>
-       <% end %>
-       <%= simple_form_for [@team, @challenge, @answer] do |f| %>
-       <% if @challenge.answer_text? %>
-       <%= f.input :text, input_html: {value: @answer.text} %>
-       <% elsif @challenge.answer_picture? %>
-       <%= f.input :picture %>
-       <%= f.input :picture_cache, as: :hidden %>
-       <% elsif @challenge.answer_auto? %>
-       <%= f.input :text, label: false,
-       collection: bad_answers(@challenge),
-       include_blank: "-- Choose an answer --",
-       selected: @answer.text,
-       input_html: { id: "select2" } %>
-       <% else @challenge.answer_both? %>
-       <%= f.input :text %>
-       <%= f.input :picture %>
-       <%= f.input :picture_cache, as: :hidden %>
-       <% end %>
+     <p>points: <b><%= @challenge.score %></b></p>
+
+     <p>cost: <%= @challenge.cost%></p>
+
+     <h2><%= @challenge.title.capitalize %></h2>
+     <p><%= image_tag(@challenge.picture) %></p>
+     <p><%= @challenge.description %></p>
+
+
+     <% if @answer.not_completed? %>
+     <div class= "alert alert-warning">
+       wrong answer
+     </div>
+     <% end %>
+     <%= simple_form_for [@team, @challenge, @answer], defaults: { input_html: { class: 'input-container' } } do |f| %>
+     <%= f.error_notification %>
+     <% if @challenge.answer_text? %>
+     <%= f.input :text, input_html: {value: @answer.text}, label: 'Your answer', wrapper: :p_wrapper %>
+     <% elsif @challenge.answer_picture? %>
+     <%= f.input :picture %>
+     <%= f.input :picture_cache, as: :hidden %>
+     <% elsif @challenge.answer_auto? %>
+     <%= f.input :text, label: false,
+     collection: bad_answers(@challenge),
+     include_blank: "-- Choose an answer --",
+     selected: @answer.text,
+     input_html: { id: "select2" } %>
+     <% else @challenge.answer_both? %>
+     <%= f.input :text, label: 'Your answer', wrapper: :p_wrapper %>
+     <%= f.input :picture %>
+     <%= f.input :picture_cache, as: :hidden %>
+     <% end %>
+     <div class="lilspace">
        <%= f.button :submit %>
        <% end %>
      </div>
 
      <div class= "bottom-right">
        <%= link_to "#myModal", "data-toggle" => "modal" do %>
-       <p> <i class="fa fa-question-circle-o" aria-hidden="true"></i></p>
+       <p> want a hint?</i></p>
        <% end %>
        <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -66,16 +70,87 @@
       </div>
     </div>
 
-    <div class= "bottom-left">
-      <%= link_to 'Back', team_challenges_path(@team, @challenge) %></div>
+    <div class= "top-right">
+      <div class="cross-back">
+
+        <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-times fa-lg", style: "color: #516DAC;" %>
+      </div>
+
     </div>
   </div>
+</div>
 </div>
 
 
 
 <div class="distance" id="total-distance">Total distance : </div>
+</div>
 
+<<<<<<< HEAD
+<div id="map" style="width: 100%; height: 600px;"></div>
+
+<% content_for(:after_js) do %>
+<%= javascript_tag do %>
+function initMap() {
+var map = new google.maps.Map(document.getElementById('map'), {
+center: {lat: 50.8503, lng: 4.3517},
+zoom: 15
+});
+var infoWindow = new google.maps.InfoWindow({map: map});
+
+var challenge = new google.maps.Marker({
+position: new google.maps.LatLng(<%=@challenge.latitude %>, <%=@challenge.longitude%>),
+map: map,
+});
+
+
+// Try HTML5 geolocation.
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(function(position) {
+var userPosition = {
+lat: position.coords.latitude,
+lng: position.coords.longitude
+};
+
+var challengePosition = {
+lat: <%=@challenge.latitude %>,
+lng: <%=@challenge.longitude%>
+};
+
+console.log(userPosition.lng)
+console.log(challengePosition.lng)
+console.log(getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng))
+
+totalDistance = getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng).toFixed(3)
+totalDistance = totalDistance.toString()
+totalDistance = totalDistance.replace('.', ',')
+
+$("#total-distance").append( totalDistance + ' km ')
+
+infoWindow.setPosition(userPosition);
+infoWindow.setContent('Location found.');
+map.setCenter(userPosition);
+}, function() {
+handleLocationError(true, infoWindow, map.getCenter());
+});
+} else {
+// Browser doesn't support Geolocation
+handleLocationError(false, infoWindow, map.getCenter());
+}
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, userPosition) {
+infoWindow.setPosition(userPosition);
+infoWindow.setContent(browserHasGeolocation ?
+'Error: The Geolocation service failed.' :
+'Error: Your browser doesn\'t support geolocation.');
+}
+
+
+<% end %>
+
+<% end %>
+=======
   <div id="map" style="width: 100%; height: 400px;"></div>
 
 <% content_for(:after_js) do %>
