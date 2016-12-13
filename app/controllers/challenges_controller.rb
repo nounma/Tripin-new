@@ -12,11 +12,19 @@ class ChallengesController < ApplicationController
 
     @challenges = Challenge.where.not(latitude: nil, longitude: nil)
 
-    @hash = Gmaps4rails.build_markers(@challenges) do |challenge, marker|
-      marker.lat challenge.latitude
-      marker.lng challenge.longitude
-      #marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
-      end
+    list_challenges = []
+
+    @challenges.each do |list|
+      list_challenges << [list.latitude, list.longitude, params[:team_id], list.id]
+    end
+
+    @coordinates_challenges = list_challenges
+
+   # @hash = Gmaps4rails.build_markers(@list_challenges) do |challenge, marker|
+   #    marker.lat challenge.latitude
+   #    marker.lng challenge.longitude
+   #    #marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
+   #    end
 
     #order all the selected challenge by answer.status
 
