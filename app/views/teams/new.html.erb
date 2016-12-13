@@ -55,10 +55,13 @@
   <div class="needspace">
     <div class="form-inputs login-input">
 
-    <%= f.input :title, placeholder: "Team name", label: 'Team name', wrapper: :p_wrapper%>
+    <%= f.input :title, placeholder: "Choose a file", label: 'Team name', wrapper: :p_wrapper%>
     <div class="needspace">
-    <%= f.input :team_picture %>
-    <%= f.input :team_picture_cache, as: :hidden %>
+    <div>
+      <%= f.input :team_picture, label: 'Choose a team picture', label_html: { class: "btn-medium"} %>
+      <%= f.input :team_picture_cache, as: :hidden %>
+    </div>
+
     </div>
 
   </div>
