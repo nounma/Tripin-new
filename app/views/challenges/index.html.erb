@@ -34,10 +34,8 @@
 
 <br>
 <br>
-<div class="distance" id="total-distance">Total distance : </div>
 
-  <div id="map" style="width: 100%; height: 400px;"></div>
-
+<div id="map" style="width: 100%; height: 400px;"></div>
 <% content_for(:after_js) do %>
   <%= javascript_tag do %>
       function initMap() {
@@ -50,7 +48,10 @@
 
         var challenges =  <%= raw @coordinates_challenges %>
         console.log(challenges)
-         var icon = '/assets/map-marker-2.png'
+
+        var icon = { url: 'images/map-marker-2.png'}
+
+
         for (var i = 0; i < challenges.length; i++) {
           var challenge = challenges[i];
 
