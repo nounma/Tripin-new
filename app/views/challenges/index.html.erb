@@ -63,7 +63,6 @@
             map: map,
             icon: icon,
             url: url
-
           });
 
           google.maps.event.addListener(marker, 'click', function() {
@@ -81,8 +80,8 @@
           if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var userPosition = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
+            lat: 50.847619,
+            lng: 4.359196
             };
 
             console.log(userPosition.lng)

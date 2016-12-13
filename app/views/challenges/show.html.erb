@@ -3,7 +3,7 @@
   <div class="col-xs-12 col-sm-6">
     <div class="bigcard">
 
-     <p><%#= link_to @challenge.address, googlemap_path%></p>
+     <p><%=@challenge.address%></p>
      <div class="inlining">
       <div class="score">
        <p><b><%= @challenge.score %><sup>PT</sup></b></p></div>
@@ -109,8 +109,8 @@ icon: icon,
 if (navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(function(position) {
 var userPosition = {
-lat: position.coords.latitude,
-lng: position.coords.longitude
+lat: 50.847619,
+lng: 4.359196
 };
 
 var challengePosition = {
@@ -129,7 +129,7 @@ totalDistance = totalDistance.replace('.', ',')
 $("#total-distance").append( totalDistance + ' km ')
 
 infoWindow.setPosition(userPosition);
-infoWindow.setContent('Location found.');
+infoWindow.setContent('here you are');
 map.setCenter(userPosition);
 }, function() {
 handleLocationError(true, infoWindow, map.getCenter());
