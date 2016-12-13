@@ -3,13 +3,13 @@
   border: 2px solid #516DAC;
   padding: 10px 15px;
   border-radius: 5px;
+  background-color: transparent;
 }
 
 .btn-medium:hover,
 .btn-medium:focus {
   opacity: 1;
   text-decoration: none;
-  color: #999999;
 }
 
 .btn-blue {
@@ -65,4 +65,8 @@
     }
   }
 
+
+.btn-clear {
+  border-style: none;
+  background-color: none;
 }

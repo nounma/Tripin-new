@@ -34,14 +34,13 @@
     </div>
     <div class="needspace styled-input">
 
-      <%= f.input :start_date, as: :date, placeholder: "Start date"%>
-      <%= f.input :end_date, as: :date, placeholder: "End date"%>
+      <%= f.input :start_date, as: :date, placeholder: "Start date", input_html: { class: "disable-form-control" } %>
+      <%= f.input :end_date, as: :date, placeholder: "End date", input_html: { class: "disable-form-control" } %>
 
     </div>
     <div class="text-center needspace">
       <a href="#team"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
     </div>
-
   </div>
 </section>
 <section id="team">
@@ -50,31 +49,38 @@
    <div class="row">
     <div class="col-xs-8 col-sm-8 needspace pushtotheright">
 
-      <h1>WITH WHO? CREATE YOUR TEAM</h1>
+      <h1>NAME YOUR TEAM</h1>
     </div>
   </div>
   <div class="needspace">
     <div class="form-inputs login-input">
 
-    <%= f.input :title, placeholder: "Team name", label: 'Team name', wrapper: :p_wrapper%>
-    <%= f.input :team_picture %>
-    <%= f.input :team_picture_cache, as: :hidden %>
+    <%= f.input :title, placeholder: "Choose a file", label: 'Team name', wrapper: :p_wrapper%>
+    <div class="needspace">
+    <div>
+      <%= f.input :team_picture, label: 'Choose a team picture', label_html: { class: "btn-medium"} %>
+      <%= f.input :team_picture_cache, as: :hidden %>
+    </div>
+
+    </div>
 
   </div>
   <div class="needspace">
    <div class="row">
     <div class="col-xs-8 col-sm-8 needspace pushtotheright">
 
-      <div class="btn-medium text-center">
-        <%= f.submit %></div></div>
+      <div class="text-center">
+
+        <%= f.submit "Create team", :class => "btn-medium" %></div></div>
         <% end %>
       </div>
     </div>
   </div>
 </section>
-
 </form>
 </div>
 </div>
 </div>
+<% content_for(:after_js) do %>
+<% end %>
 
