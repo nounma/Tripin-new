@@ -11,8 +11,8 @@
        <i class="fa fa-map-marker" aria-hidden="true"></i>
      </div>
      <h2><%= @challenge.title.capitalize %></h2>
-     <div  class="col-xs-6 challenge-picture" style="width: 100px">
-       <p><%= image_tag(@challenge.picture)%></p>
+     <div class="col-xs-6 picture-challenge">
+       <p><%= image_tag(@challenge.picture) %></p>
      </div>
      <div class="col-xs-6 col-xs-offset-6">
        <p><%= @challenge.description %></p>
@@ -23,27 +23,29 @@
        wrong answer
      </div>
      <% end %>
+      <div class="needlilspace styled-input">
      <%= simple_form_for [@team, @challenge, @answer], defaults: { input_html: { class: 'input-container' } } do |f| %>
-     <%= f.error_notification %>
-     <% if @challenge.answer_text? %>
-     <%= f.input :text, input_html: {value: @answer.text}, label: 'Your answer', wrapper: :p_wrapper %>
-     <% elsif @challenge.answer_picture? %>
-     <%= f.input :picture %>
-     <%= f.input :picture_cache, as: :hidden %>
-     <% elsif @challenge.answer_auto? %>
-     <%= f.input :text, label: false,
-     collection: bad_answers(@challenge),
-     include_blank: "-- Choose an answer --",
-     selected: @answer.text,
-     input_html: { id: "select2" } %>
-     <% else @challenge.answer_both? %>
-     <%= f.input :text, label: 'Your answer', wrapper: :p_wrapper %>
-     <%= f.input :picture %>
-     <%= f.input :picture_cache, as: :hidden %>
-     <% end %>
-     <div class="lilspace">
-       <%= f.button :submit %>
+       <%= f.error_notification %>
+       <% if @challenge.answer_text? %>
+       <%= f.input :text, input_html: {value: @answer.text}, label: 'Your answer', wrapper: :p_wrapper %>
+       <% elsif @challenge.answer_picture? %>
+       <%= f.input :picture %>
+       <%= f.input :picture_cache, as: :hidden %>
+       <% elsif @challenge.answer_auto? %>
+       <%= f.input :text, label: false,
+       collection: bad_answers(@challenge),
+       include_blank: "-- Choose an answer --",
+       selected: @answer.text,
+       input_html: { class: "disable-form-control" } %>
+       <% else @challenge.answer_both? %>
+       <%= f.input :text, label: 'Your answer', wrapper: :p_wrapper %>
+       <%= f.input :picture %>
+       <%= f.input :picture_cache, as: :hidden %>
        <% end %>
+       <div class="lilspace">
+         <%= f.button :submit %>
+         <% end %>
+       </div>
      </div>
 
      <div class= "bottom-right">

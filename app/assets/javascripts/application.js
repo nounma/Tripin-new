@@ -4,7 +4,10 @@
 //= require underscore
 //= require gmaps/google
 //= require select2-full
-//= require datepicker
-//= require bootstrap-datepicker
+//= require jquery-ui
+
 //= require_tree .
 
+$(document).on("page:load ready", function(){
+    $("input.datepicker").datepicker();
+});
