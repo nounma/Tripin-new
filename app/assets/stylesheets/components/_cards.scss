@@ -53,7 +53,8 @@
   background: black;
   opacity: 0;
 }
-.card-link:hover{
+.card-link:hover,
+.btn-link:focus{
   opacity: 0.1;
 }
 
@@ -117,6 +118,7 @@
   position: absolute;
   z-index: 1;
 }
+
 
 .team-score{
   position: absolute;

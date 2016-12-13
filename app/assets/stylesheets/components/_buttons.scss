@@ -5,7 +5,8 @@
   border-radius: 5px;
 }
 
-.btn-medium:hover {
+.btn-medium:hover,
+.btn-medium:focus {
   opacity: 1;
   text-decoration: none;
   color: #999999;
@@ -19,26 +20,25 @@
   margin-top: 15px;
 }
 
-.btn-blue:hover {
+.btn-blue:hover,
+.btn-blue:focus {
+  opacity: 1;
   text-decoration: none;
 }
 
 .btn-white {
   color: #FDF5E9;
   border: 2px solid #FDF5E9;
-  padding: 7px 34px;
-  border-radius: 3px;
+  padding: 3px 14px;
+  // border-radius: 50px;
   margin-top: 15px;
   font-weight: bold;
 }
 
-.btn-white:hover {
+.btn-white:hover,
+.btn-white:focus {
   text-decoration: none;
-  color: #F9F7F1;
-  border: 2px solid #F9F7F1;
-  padding: 3px 14px;
-  // border-radius: 50px;
-  margin-top: 15px;
+  color: #999999;
 }
 
 .btn-blanc {
@@ -50,6 +50,7 @@
   font-weight: bold;
 }
 
-.btn-blanc:hover {
+.btn-blanc:hover,
+.btn-blanc:focus {
   text-decoration: none;
 }
