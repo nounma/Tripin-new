@@ -50,15 +50,17 @@
    <div class="row">
     <div class="col-xs-8 col-sm-8 needspace pushtotheright">
 
-      <h1>WITH WHO? CREATE YOUR TEAM</h1>
+      <h1>NAME YOUR TEAM</h1>
     </div>
   </div>
   <div class="needspace">
     <div class="form-inputs login-input">
 
     <%= f.input :title, placeholder: "Team name", label: 'Team name', wrapper: :p_wrapper%>
+    <div class="needspace">
     <%= f.input :team_picture %>
     <%= f.input :team_picture_cache, as: :hidden %>
+    </div>
 
   </div>
   <div class="needspace">

@@ -5,5 +5,6 @@
 //= require gmaps/google
 //= require select2-full
 //= require datepicker
+//= require bootstrap-datepicker
 //= require_tree .
 

@@ -5,18 +5,18 @@
 
      <p><%#= link_to @challenge.address, googlemap_path%></p>
      <div class="inlining">
-    <div class="score">
-     <p><b><%= @challenge.score %><sup>PT</sup></b></p></div>
-     <p><%= @challenge.cost %></p>
-     <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <div class="score">
+       <p><b><%= @challenge.score %><sup>PT</sup></b></p></div>
+       <p><%= @challenge.cost %></p>
+       <i class="fa fa-map-marker" aria-hidden="true"></i>
      </div>
      <h2><%= @challenge.title.capitalize %></h2>
-            <div class="col-xs-6">
-     <p><%= image_tag(@challenge.picture) %></p>
+     <div class="col-xs-6">
+       <p><%= image_tag(@challenge.picture) %></p>
      </div>
-       <div class="col-xs-6 col-xs-offset-6">
-     <p><%= @challenge.description %></p>
-</div>
+     <div class="col-xs-6 col-xs-offset-6">
+       <p><%= @challenge.description %></p>
+     </div>
 
      <% if @answer.not_completed? %>
      <div class= "alert alert-warning">
@@ -61,14 +61,10 @@
             <div class="modal-body">
               <p><%= @challenge.hint %></p>
             </div>
-
-
-
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -151,80 +147,80 @@ infoWindow.setContent(browserHasGeolocation ?
 <% end %>
 
 <% end %>
-  <div id="map" style="width: 100%; height: 400px;"></div>
+<div id="map" style="width: 100%; height: 400px;"></div>
 
 <% content_for(:after_js) do %>
-  <%= javascript_tag do %>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 50.8503, lng: 4.3517},
-          zoom: 12
-        });
-        var infoWindow = new google.maps.InfoWindow({map: map});
+<%= javascript_tag do %>
+function initMap() {
+var map = new google.maps.Map(document.getElementById('map'), {
+center: {lat: 50.8503, lng: 4.3517},
+zoom: 12
+});
+var infoWindow = new google.maps.InfoWindow({map: map});
 
-        var challenge = new google.maps.Marker({
-           position: new google.maps.LatLng(<%=@challenge.latitude %>, <%=@challenge.longitude%>),
-           map: map,
-        });
-
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var userPosition = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            var challengePosition = {
-              lat: <%=@challenge.latitude %>,
-              lng: <%=@challenge.longitude%>
-            };
-
-            console.log(userPosition.lng)
-            console.log(challengePosition.lng)
-            console.log(getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng))
-
-            totalDistance = getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng).toFixed(3)
-            totalDistance = totalDistance.toString()
-            totalDistance = totalDistance.replace('.', ',')
-
-            $("#total-distance").append( totalDistance + ' km ')
-
-            infoWindow.setPosition(userPosition);
-            infoWindow.setContent('Location found.');
-            map.setCenter(userPosition);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
-
-      function handleLocationError(browserHasGeolocation, infoWindow, userPosition) {
-        infoWindow.setPosition(userPosition);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-      }
+var challenge = new google.maps.Marker({
+position: new google.maps.LatLng(<%=@challenge.latitude %>, <%=@challenge.longitude%>),
+map: map,
+});
 
 
-  <% end %>
+// Try HTML5 geolocation.
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(function(position) {
+var userPosition = {
+lat: position.coords.latitude,
+lng: position.coords.longitude
+};
+
+var challengePosition = {
+lat: <%=@challenge.latitude %>,
+lng: <%=@challenge.longitude%>
+};
+
+console.log(userPosition.lng)
+console.log(challengePosition.lng)
+console.log(getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng))
+
+totalDistance = getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng).toFixed(3)
+totalDistance = totalDistance.toString()
+totalDistance = totalDistance.replace('.', ',')
+
+$("#total-distance").append( totalDistance + ' km ')
+
+infoWindow.setPosition(userPosition);
+infoWindow.setContent('Location found.');
+map.setCenter(userPosition);
+}, function() {
+handleLocationError(true, infoWindow, map.getCenter());
+});
+} else {
+// Browser doesn't support Geolocation
+handleLocationError(false, infoWindow, map.getCenter());
+}
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, userPosition) {
+infoWindow.setPosition(userPosition);
+infoWindow.setContent(browserHasGeolocation ?
+'Error: The Geolocation service failed.' :
+'Error: Your browser doesn\'t support geolocation.');
+}
+
+
+<% end %>
 
 <% end %>
 </div>
 <!-- for admin only: update or download the challenge picture
- -->
- <div>
+-->
+<div>
  <% if current_user.admin? %>
  <%= simple_form_for [@team, @challenge], url:  team_challenge_path(@team, @challenge) do |c| %>
  <%= c.input :picture %>
  <%= c.input :picture_cache, as: :hidden %>
 
  <%= c.button :submit %>
-  <% end %>
+ <% end %>
 
  <% end %>
 </div>
