@@ -1,14 +1,37 @@
-<% if member.user.facebook_picture_url.nil? %>
-          <% unless member.user.profile_picture.nil?  %>
-            <%= cl_image_tag member.user.profile_picture, class: "member-picture", crop: :fill %>
-          <% end %>
-        <%else %>
-          <%= image_tag member.user.facebook_picture_url, class: "circle-large", crop: :fill %>
-        <% end %>
 
-<h2><%= member.user.first_name %> <%= member.user.last_name %></h2>
-      <p><%= member.user.email %></p>
-      <%= link_to "", user_path(member.user.id), class: "card-link" %>
+
+
+<div class="row">
+
+  <div class="col-xs-3">
+
+    <% if member.user.facebook_picture_url.nil? %>
+    <% unless member.user.profile_picture.nil?  %>
+    <%= cl_image_tag member.user.profile_picture, class: "lilcircle", crop: :fill %>
+    <% end %>
+    <%else %>
+    <%= image_tag member.user.facebook_picture_url, class: "lilcircle", crop: :fill %>
+    <% end %>
+
+    <%= link_to "", user_path(member.user.id), class: "card-link" %>
+  </div>
+</div>
+
+<!-- <h2><%= member.user.first_name %> <%= member.user.last_name %></h2>
+<p><%= member.user.email %></p> -->
+
+
+
+
+<!-- <div class= "container">
+  <div class="row">
+    <div class="col-xs-9 left-card text-right">
+      <div class="usercard-left">
+
+      </div>
+    </div>
+
+    <div class="col-xs-3 delete-card text-center">
 
 
       <i class="fa fa-trash" aria-hidden="true"></i>
@@ -16,15 +39,7 @@
 
 
 
-<div class= "container">
-  <div class="row">
-    <div class="col-xs-9 left-card text-right">
-      <div class="usercard-left">
-
-      </div>
 
     </div>
-    <div class="col-xs-3 delete-card text-center">
-    </div>
-  </div>
+  </div> -->
 </div>

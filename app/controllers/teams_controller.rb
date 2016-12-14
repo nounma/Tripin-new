@@ -32,10 +32,13 @@ class TeamsController < ApplicationController
     # @team.city = @city
 
     @team.save
+    Rails.logger.info('save team')
     authorize @team
+    Rails.logger.info('authorized team')
 
     # create memner from currentuser
     Member.create(user: current_user, team: @team)
+    Rails.logger.info('created member')
 
     redirect_to team_path(@team)
   end
