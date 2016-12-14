@@ -7,7 +7,11 @@
     <div class="row">
       <div class="col-xs-4">
         <div class="avatar-link">
-          <%= cl_image_tag member.team.team_picture, class: "picture-card" %>
+          <% if member.team.team_picture.present? %>
+            <%= cl_image_tag member.team.team_picture, class: "picture-card" %>
+          <% else %>
+            <%= cl_image_tag("default_fkhyps.png", class: "picture-card") %>
+          <% end %>
         </div>
       </div>
       <div class="col-xs-8">
