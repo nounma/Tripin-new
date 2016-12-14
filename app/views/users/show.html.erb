@@ -25,18 +25,17 @@
 
 
     </div>
-    <h1 class="text-left title-yo" style="color: #516DAC;"><b>MY TEAMS</b></h1>
+    <h1 class="text-left title-yo" style="color: #516DAC;"><b>MY TEAMS</b> <%= link_to "", new_team_path, class: "fa fa-plus-circle", style: "color: #516DAC;" %></h1>
     <div class="profilecard-bottom text-right">
 
-      <p><%= link_to "Create a new team", new_team_path, class: "btn-white" %>
-        <div class="container">
+
+
 
         <% @user.members.each do |member| %>
         <%= render "card", member: member %>
 
           <% end %>
 
-        </div>
       </div>
     </div>
   </div>
