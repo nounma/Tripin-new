@@ -6,8 +6,10 @@
   <h2>Add team members</h2>
   <%= simple_form_for @member , url: team_members_path(@team), method: :post, remote: true, defaults: { input_html: { class: 'input-container' } } do |f| %>
     <%= f.input :email, placeholder: "Enter the email of your teammate", label: 'Email of your teammate', wrapper: :p_wrapper %>
+
     <%= f.submit %>
   <% end %>
+</div>
 <%= link_to 'Go Back', team_path(@team) %>
 
 <ul class="members-list list-unstyled" >
