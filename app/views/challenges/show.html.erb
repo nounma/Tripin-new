@@ -156,11 +156,11 @@ zoom: 12
 });
 
 var infoWindow = new google.maps.InfoWindow({map: map});
-var icon = "<%= asset_path 'map-marker-2.png' %>"
+
 var challenge = new google.maps.Marker({
 position: new google.maps.LatLng(<%=@challenge.latitude %>, <%=@challenge.longitude%>),
 map: map,
-icon: icon,
+icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
 });
 
 
