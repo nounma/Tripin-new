@@ -3,7 +3,7 @@
   </div>
 
   <%= link_to '', team_path(@team), class: "fa fa-times fa-lg cross-challenge", style: "color: #484846;" %>
-  
+
   <p class="text-left" style="margin-top: 10px; margin-left: 20px;"><b style='font-size: 12px'>YOUR CHALLENGES</b></p>
   <% @team_challenges_not_answered.each do |team_challenge| %>
     <%= render "card", team_challenge: team_challenge %>
@@ -34,7 +34,7 @@
           var challenges =  <%= raw @coordinates_challenges %>
           console.log(challenges)
 
-          var icon = "<%= asset_path 'map-marker-2.png' %>"
+
 
           for (var i = 0; i < challenges.length; i++) {
             var challenge = challenges[i];
@@ -46,7 +46,7 @@
             var marker = new google.maps.Marker({
               position: {lat: challenge[0], lng: challenge[1]},
               map: map,
-              icon: icon,
+icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
               url: url
             });
 

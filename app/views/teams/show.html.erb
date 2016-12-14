@@ -20,11 +20,11 @@
     <%elsif @team.in_trip?%>
        <p><%= -(Date.today - @team.end_date.to_date).to_i+1 %> day(s)</p>
     <%else%>
-      <p>CONGRATULATIONS, you're done :)</p>
+      <p> Your Trip is finished </p>
     <% end %>
   </div>
-  <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city), class: "fa fa-info-circle edit-button", style: "color: #E0E0E0;", method: :get %>
-  </p>
+  <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city_id), class: "fa fa-info-circle edit-button", style: "color: #E0E0E0;", method: :get %>
+   </p>
 </div>
 
 
