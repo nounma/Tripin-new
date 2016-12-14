@@ -1,0 +1,103 @@
+.team-picture{
+  height: 230px;
+  margin: -70px -15px 0 -15px;
+  background-size: cover !important;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.team-picture-size {
+  height: 230px;
+  width: 100%;
+}
+
+.white-block{
+  color: blue;
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.members-team{
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.white-block p {
+  font-size: 20px;
+}
+
+.white-block h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.white-block h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.inline-team {
+  justify-content: center;
+  display: flex;
+  -webkit-box-pack: center;
+}
+
+.inline-team p {
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+.member {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.team-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 13px;
+  width: 100%;
+  background: grey;
+  opacity: 0;
+}
+.team-link:hover,
+.team-link:focus{
+  opacity: 0;
+}
+
+.members-picture{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.button-team {
+  background-color: grey;
+  color: white;
+}
+
+.add-member {
+  height: 50px;
+  font-size: 50px;
+  color: grey;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-width: 1px;
+}
+
+.add-member:hover {
+  text-decoration: none;
+}

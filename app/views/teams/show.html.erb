@@ -1,52 +1,63 @@
-
-<div class="top-card text-center">
-  <div class="imageborder">
-    <% if @team.team_picture.present?  %>
-      <%= cl_image_tag @team.team_picture, class: "avatar-user", crop: :fill %>
-    <% else %>
-      <%= cl_image_tag("default_fkhyps.png", class: "avatar-user") %>
-    <% end %>
-  </div>
-  <p>
-    <strong><%= @team.title.capitalize %></strong>
-    <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: #E0E0E0;", method: :get %>
-  </p>
-
-  <div class="inlininginfos">
-    <p><%= @total_score %> <sup>PT</sup></p> |
-
-    <% if @team.start_date.to_date > Date.today %>
-      <p><%= countdown = (@team.start_date.to_date - Date.today).to_i %> day(s)</p>
-    <%elsif @team.in_trip?%>
-       <p><%= -(Date.today - @team.end_date.to_date).to_i+1 %> day(s)</p>
-    <%else%>
-      <p> Your Trip is finished </p>
-    <% end %>
-  </div>
-  <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city_id), class: "fa fa-info-circle edit-button", style: "color: #E0E0E0;", method: :get %>
-   </p>
-</div>
-
-
-<div class="container teamcontent">
-  <h3>TEAMMATES</h3>
+<div class="container">
   <div class="row">
-        <% @team.members.each do |member| %>
-        <%= render "card", member: member %>
+    <div class="col-xs-12">
+      <div class="team-picture">
+        <% if @team.team_picture.present?  %>
+          <%= cl_image_tag @team.team_picture, crop: :fill, class: "team-picture-size" %>
+        <% else %>
+          <%= cl_image_tag("default_fkhyps.png", class: "team-picture-size") %>
         <% end %>
-    <div class="col-xs-3">
-      <%= link_to "+",  new_team_member_path(@team),class: "circled", method: :get %>
+      </div>
     </div>
   </div>
+  <div class="row">
+    <div class="white-block">
+      <div class="col-xs-12 text-center">
+        <h2>
+          <%= @team.title.capitalize %>
+          <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: grey;", method: :get %>
+        </h2>
+        <div class="inline-team">
+          <p><%= @total_score %> <sup>PT</sup></p> |
+
+          <% if @team.start_date.to_date > Date.today %>
+            <p><%= countdown = (@team.start_date.to_date - Date.today).to_i %> day(s)</p>
+          <% elsif @team.in_trip? %>
+            <p><%= -(Date.today - @team.end_date.to_date).to_i+1 %> day(s)</p>
+          <% else %>
+            <p>CONGRATULATIONS, you're done :)</p>
+          <% end %>
+        </div>
+        <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city), class: "fa fa-info-circle edit-button", style: "color: grey;", method: :get %>
+        </p>
+      </div>
+      <div class="row">
+        <div class="members-team">
+          <h3>TEAMMATES</h3>
+          <% @team.members.each do |member| %>
+            <%= render "card", member: member %>
+          <% end %>
+          <div class="col-xs-3", style="margin-top: 10px;">
+            <%= link_to "+",  new_team_member_path(@team),class: "add-member", method: :get %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="text-center">
-
-<% if @team.in_trip? %>
-<%= link_to "My Challenges", team_challenges_path(@team),class: "btn-blue", method: :get %>
-<% end %>
-
-
-<p><%= link_to "My Answers", team_team_answers_path(@team),class: "btn-blue", method: :get %></p>
-</div>
-
+  <div class="row">
+    <div class="button-team text-center">
+      <div class="col-xs-6">
+        <div class="btn-team">
+          <% if @team.in_trip? %>
+            <p><b>My Challenges</b><%= link_to "", team_challenges_path(@team), method: :get, class: "card-link" %></p>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="btn-team">
+          <p><b>My Answers</b><%= link_to "", team_team_answers_path(@team), method: :get, class: "card-link" %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div
