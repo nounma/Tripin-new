@@ -12,12 +12,38 @@
   <div class="cross-back">
     <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-times fa-lg", style: "color: white;"%>
   </div>
+
+<div>
+  <h2><%= @challenge.title.capitalize %></h2>
+
+  <% if @challenge.cost == 0 %>
+  <div class="p-inline">
+    <p class="text-grey">€</p>
+    <p class="text-grey">€</p>
+    <p class="text-grey">€</p>
+  </div>
+  <% elsif @challenge.cost == 1 %>
+  <div class="p-inline">
+    <p class="text-yellow">€</p>
+    <p class="text-grey">€</p>
+    <p class="text-grey">€</p>
+  </div>
+  <% elsif @challenge.cost == 2 %>
+  <div class="p-inline">
+    <p class="text-yellow">€</p>
+    <p class="text-yellow">€</p>
+    <p class="text-grey">€</p>
+  </div>
+  <% else @challenge.cost == 3 %>
+  <div class="p-inline">
+    <p class="text-yellow">€</p>
+    <p class="text-yellow">€</p>
+    <p class="text-yellow">€</p>
+  </div>
+  <% end %>
+
+  <p><%= @challenge.description %></p>
 </div>
-
-
-<h2><%= @challenge.title.capitalize %></h2>
-       <p><%= @challenge.cost %></p>
-              <p><%= @challenge.description %></p>
 
 
 
