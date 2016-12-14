@@ -1,8 +1,10 @@
 
 <div class="top-card text-center">
   <div class="imageborder">
-    <% unless @team.team_picture.nil?  %>
-      <%= cl_image_tag @team.team_picture, class: "circle-large", crop: :fill %>
+    <% if @team.team_picture.present?  %>
+      <%= cl_image_tag @team.team_picture, class: "avatar-user", crop: :fill %>
+    <% else %>
+      <%= cl_image_tag("default_fkhyps.png", class: "avatar-user") %>
     <% end %>
   </div>
   <p>

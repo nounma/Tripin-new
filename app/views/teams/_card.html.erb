@@ -1,11 +1,13 @@
 <div class="col-xs-3">
 
   <% if member.user.facebook_picture_url.nil? %>
-  <% unless member.user.profile_picture.nil?  %>
-  <%= cl_image_tag member.user.profile_picture, class: "lilcircle", crop: :fill %>
-  <% end %>
+    <% if member.user.profile_picture.present?  %>
+      <%= cl_image_tag member.user.profile_picture, class: "lilcircle", crop: :fill %>
+    <% else %>
+      <%= cl_image_tag("default_fkhyps.png", class: "lilcircle") %>
+    <% end %>
   <%else %>
-  <%= image_tag member.user.facebook_picture_url, class: "lilcircle", crop: :fill %>
+    <%= image_tag member.user.facebook_picture_url, class: "lilcircle", crop: :fill %>
   <% end %>
 
   <%= link_to "", user_path(member.user.id), class: "card-link" %>
