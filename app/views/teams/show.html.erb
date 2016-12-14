@@ -7,7 +7,7 @@
   </div>
   <p>
     <%= @team.title.capitalize %>
-    <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %>
+    <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: #E0E0E0;", method: :get %>
   </p>
 
   <div class="inlininginfos">
@@ -21,7 +21,7 @@
       <p>CONGRATULATIONS, you're done :)</p>
     <% end %>
   </div>
-  <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city),class: "fa fa-info-circle edit-button", style: "color: #516DAC;", method: :get %>
+  <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city), class: "fa fa-info-circle edit-button", style: "color: #E0E0E0;", method: :get %>
   </p>
 </div>
 
@@ -29,56 +29,19 @@
 <div class="container teamcontent">
   <h3>TEAMMATES</h3>
   <div class="row">
-    <div class="col-xs-9">
-      <div class="row">
         <% @team.members.each do |member| %>
         <%= render "card", member: member %>
         <% end %>
-      </div>
-    </div>
     <div class="col-xs-3">
-      <%= link_to "Add a member",  new_team_member_path(@team),class: "btn-white", method: :get %>
+      <%= link_to "+",  new_team_member_path(@team),class: "circled", method: :get %>
     </div>
   </div>
 </div>
 
-
+<div class="text-center">
 <% if @team.in_trip? %>
 <%= link_to "My Challenges", team_challenges_path(@team),class: "btn-blue", method: :get %>
 <% end %>
 <p><%= link_to "My Answers", team_team_answers_path(@team),class: "btn-blue", method: :get %></p>
 
-
-
-
-
-
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="container text-center">
-      <div class="profilecard-top">
-        <div class="col-xs-7">
-          <div class="lilspace text-left">
-
-          </div>
-        </div>
-        <div class="col-xs-5">
-          <div class="countdown">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <h2 class="text-left title-yo" style="color: #516DAC;"></h2>
-    <div class="profilecard-bottom text-right">
-      <div class col-xs-12">
-
-      </div>
-    </div>
-  </div>
 </div>

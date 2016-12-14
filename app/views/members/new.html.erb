@@ -1,7 +1,12 @@
-<h2>Add team members</h2>
-<div class="form-inputs login-input">
-  <%= simple_form_for @member , url: team_members_path(@team), method: :post, remote: true do |f| %>
-    <%= f.input :email, placeholder: "Enter the email of your team mate" %>
+
+<div class="container">
+
+
+
+  <h2>Add team members</h2>
+  <%= simple_form_for @member , url: team_members_path(@team), method: :post, remote: true, defaults: { input_html: { class: 'input-container' } } do |f| %>
+    <%= f.input :email, placeholder: "Enter the email of your teammate", label: 'Email of your teammate', wrapper: :p_wrapper %>
+
     <%= f.submit %>
   <% end %>
 </div>
@@ -12,3 +17,4 @@
 </ul>
 
 <%= link_to 'Create the team!', team_path(@team) %>
+</div>
