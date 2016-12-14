@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-xs-12 col-sm-6">
 
-      <div class="lilcontent">
+      <div class="lilcontent", style="padding: 15px 0 10px 0px;">
         <h2>CREATE AN ACCOUNT</h2>
 
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), defaults: { input_html: { class: 'input-container' } }) do |f| %>
@@ -20,12 +20,14 @@
 
         <div class="lilspace">
           <div class="form-actions">
-          <%= f.button :submit, "Sign up", class: "btn-blue" %>
+          <%= f.button :submit, "Sign up", class: "btn-blue", style: "padding: 0px 10px; margin-top: 34px;
+margin-bottom: -10px;" %>
           </div>
           <% end %>
         </div>
-
+        <div style="margin: 0 -15px;">
         <%= render "devise/shared/links" %>
+        </div>
       </div>
     </div>
   </div>
