@@ -1,6 +1,11 @@
 .circle-large {
-  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border-style: solid 2px;
-  border-color: white;
+  border-style: 1px solid;
+  border-color: black;
+}
+
+.lilcircle {
+  height: 50px;
+  border-radius: 50%;
 }

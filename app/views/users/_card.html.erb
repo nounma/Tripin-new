@@ -1,34 +1,33 @@
-  <div class="row">
-
-    <% if member.team.end_date.to_date > Date.today %>
-      <div class="col-xs-10 left-card text-left">
-    <% else %>
-      <div class="col-xs-10 left-card-outdate text-left">
-    <% end %>
-      <div class="row">
-        <div class="col-xs-6">
-          <div class="avatar-link">
-            <%= cl_image_tag member.team.team_picture, class: "avatar-large" %>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <p><%= member.team.city.name.upcase %></p>
-          <p><%= member.team.title %></p>
+<div class="row">
+  <% if member.team.end_date.to_date > Date.today %>
+    <div class="col-xs-10 left-card text-left">
+  <% else %>
+    <div class="col-xs-10 left-card-outdate text-left">
+  <% end %>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="avatar-link">
+          <%= cl_image_tag member.team.team_picture, class: "avatar-large" %>
         </div>
       </div>
+      <div class="col-xs-6">
+        <p><%= member.team.city.name.upcase %></p>
+        <p><%= member.team.title %></p>
+        <p><%= member.team.score %><sup>points</sup></p>
+      </div>
+    </div>
       <% if policy(member.team).show? %>
         <%= link_to "", team_path(member.team.id), class: "card-link" %>
       <% end %>
     </div>
     <% if member.team.end_date.to_date > Date.today %>
-    <div class="col-xs-2 delete-card text-center">
+      <div class="col-xs-2 delete-card text-center">
     <% else %>
-    <div class="col-xs-2 delete-card-outdate text-center">
+      <div class="col-xs-2 delete-card-outdate text-center">
     <% end %>
-        <% if policy(member.team).destroy? %>
+      <% if policy(member.team).destroy? %>
         <i class="fa fa-trash" aria-hidden="true"></i>
-
-          <%= link_to "", team_path(member.team), method: :delete, class: "card-link" %>
-        <% end %>
+        <%= link_to "", team_path(member.team), method: :delete, class: "card-link" %>
+      <% end %>
     </div>
-  </div>
+</div>

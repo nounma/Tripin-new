@@ -25,16 +25,20 @@ class TeamsController < ApplicationController
   end
 
   def create
-    @city = City.find(params[:city_id])
+    # raise
+    # @city = City.find(params[:city_id])
 
     @team = Team.new(team_params)
-    @team.city = @city
+    # @team.city = @city
 
     @team.save
+    Rails.logger.info('save team')
     authorize @team
+    Rails.logger.info('authorized team')
 
     # create memner from currentuser
     Member.create(user: current_user, team: @team)
+    Rails.logger.info('created member')
 
     redirect_to team_path(@team)
   end

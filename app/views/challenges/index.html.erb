@@ -1,34 +1,26 @@
 
 <div class="yellow-back">
-<div id="map" style="width: 100%; height: 300px;"></div>
-
-
-<div class="container">
-<!--   <div class="row">
-          </div> -->
-
-      <p class="text-left" style="margin-top: 10px;"><b>YOUR CHALLENGES</b></p>
-      <% @team_challenges_not_answered.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <% @team_challenges_not_completed.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <% @team_challenges_pending.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <% @team_challenges_completed.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <div class="cross-back">
-        <%= link_to '', team_path(@team), class: "fa fa-times fa-lg", style: "color: white;" %>
-    </div>
-    </div>
-  </div>
+  <div id="map" style="width: 100%; height: 300px;"></div>
 </div>
 
-<br>
-<br>
+<p class="text-left" style="margin-top: 10px; margin-left: 20px;"><b>YOUR CHALLENGES</b></p>
+<% @team_challenges_not_answered.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<% @team_challenges_not_completed.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<% @team_challenges_pending.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<% @team_challenges_completed.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<div class="cross-back">
+  <%= link_to '', team_path(@team), class: "fa fa-times fa-lg", style: "color: white;" %>
+</div>
+
+
 
 <% content_for(:after_js) do %>
   <%= javascript_tag do %>
@@ -38,6 +30,7 @@
           center: {lat: 50.8503, lng: 4.3517},
           zoom: 12
         });
+
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         var challenges =  <%= raw @coordinates_challenges %>
@@ -71,37 +64,18 @@
 
 
         // Try HTML5 geolocation.
-          if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var userPosition = {
-            lat: 50.847619,
-            lng: 4.359196
-            };
+             var userPosition = {lat: 50.847619,lng: 4.359196};
+
 
             console.log(userPosition.lng)
             console.log(getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng))
 
             infoWindow.setPosition(userPosition);
             infoWindow.setContent('You are here');
-            map.setCenter(userPosition);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
-
-      function handleLocationError(browserHasGeolocation, infoWindow, userPosition) {
-        infoWindow.setPosition(userPosition);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-      }
+      };
 
 
   <% end %>
 
 <% end %>
-</div>
+
