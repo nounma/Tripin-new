@@ -7,6 +7,7 @@ class CitiesController < ApplicationController
   end
 
   def show
+
     authorize @cities
   end
 

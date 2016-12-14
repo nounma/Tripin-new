@@ -1,49 +1,81 @@
+
+
+<div class="top-card text-center">
+
+
+
+  <div class="imageborder">
+
+    <% unless @team.team_picture.nil?  %>
+      <%= cl_image_tag @team.team_picture, class: "circle-large", crop: :fill %>
+    <% end %>
+
+  </div>
+
+  <p>
+  <%= @team.title.capitalize %>
+  <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %>
+  </p>
+
+ <div class="inlininginfos">
+    <p><%= @total_score %> pts</p>
+
+    <% if @team.start_date.to_date > Date.today %>
+      <%= countdown = (@team.start_date.to_date - Date.today).to_i %> days
+    <%elsif @team.in_trip?%>
+       <%= -(Date.today - @team.end_date.to_date).to_i+1 %><p>days</p>
+    <%else%>
+      <p>CONGRATULATIONS, you're done :)</p>
+    <% end %>
+  </div>
+  <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city),class: "fa fa-info-circle edit-button", style: "color: #516DAC;", method: :get %>
+  </p>
+
+</div>
+
+<h3>TEAMMATES</h3>
+
+<% @team.members.each do |member| %>
+<%= render "card", member: member %>
+<% end %>
+
+<p><%= link_to "Add a member",  new_team_member_path(@team),class: "btn-white", method: :get %></p>
+
+<% if @team.in_trip? %>
+<%= link_to "My Challenges", team_challenges_path(@team),class: "btn-blue", method: :get %>
+<% end %>
+<p><%= link_to "My Answers", team_team_answers_path(@team),class: "btn-blue", method: :get %></p>
+
+
+
+
+
+
+
+
+
 <div class="container">
   <div class="row">
     <div class="container text-center">
       <div class="profilecard-top">
         <div class="col-xs-7">
           <div class="lilspace text-left">
-            <% unless @team.team_picture.nil?  %>
-            <%= cl_image_tag @team.team_picture, class: "avatar-large" %>
-            <% end %>
-            <h2><%= @team.city.name %> <%= link_to "", city_path(@team.city),class: "fa fa-info-circle edit-button", style: "color: #516DAC;", method: :get %>
-            </h2>
-            <h2><%= @team.title.capitalize %> <%= link_to "", edit_team_path(@team),class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %>
-            </h2>
-            <p>Your actual score = <%= @total_score %> </p>
-            <% if @team.in_trip? %>
-            <%= link_to "My Challenges", team_challenges_path(@team),class: "btn-blue", method: :get %>
-            <% end %>
-            <p><%= link_to "My Answers", team_team_answers_path(@team),class: "btn-blue", method: :get %></p>
+
           </div>
         </div>
         <div class="col-xs-5">
           <div class="countdown">
-            <% if @team.start_date.to_date > Date.today %>
-            <h2><%= countdown = (@team.start_date.to_date - Date.today).to_i %></h2>
-            <p> days before your trip in <%= @team.city.name %></p>
-            <%elsif @team.in_trip?%>
-            <p>You got</p>
-            <h2><b><%= -(Date.today - @team.end_date.to_date).to_i+1 %></b></h2>
-            <p>days left</p>
-            <p>in <%= @team.city.name %></p>
-            <%else%>
-            <p>CONGRATULATIONS, hope you had nice a holiday in <%= @team.city.name %> ! :)</p>
-            <% end %>
+
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <h2 class="text-left title-yo" style="color: #516DAC;"><b>TEAMMATES</b></h2>
+    <h2 class="text-left title-yo" style="color: #516DAC;"></h2>
     <div class="profilecard-bottom text-right">
       <div class col-xs-12">
-        <p><%= link_to "Add a member",  new_team_member_path(@team),class: "btn-white", method: :get %></p>
-        <% @team.members.each do |member| %>
-        <%= render "card", member: member %>
-        <% end %>
+
       </div>
     </div>
   </div>
