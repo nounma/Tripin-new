@@ -1,42 +1,28 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 text-center">
-
       <div class="container text-center">
-
         <div class="profilecard-top">
-
           <div class="lilspace text-center">
-
-          <% if @user.facebook_picture_url.nil? %>
-           <% unless @user.profile_picture.nil?  %>
-           <%= cl_image_tag @user.profile_picture, class: "avatar-large", crop: :fill %>
-           <% end %>
-           <%else %>
-           <%= image_tag @user.facebook_picture_url, class: "avatar-large", crop: :fill %>
-           <% end %>
-
-           <h2><%= @user.first_name %> <%= @user.last_name %> <%= link_to "", edit_user_path(@user),class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %></h2>
-           <p><p><%= @user.user_score %></p><p>points</p></p>
-
+            <% if @user.facebook_picture_url.nil? %>
+              <% unless @user.profile_picture.nil?  %>
+                <%= cl_image_tag @user.profile_picture, class: "avatar-large", crop: :fill %>
+              <% end %>
+            <%else %>
+              <%= image_tag @user.facebook_picture_url, class: "avatar-large", crop: :fill %>
+            <% end %>
+            <h2><%= @user.first_name %> <%= @user.last_name %> <%= link_to "", edit_user_path(@user),class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %></h2>
+            <p><%= @user.user_score %> <sup>PT</sup></p>
+          </div>
         </div>
-
       </div>
-
-
-    </div>
-    <h1 class="text-left title-yo" style="color: #516DAC;"><b>MY TEAMS</b> <%= link_to "", new_team_path, class: "fa fa-plus-circle", style: "color: #516DAC;" %></h1>
+    <h1 class="text-left title-yo" style="color: #516DAC;"><b>MY TEAMS</b></h1>
     <div class="profilecard-bottom text-right">
-
-
-
-
-        <% @user.members.each do |member| %>
+      <p><%= link_to "Create a new team", new_team_path, style: "text-decoration: none; color: white;" %></p>
+      <% @user.members.each do |member| %>
         <%= render "card", member: member %>
-
-          <% end %>
-
-      </div>
+      <% end %>
+    </div>
     </div>
   </div>
 </div>

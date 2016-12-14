@@ -5,15 +5,15 @@
     <div class="col-xs-10 left-card-outdate text-left">
   <% end %>
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-4">
         <div class="avatar-link">
-          <%= cl_image_tag member.team.team_picture, class: "avatar-large" %>
+          <%= cl_image_tag member.team.team_picture, class: "picture-card" %>
         </div>
       </div>
-      <div class="col-xs-6">
+      <div class="col-xs-8">
         <p><%= member.team.city.name.upcase %></p>
-        <p><%= member.team.title %></p>
-        <p><%= member.team.score %><sup>points</sup></p>
+        <h2><%= member.team.title %></h2>
+        <p><%= member.team.score %> <sup>PT</sup></p>
       </div>
     </div>
       <% if policy(member.team).show? %>
