@@ -1,20 +1,16 @@
 
 <div class="top-card text-center">
-
   <div class="imageborder">
-
     <% unless @team.team_picture.nil?  %>
       <%= cl_image_tag @team.team_picture, class: "circle-large", crop: :fill %>
     <% end %>
-
   </div>
-
   <p>
-  <%= @team.title.capitalize %>
-  <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %>
+    <%= @team.title.capitalize %>
+    <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %>
   </p>
 
- <div class="inlininginfos">
+  <div class="inlininginfos">
     <p><%= @total_score %> <sup>PT</sup></p>
 
     <% if @team.start_date.to_date > Date.today %>
@@ -27,23 +23,25 @@
   </div>
   <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city),class: "fa fa-info-circle edit-button", style: "color: #516DAC;", method: :get %>
   </p>
-
 </div>
 
 
 <div class="container teamcontent">
-
-<h3>TEAMMATES</h3>
-
-<% @team.members.each do |member| %>
-<%= render "card", member: member %>
-<% end %>
-
+  <h3>TEAMMATES</h3>
+  <div class="row">
+    <div class="col-xs-9">
+      <div class="row">
+        <% @team.members.each do |member| %>
+        <%= render "card", member: member %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <%= link_to "Add a member",  new_team_member_path(@team),class: "btn-white", method: :get %>
+    </div>
+  </div>
 </div>
 
-
-
-<p><%= link_to "Add a member",  new_team_member_path(@team),class: "btn-white", method: :get %></p>
 
 <% if @team.in_trip? %>
 <%= link_to "My Challenges", team_challenges_path(@team),class: "btn-blue", method: :get %>
