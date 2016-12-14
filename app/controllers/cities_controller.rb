@@ -7,8 +7,8 @@ class CitiesController < ApplicationController
   end
 
   def show
-
-    authorize @cities
+    @city = City.find(params[:id])
+    authorize @city
   end
 
   private
