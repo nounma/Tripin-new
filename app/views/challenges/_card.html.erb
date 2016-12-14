@@ -25,20 +25,13 @@
 <div class="col-xs-1 status-card">
 
 
-<% if !team_challenge.answer.nil? %>
-
-<%= team_challenge.answer.status %>
-
-
   <div>
 
 
-    <% if team_challenge.answer.status == "completed" || team_challenge.challenge.gift == "" %>
+    <% if team_challenge.answer.status == "completed" && team_challenge.challenge.gift == "" %>
     <i class="fa fa-check-circle"></i>
 
-    <% elsif team_challenge.answer.status == "completed" || team_challenge.challenge.gift != "" %>
-
-
+    <% elsif team_challenge.answer.status == "completed" && team_challenge.challenge.gift != "" %>
 
     <%= link_to "#myModal", "data-toggle" => "modal" do %>
     <p> <i class="fa fa-gift"></i><!--+link to promocode page  --></i></p>
