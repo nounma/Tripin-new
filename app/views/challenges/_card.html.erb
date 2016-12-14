@@ -27,8 +27,7 @@
 
 <% if !team_challenge.answer.nil? %>
 
-
-<div class="upper-right"><%#= team_challenge.answer.status %>
+<%= team_challenge.answer.status %>
 
 
   <div>
@@ -55,13 +54,12 @@
             <h4 class="modal-title">Your promocode is : </h4>
           </div>
           <div class="modal-body">
-            <p>  <%= team_challenge.challenge.gift %>   </p>
+            <p>  <%= team_challenge.challenge.gift %>  </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">
               Close
             </button>
-          </div>
         </div>
       </div>
     </div>
