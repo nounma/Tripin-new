@@ -57,8 +57,9 @@
 
     <%= f.input :title, placeholder: "Choose a file", label: 'Team name', wrapper: :p_wrapper%>
     <div class="needspace">
+
     <div>
-      <%= f.input :team_picture, label: 'Choose a team picture', label_html: { class: "btn-medium"} %>
+      <%= f.input :team_picture, label: 'Choose a team picture', label_html: { class: "btn-medium", style: "font-weight: normal !important"} %>
       <%= f.input :team_picture_cache, as: :hidden %>
     </div>
 
