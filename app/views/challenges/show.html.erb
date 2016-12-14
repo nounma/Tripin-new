@@ -53,16 +53,16 @@
      </div>
 
 
-     <%= link_to "#myModal", "data-toggle" => "modal" do %>
-     <p> want a hint?</i></p>
+     <%= link_to "#js-hint", "data-toggle" => "modal" do %>
+     <p> Need a hint?</i></p>
      <% end %>
-     <div id="myModal" class="modal fade" role="dialog">
+     <div id="js-hint" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Your hint is : </h4>
+            <h4 class="modal-title"><strong>Your hint is : </strong> </h4>
           </div>
           <div class="modal-body">
             <p><%= @challenge.hint %></p>
@@ -73,6 +73,41 @@
         </div>
       </div>
     </div>
+
+    <%= link_to "#js-wifi", "data-toggle" => "modal" do %>
+     <p><i class="fa fa-wifi" aria-hidden="true"></i></p>
+     <% end %>
+     <div id="js-wifi" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><strong>Some wifi around this challenge</strong> </h4>
+          </div>
+          <div class="modal-body">
+            <h3>EXKi De Brouckère - place de Brouckère </h3>
+            <p>Name: Exki De Brouckère - Password: 4262EXKI</p>
+
+            <h3>Fortis Brussels - rue de la Chancellerie, 11</h3>
+            <p>Name: Fortis298 - Password: 426FORTISH</p>
+
+            <h3>McDonald's - place de la Bourse, 3 </h3>
+            <p>Name: McDo_PlB - Password: jsjsh7282hh</p>
+
+            <h3>Java Coffee - rue Neuve, 123</h3>
+            <p>Name: Java_Coffee_Wifi - Password: 42IHJDHZ9</p>
+
+            <h3>AB Café/Resto - rue des Pierres, 23 </h3>
+            <p>Name: ABcafeBXL - Password: 4kej983982I</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 </div>
 
