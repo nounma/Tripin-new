@@ -6,12 +6,12 @@
     <% end %>
   </div>
   <p>
-    <%= @team.title.capitalize %>
+    <strong><%= @team.title.capitalize %></strong>
     <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: #E0E0E0;", method: :get %>
   </p>
 
   <div class="inlininginfos">
-    <p><%= @total_score %> <sup>PT</sup></p>
+    <p><%= @total_score %> <sup>PT</sup></p> |
 
     <% if @team.start_date.to_date > Date.today %>
       <p><%= countdown = (@team.start_date.to_date - Date.today).to_i %> day(s)</p>
@@ -36,12 +36,15 @@
       <%= link_to "+",  new_team_member_path(@team),class: "circled", method: :get %>
     </div>
   </div>
-</div>
+  </div>
 
-<div class="text-center">
+  <div class="text-center">
+
 <% if @team.in_trip? %>
 <%= link_to "My Challenges", team_challenges_path(@team),class: "btn-blue", method: :get %>
 <% end %>
-<p><%= link_to "My Answers", team_team_answers_path(@team),class: "btn-blue", method: :get %></p>
 
+
+<p><%= link_to "My Answers", team_team_answers_path(@team),class: "btn-blue", method: :get %></p>
 </div>
+
