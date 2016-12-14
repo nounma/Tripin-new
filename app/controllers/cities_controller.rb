@@ -7,7 +7,13 @@ class CitiesController < ApplicationController
   end
 
   def show
-    authorize @cities
+    @city = City.find(params[:id])
+    authorize @city
+  end
+
+  private
+  def city_params
+    params.require(:city).permit(:name, :picture, :country, :advice, :id )
   end
 
 end
