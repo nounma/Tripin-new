@@ -1,34 +1,26 @@
 
 <div class="yellow-back">
-<div id="map" style="width: 100%; height: 300px;"></div>
-
-
-<div class="container">
-<!--   <div class="row">
-          </div> -->
-
-      <p class="text-left" style="margin-top: 10px;"><b>YOUR CHALLENGES</b></p>
-      <% @team_challenges_not_answered.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <% @team_challenges_not_completed.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <% @team_challenges_pending.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <% @team_challenges_completed.each do |team_challenge| %>
-        <%= render "card", team_challenge: team_challenge %>
-      <% end %>
-      <div class="cross-back">
-        <%= link_to '', team_path(@team), class: "fa fa-times fa-lg", style: "color: white;" %>
-    </div>
-    </div>
-  </div>
+  <div id="map" style="width: 100%; height: 300px;"></div>
 </div>
 
-<br>
-<br>
+<p class="text-left" style="margin-top: 10px; margin-left: 20px;"><b>YOUR CHALLENGES</b></p>
+<% @team_challenges_not_answered.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<% @team_challenges_not_completed.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<% @team_challenges_pending.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<% @team_challenges_completed.each do |team_challenge| %>
+  <%= render "card", team_challenge: team_challenge %>
+<% end %>
+<div class="cross-back">
+  <%= link_to '', team_path(@team), class: "fa fa-times fa-lg", style: "color: white;" %>
+</div>
+
+
 
 <% content_for(:after_js) do %>
   <%= javascript_tag do %>
@@ -104,4 +96,4 @@
   <% end %>
 
 <% end %>
-</div>
+

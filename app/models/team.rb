@@ -50,4 +50,16 @@ class Team < ApplicationRecord
   def in_trip?
     start_date.to_date <= Date.today && end_date.to_date >= Date.today
   end
+
+  def score
+    total_score = 0
+    self.team_challenges.each do |team_challenge|
+      if !team_challenge.answer.nil?
+        if team_challenge.answer.status == Answer::COMPLETED
+          total_score += team_challenge.challenge.score
+        end
+      end
+    end
+    total_score
+  end
 end
