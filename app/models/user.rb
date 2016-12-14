@@ -14,7 +14,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   validates :email, presence: true
 
-def self.find_for_facebook_oauth(auth)
+  def self.find_for_facebook_oauth(auth)
     user_params = auth.to_h.slice(:provider, :uid)
     user_params.merge! auth.info.slice(:email, :first_name, :last_name)
     user_params[:facebook_picture_url] = auth.info.image
@@ -34,4 +34,14 @@ def self.find_for_facebook_oauth(auth)
     return user
   end
 
+  def user_score
+    #find every teams for one user
+    #
+    list_teams = self.teams
+      user_score = 0
+    list_teams.each do |team|
+      user_score += team.score
+    end
+    user_score
+  end
 end
