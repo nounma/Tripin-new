@@ -10,13 +10,13 @@
 
   <div class= "top-right">
     <div class="cross-back">
-      <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-times fa-lg", style: "color: white;"%>
+      <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-times fa-lg", style: "color: #484846;"%>
     </div>
   </div>
 
   <h2><%= @challenge.title.capitalize %></h2>
   <div class="p-inline">
-    <p><b><%= @challenge.score %><sup>PT</sup></b> | </p>
+    <p><strong><%= @challenge.score %><sup>PT</sup></strong></p>
     <% if @challenge.cost == 0 %>
     <div class="p-inline">
       <p class="text-grey">€</p>
@@ -43,7 +43,7 @@
     </div>
     <% end %>
     <%= link_to "#js-wifi", "data-toggle" => "modal" do %>
-      <p class="typo_white">  |<i class="fa fa-wifi typo_white"" aria-hidden="true"></i></p>
+      <p class="typo_white">   <i class="fa fa-wifi typo_white"" aria-hidden="true"></i></p>
     <% end %>
     <div id="js-wifi" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -80,9 +80,6 @@
   <p><%= @challenge.description %></p>
 
 
-
-
-
   <% if @answer.not_completed? %>
   <div class= "alert alert-warning">
     wrong answer
@@ -107,7 +104,7 @@
       <%= f.input :picture, label: 'Send picture' %>
       <%= f.input :picture_cache, as: :hidden %>
     <% end %>
-    <div class="lilspace">
+    <div class="lilspace topspace">
       <%= f.button :submit, label: 'Send' %>
       <% end %>
     </div>
