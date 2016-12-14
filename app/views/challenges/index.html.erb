@@ -1,9 +1,11 @@
+<div class="container">
 
-<div class="yellow-back">
+
   <div id="map" style="width: 100%; height: 300px;"></div>
 </div>
 
-<p class="text-left" style="margin-top: 10px; margin-left: 20px;"><b>YOUR CHALLENGES</b></p>
+
+<p class="text-left" style="margin-top: 10px; margin-left: 20px;"><b style='font-size: 12px'>YOUR CHALLENGES</b></p>
 <% @team_challenges_not_answered.each do |team_challenge| %>
   <%= render "card", team_challenge: team_challenge %>
 <% end %>
@@ -17,9 +19,8 @@
   <%= render "card", team_challenge: team_challenge %>
 <% end %>
 <div class="cross-back">
-  <%= link_to '', team_path(@team), class: "fa fa-times fa-lg", style: "color: white;" %>
+  <%= link_to '', team_path(@team), class: "fa fa-times fa-lg", style: "color: #484846;" %>
 </div>
-
 
 
 <% content_for(:after_js) do %>
