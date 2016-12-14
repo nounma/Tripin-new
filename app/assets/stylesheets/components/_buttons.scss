@@ -1,9 +1,10 @@
 .btn-medium {
-  color: #516DAC;
+  color: white;
   border: 2px solid #516DAC;
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #516DAC;
+  font-weight: bold;
 }
 
 .btn-medium:hover,
@@ -58,7 +59,7 @@
 
 .edit-button {
     text-decoration: none;
-  
+
   a {
     &:hover {
       text-decoration: none;
