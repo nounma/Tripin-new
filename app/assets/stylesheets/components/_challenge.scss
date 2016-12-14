@@ -42,6 +42,18 @@
   }
 }
 
+.cross-challenge{
+  top: 382px;
+  right: 0;
+  margin-right: 9px;
+  text-decoration: none;
+  position: absolute;
+}
+
+.cross-challenge:hover {
+  text-decoration: none;
+}
+
 .challenge-score {
   color: #FDC945;
   width: 100px;
