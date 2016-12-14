@@ -130,6 +130,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
 center: {lat: 50.8503, lng: 4.3517},
 zoom: 12
 });
+
 var infoWindow = new google.maps.InfoWindow({map: map});
 var icon = "<%= asset_path 'map-marker-2.png' %>"
 var challenge = new google.maps.Marker({
@@ -142,21 +143,14 @@ icon: icon,
 
 
 // Try HTML5 geolocation.
-if (navigator.geolocation) {
-navigator.geolocation.getCurrentPosition(function(position) {
-var userPosition = {
-lat: 50.847619,
-lng: 4.359196
-};
+    var userPosition = {lat: 50.847619,lng: 4.359196};
 
-var challengePosition = {
-lat: <%=@challenge.latitude %>,
-lng: <%=@challenge.longitude%>
-};
+var challengePosition = {lat: <%=@challenge.latitude %>, lng: <%=@challenge.longitude%>};
 
 console.log(userPosition.lng)
 console.log(challengePosition.lng)
 console.log(getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng))
+
 
 totalDistance = getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng,challengePosition.lat,challengePosition.lng).toFixed(3)
 totalDistance = totalDistance.toString()
@@ -165,23 +159,8 @@ totalDistance = totalDistance.replace('.', ',')
 $("#total-distance").append( totalDistance + ' km ')
 
 infoWindow.setPosition(userPosition);
-infoWindow.setContent('here you are');
-map.setCenter(userPosition);
-}, function() {
-handleLocationError(true, infoWindow, map.getCenter());
-});
-} else {
-// Browser doesn't support Geolocation
-handleLocationError(false, infoWindow, map.getCenter());
-}
-}
-
-function handleLocationError(browserHasGeolocation, infoWindow, userPosition) {
-infoWindow.setPosition(userPosition);
-infoWindow.setContent(browserHasGeolocation ?
-'Error: The Geolocation service failed.' :
-'Error: Your browser doesn\'t support geolocation.');
-}
+infoWindow.setContent('You are here');
+};
 
 
 <% end %>
