@@ -4,6 +4,7 @@ class TeamsController < ApplicationController
   end
 
   def show
+
     @team = Team.find(params[:id])
     authorize @team
 
@@ -24,7 +25,7 @@ class TeamsController < ApplicationController
   end
 
   def create
-    @city = City.find(params[:team][:city_id])
+    @city = City.find(params[:city_id])
 
     @team = Team.new(team_params)
     @team.city = @city
@@ -67,7 +68,7 @@ class TeamsController < ApplicationController
   private
 
   def team_params
-    params.require(:team).permit(:title, :team_picture, :start_date, :end_date, :city, :team_picture_cache, :id )
+    params.require(:team).permit(:title, :team_picture, :start_date, :end_date, :city, :team_picture_cache, :id, :city_id )
 
   end
 end

@@ -10,4 +10,9 @@ class CitiesController < ApplicationController
     authorize @cities
   end
 
+  private
+  def city_params
+    params.require(:city).permit(:name, :picture, :country, :advice, :id )
+  end
+
 end
