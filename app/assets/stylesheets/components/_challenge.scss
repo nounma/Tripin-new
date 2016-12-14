@@ -30,10 +30,9 @@
 }
 
 .cross-back {
-  position: absolute;
   top: 380px;
   right: 0;
-  margin-right: 30px;
+  margin-right: 9px;
   text-decoration: none;
 
   a {
@@ -74,8 +73,8 @@
   border-color: #4F66AA;
   top: 0;
   position: absolute;
-  width: 100%;
-  height: 200px;
+  max-width: 100%;
+  height: auto;
   z-index: -3;
   padding-top: -70px;
 }
@@ -88,7 +87,7 @@
   color: white;
   padding: 20px;
   position: relative;
-  margin-top: 13px;
+  margin-top: 80px;
 }
 
 .challenge-content h2 {
@@ -96,9 +95,16 @@
 }
 
 .score-circle {
-  border-radius: 50px;
-  width: 50px;
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
   background-color: #516DAC;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 116px;
+  right: 144px;
+  z-index: 4;
 }
 
 .modal-content h4{
@@ -125,3 +131,13 @@
     display: inline-block;
   }
 }
+.p-inline {
+  display: inline-block;
+}
+
+
+
+.typo_white {
+  color: white;
+}
+
