@@ -44,6 +44,7 @@
           center: {lat: 50.8503, lng: 4.3517},
           zoom: 12
         });
+
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         var challenges =  <%= raw @coordinates_challenges %>
@@ -77,34 +78,15 @@
 
 
         // Try HTML5 geolocation.
-          if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var userPosition = {
-            lat: 50.847619,
-            lng: 4.359196
-            };
+             var userPosition = {lat: 50.847619,lng: 4.359196};
+
 
             console.log(userPosition.lng)
             console.log(getDistanceFromLatLonInKm(userPosition.lat, userPosition.lng))
 
             infoWindow.setPosition(userPosition);
             infoWindow.setContent('You are here');
-            map.setCenter(userPosition);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
-
-      function handleLocationError(browserHasGeolocation, infoWindow, userPosition) {
-        infoWindow.setPosition(userPosition);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-      }
+      };
 
 
   <% end %>
