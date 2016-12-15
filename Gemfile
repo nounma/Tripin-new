@@ -26,7 +26,8 @@ gem 'omniauth-facebook'
 gem 'bootstrap-social-rails'
 # gem 'bootstrap-datepicker-rails'
 # gem 'jquery_datepicker'
-
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 
 gem "paperclip", "~> 5.0.0"
 
