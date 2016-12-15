@@ -9,7 +9,7 @@ p.input-container-white {
 
 .input-container-white {
   label {
-    color: #CCC;
+    color: white;
     position: absolute;
     cursor: text;
     transform: translateY(-25px);
@@ -24,11 +24,11 @@ p.input-container-white {
     font-size: 16px;
     transition: 0.6s;
     border: none;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid white;
     background-color: transparent;
     &:focus {
       outline: none;
-      border-bottom: 1px solid #3C3D72;
+      border-bottom: 1px solid white;
     }
   }
 
@@ -40,11 +40,11 @@ p.input-container-white {
     font-size: 16px;
     transition: 0.6s;
     border: none;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid white;
     background-color: transparent;
     &:focus {
       outline: none;
-      border-bottom: 1px solid #3C3D72;
+      border-bottom: 1px solid white;
     }
   }
 
@@ -59,14 +59,6 @@ p.input-container-white {
   }
 
   .animation-color label {
-    color: #3C3D72;
+    color: white;
   }
 
-#team_team_picture {
-  border: 1px solid black;
-  display: none;
-}
-
-.bottomspace {
-  margin-bottom: 60px;
-}

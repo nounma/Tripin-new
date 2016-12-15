@@ -3,7 +3,7 @@
 </div>
 
 <div class="back-arrow">
-  <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-times fa-lg", style: "color: red;"%>
+  <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-times fa-lg", style: "color: white;"%>
 </div>
 
 <div class="container content-show">
@@ -149,7 +149,7 @@
   </div>
   <% end %>
   <div class="needlilspace styled-input text-center">
-    <%= simple_form_for [@team, @challenge, @answer], defaults: { input_html: { class: 'input-container' } } do |f| %>
+    <%= simple_form_for [@team, @challenge, @answer], defaults: { input_html: { class: 'input-container-white' } } do |f| %>
     <%= f.error_notification %>
     <% if @challenge.answer_text? %>
     <div class="bottom-space">
@@ -160,11 +160,13 @@
       <%= f.input :picture, label: 'Take a picture', label_html: { class: "btn-picture"} %>
       <%= f.input :picture_cache, as: :hidden %>
       <% elsif @challenge.answer_auto? %>
+      <div class="bottoms-up">
       <%= f.input :text, label: false,
       collection: bad_answers(@challenge),
       include_blank: "-- Choose an answer --",
       selected: @answer.text,
-      input_html: { class: "disable-form-control" } %>
+      input_html: { class: "styled-input-white" } %>
+      </div>
       <% else @challenge.answer_both? %>
       <div class="pushtothetop">
         <%= f.input :text, label: 'Your answer', wrapper: :p_wrapper %></div>
