@@ -18,12 +18,15 @@
 
 .back-arrow {
   height: 10px;
-  text-align: right;
+  position: relative;
 }
 
 .back-arrow a {
   z-index: 2000;
-  text-align: right;
+  position: absolute;
+  top: -133px;
+  right: 33px;
+
 }
 
 .content-link {
