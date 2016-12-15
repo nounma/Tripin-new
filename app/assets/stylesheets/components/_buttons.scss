@@ -20,6 +20,14 @@
   border-radius: 3px;
   margin-top: 15px;
   line-height: 225%;
+  background-color: transparent;
+}
+
+.btn-blue-log {
+  color: #3D3E6F;
+  padding: 3px 14px;
+  margin-top: 15px;
+  line-height: 225%;
 }
 
 .btn-blue:hover,
@@ -70,4 +78,53 @@
 .btn-clear {
   border-style: none;
   background-color: none;
+}
+
+
+.big-btn {
+  height: 100px;
+  background-color: #696992;
+  padding: -60px;
+}
+
+.btn-team {
+  color: blue;
+  height: 100px;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.btn-team-left {
+  border-left: 2px solid #D3D3D3;
+  color: blue;
+  height: 100px;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.btn-create-t {
+  background-color: #696992;
+  color: white;
+  border: none;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.btn-add-member {
+  height: 60px;
+  width: 60px;
+  opacity: 0.2;
+}
+
+.btn-bottom {
+  height: 120px;
+  background-color: #555B8E;
+  color: white;
+  padding-top: 50px;
+  text-decoration: none;
+  a {
+    color: white;
+  }
 }

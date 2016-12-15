@@ -9,26 +9,36 @@
    width: 100%; /* for IE 6 */
  }
 
+
+.answer-title h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 50px;
+  color: #575D91;
+}
+
+
+
+
  h5 {
   font-family: 'Playfair Display SC', serif;
   font-size: 90px;
-  color: #516DAC;
-  line-height: 80px;
+  color: #575D91;
+  line-height: 72px;
   font-style: bold;
   position: absolute;
-  top: -68px;
-  left: -51px;
+  top: -84px;
+  left: -6px;
   width: 100%;
 }
 
 .bigasscontent h4 {
   font-family: 'Playfair Display SC', serif;
   font-size: 90px;
-  color: #516DAC;
+  color: #575D91;
   line-height: 80px;
   font-style: bold;
   position: absolute;
-  top: -68px;
+  top: -136px;
   left: 65px;
   width: 100%;
 }
@@ -38,11 +48,11 @@
 }
 
 .bigasscontent p {
-  color: #516DAC;
+  color: #575D91;
   line-height: 15px;
   font-size: 13px;
   position: absolute;
-  top: 124px;
+  top: 14px;
   right: 0;
 }
 
@@ -51,7 +61,7 @@
   border-color: #516DAC;
   border-width: 1px;
   padding: 15px;
-  color: #516DAC;
+  color: #575D91;
   margin-bottom: 30px;
   border-radius: 2px;
 }
@@ -61,6 +71,23 @@
 }
 
 
-.col-xs-offset-5 p {
-  top: 514px;
+.offsetting-1 p {
+  top: 349px;
+}
+
+.offsetting-2 p {
+  top: 73px;
+}
+
+.offsetting-3 h5 {
+  top: 30px;
+  margin-top: -191px;
+}
+
+.offsetting-4 p {
+  top: 256px;
+}
+
+.offsetting-5 h4 {
+  top: 131px;
 }

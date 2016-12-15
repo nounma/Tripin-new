@@ -1,6 +1,5 @@
 <div class="content">
 
-
   <div class="bigtext">
     <section id="city">
       <div class="bigcontainer">
@@ -55,33 +54,36 @@
   <div class="needspace">
     <div class="form-inputs login-input">
 
-    <%= f.input :title, placeholder: "Choose a file", label: 'Team name', wrapper: :p_wrapper%>
-    <div class="needspace">
+      <%= f.input :title, placeholder: "Choose a file", label: 'Team name', wrapper: :p_wrapper%>
+      <div class="needspace">
 
-    <div>
-      <%= f.input :team_picture, label: 'Choose a team picture', label_html: { class: "btn-medium", style: "font-weight: normal !important"} %>
-      <%= f.input :team_picture_cache, as: :hidden %>
+        <div>
+          <%= f.input :team_picture, label: 'Choose a team picture', label_html: { class: "btn-medium", style: "font-weight: normal !important"} %>
+          <%= f.input :team_picture_cache, as: :hidden %>
+        </div>
+        </div>
     </div>
 
+
+    </section>
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div class="big-btn text-center">
+
+          <%= f.submit "Create team", :class => "btn-create-t" %></div></div>
+          <% end %>
+        </div>
+      <div>
     </div>
-
-  </div>
-
-   <div class="row">
-    <div class="col-xs-8 col-sm-8">
-
-      <div class="text-center", style="margin-left: -10px;">
-
-        <%= f.submit "Create team", :class => "btn-medium" %></div></div>
-        <% end %>
-      </div>
-
-  </div>
-</section>
-</form>
+  </form>
 </div>
 </div>
 </div>
+
+
+
+
 <% content_for(:after_js) do %>
 <% end %>
 

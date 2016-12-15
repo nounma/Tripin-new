@@ -22,7 +22,7 @@
       </div>
     <h1 class="text-left title-yo" style="color: #516DAC;"><b>MY TEAMS</b></h1>
     <div class="profilecard-bottom text-right">
-      <p><%= link_to "Create a new team", new_team_path, style: "text-decoration: none; color: white;" %></p>
+      <p><%= link_to "CREATE A NEW TEAM", new_team_path, style: "text-decoration: none; color: white;" %></p>
       <% @user.members.each do |member| %>
         <%= render "card", member: member %>
       <% end %>

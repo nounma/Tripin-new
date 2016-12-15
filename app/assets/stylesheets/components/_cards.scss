@@ -146,18 +146,13 @@
   background-size: cover !important;
   color: black;
   position: relative;
-  background-color: white;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  margin-bottom: 5px;
+  background-color: linear-gradient( 0deg, #372058 , #3A3D72);
 }
 
 
 .status-card {
   height: 110px;
-  background-color: white;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  background-color: linear-gradient( 0deg, #372058 , #3A3D72);
   padding: 40px 0;
   margin-left: -15px;
   color: #484846;

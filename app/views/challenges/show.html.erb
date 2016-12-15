@@ -1,147 +1,188 @@
-<%= image_tag(@challenge.picture, :class => "picture-challenge") %>
+<div class="imgbackground">
+  <%= image_tag(@challenge.picture, :class => "picture-challenge") %>
+</div>
+<div class="back-arrow">
+  <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-long-arrow-left", style: "color: white;"%>
+</div>
+
+<div class="container content-show">
+
+  <div class="row">
+
+    <div class="col-xs-8 content-again">
+      <h2><%= @challenge.title %></h2>
+      <p><%= @challenge.description %></p>
 
 
-<!-- <div class="score text-center score-circle">
-  <p><b><%= @challenge.score %><sup>PT</sup></b></p>
-</div> -->
-
-
-<div class="challenge-content text-center">
-
-  <div class= "top-right">
-    <div class="cross-back">
-      <%= link_to '', team_challenges_path(@team, @challenge), class: "fa fa-times fa-lg", style: "color: #484846;"%>
-    </div>
-  </div>
-
-  <h2><%= @challenge.title.capitalize %></h2>
-  <div class="p-inline">
-    <p><strong><%= @challenge.score %><sup>PT</sup></strong></p>
-    <% if @challenge.cost == 0 %>
-    <div class="p-inline">
-      <p class="text-grey">€</p>
-      <p class="text-grey">€</p>
-      <p class="text-grey">€</p>
-    </div>
-    <% elsif @challenge.cost == 1 %>
-    <div class="p-inline">
-      <p class="text-yellow">€</p>
-      <p class="text-grey">€</p>
-      <p class="text-grey">€</p>
-    </div>
-    <% elsif @challenge.cost == 2 %>
-    <div class="p-inline">
-      <p class="text-yellow">€</p>
-      <p class="text-yellow">€</p>
-      <p class="text-grey">€</p>
-    </div>
-    <% else @challenge.cost == 3 %>
-    <div class="p-inline">
-      <p class="text-yellow">€</p>
-      <p class="text-yellow">€</p>
-      <p class="text-yellow">€</p>
-    </div>
-    <% end %>
-    <%= link_to "#js-wifi", "data-toggle" => "modal" do %>
-      <p class="typo_white">   <i class="fa fa-wifi typo_white"" aria-hidden="true"></i></p>
-    <% end %>
-    <div id="js-wifi" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-      <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-           <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title"><strong>Some wifi around this challenge</strong> </h4>
+      <%= link_to "#js-hint", "data-toggle" => "modal" do %>
+      <p> Need a hint ?</i></p>
+      <% end %>
+      <div id="js-hint" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"><strong>Your hint is : </strong> </h4>
+            </div>
+            <div class="modal-body">
+              <p><%= @challenge.hint %></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
-          <div class="modal-body">
-            <h3>EXKi De Brouckère - place de Brouckère </h3>
-            <p>Name: Exki De Brouckère - Password: 4262EXKI</p>
+        </div>
+      </div>
 
-            <h3>Fortis Brussels - rue de la Chancellerie, 11</h3>
-            <p>Name: Fortis298 - Password: 426FORTISH</p>
+    </div>
 
-            <h3>McDonald's - place de la Bourse, 3 </h3>
-            <p>Name: McDo_PlB - Password: jsjsh7282hh</p>
+    <div class="col-xs-4 content-link">
 
-            <h3>Java Coffee - rue Neuve, 123</h3>
-            <p>Name: Java_Coffee_Wifi - Password: 42IHJDHZ9</p>
+      <div class="row">
+        <h3>SCORE</h3>
+        <div class="inside text-center bigger">
+        <strong><%= @challenge.score %><sup>PT</sup></strong>
+      </div>
+      </div>
 
-            <h3>AB Café/Resto - rue des Pierres, 23 </h3>
-            <p>Name: ABcafeBXL - Password: 4kej983982I</p>
+      <div class="row">
+        <h3>COST</h3>
+                <div class="inside text-center bigger">
+
+        <div class="p-inline">
+          <% if @challenge.cost == 0 %>
+          <div class="p-inline">
+            <p class="text-grey">€</p>
+            <p class="text-grey">€</p>
+            <p class="text-grey">€</p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <% elsif @challenge.cost == 1 %>
+          <div class="p-inline">
+            <p class="text-yellow">€</p>
+            <p class="text-grey">€</p>
+            <p class="text-grey">€</p>
+          </div>
+          <% elsif @challenge.cost == 2 %>
+          <div class="p-inline">
+            <p class="text-yellow">€</p>
+            <p class="text-yellow">€</p>
+            <p class="text-grey">€</p>
+          </div>
+          <% else @challenge.cost == 3 %>
+          <div class="p-inline">
+            <p class="text-yellow">€</p>
+            <p class="text-yellow">€</p>
+            <p class="text-yellow">€</p>
+          </div>
+          <% end %>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+            <h3>WIFI</h3>
+              <div class="inside text-center bigger">
+
+        <%= link_to "#js-wifi", "data-toggle" => "modal" do %>
+        <p class="typo_white">   <i class="fa fa-wifi typo_white"" aria-hidden="true"></i></p>
+        <% end %>
+        <div id="js-wifi" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title"><strong>Some wifi around this challenge</strong> </h4>
+             </div>
+             <div class="modal-body">
+              <h3>EXKi De Brouckère - place de Brouckère </h3>
+              <p>Name: Exki De Brouckère - Password: 4262EXKI</p>
+
+              <h3>Fortis Brussels - rue de la Chancellerie, 11</h3>
+              <p>Name: Fortis298 - Password: 426FORTISH</p>
+
+              <h3>McDonald's - place de la Bourse, 3 </h3>
+              <p>Name: McDo_PlB - Password: jsjsh7282hh</p>
+
+              <h3>Java Coffee - rue Neuve, 123</h3>
+              <p>Name: Java_Coffee_Wifi - Password: 42IHJDHZ9</p>
+
+              <h3>AB Café/Resto - rue des Pierres, 23 </h3>
+              <p>Name: ABcafeBXL - Password: 4kej983982I</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
+
+    <div class="row">
+          <h3>ADDRESS</h3>
+                  <div class="inside">
+
+
+      <p><%=@challenge.address%></p>
+      </div>
+    </div>
+
+  <div class="row ">
+    <h3>LOCATION</h3>
+    <div class="inside p-inline" style="display: flex;">
+      <div>
+        <span id="total-distance">
+          <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 5px;"></i>
+
+        </span>
+      </div>
+    </div>
   </div>
+ </div>
+</div>
 
-  <p><%= @challenge.description %></p>
-
-
+<div class="row input-things">
   <% if @answer.not_completed? %>
   <div class= "alert alert-warning">
-    wrong answer
+    Wrong answer
   </div>
   <% end %>
-  <div class="needlilspace styled-input">
+  <div class="needlilspace styled-input text-center">
     <%= simple_form_for [@team, @challenge, @answer], defaults: { input_html: { class: 'input-container' } } do |f| %>
-      <%= f.error_notification %>
-      <% if @challenge.answer_text? %>
-      <%= f.input :text, input_html: {value: @answer.text}, label: 'Type your answer', wrapper: :p_wrapper %>
-      <% elsif @challenge.answer_picture? %>
-      <%= f.input :picture, label: 'Send picture' %>
-      <%= f.input :picture_cache, as: :hidden %>
+    <%= f.error_notification %>
+    <% if @challenge.answer_text? %>
+    <div class="bottom-space">
+    <%= f.input :text, input_html: {value: @answer.text}, label: 'Type your answer', wrapper: :p_wrapper, wrapper_html: {class: "animation animation-color"} %>
+    </div>
+    <% elsif @challenge.answer_picture? %>
+    <%= f.input :picture, label: 'Take a picture', label_html: { class: "btn-picture"} %>
+    <%= f.input :picture_cache, as: :hidden %>
     <% elsif @challenge.answer_auto? %>
-      <%= f.input :text, label: false,
-       collection: bad_answers(@challenge),
-       include_blank: "-- Choose an answer --",
-       selected: @answer.text,
-       input_html: { class: "disable-form-control" } %>
+    <%= f.input :text, label: false,
+    collection: bad_answers(@challenge),
+    include_blank: "-- Choose an answer --",
+    selected: @answer.text,
+    input_html: { class: "disable-form-control" } %>
     <% else @challenge.answer_both? %>
-      <%= f.input :text, label: 'Your answer', wrapper: :p_wrapper %>
-      <%= f.input :picture, label: 'Send picture' %>
-      <%= f.input :picture_cache, as: :hidden %>
+    <%= f.input :text, label: 'Your answer', wrapper: :p_wrapper %>
+    <%= f.input :picture, label: 'Send picture' %>
+    <%= f.input :picture_cache, as: :hidden %>
     <% end %>
-    <div class="lilspace topspace">
-      <%= f.button :submit, label: 'Send' %>
-      <% end %>
-    </div>
   </div>
-
-
-  <%= link_to "#js-hint", "data-toggle" => "modal" do %>
-    <p class="typo_white"> Need a hint ?</i></p>
-  <% end %>
-  <div id="js-hint" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><strong>Your hint is : </strong> </h4>
-        </div>
-        <div class="modal-body">
-        <p><%= @challenge.hint %></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <p><i class="fa fa-map-marker" aria-hidden="true"> </i><%=@challenge.address%></p>
-  <div class="container">
-  <div id="map" style="width: 100%; height: 250px;"></div>
-  </div>
-  <div class="distance" id="total-distance">Total distance : </div>
-
-  <br/>
 </div>
+
+<div class="row lilspace btn-show text-center">
+  <%= f.button :submit,'Send answer', class: "btn-show" %>
+  <% end %>
+</div>
+
+<div class="panel-maps">
+  <div id="map" style="width: 100%; height: 250px; z-index: 9;"></div>
+</div>
+
+</div>
+
 
 <% content_for(:after_js) do %>
 <%= javascript_tag do %>
@@ -162,9 +203,8 @@ icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
 
 
 
-
 // Try HTML5 geolocation.
-    var userPosition = {lat: 50.847619,lng: 4.359196};
+var userPosition = {lat: 50.847619,lng: 4.359196};
 
 var challengePosition = {lat: <%=@challenge.latitude %>, lng: <%=@challenge.longitude%>};
 
@@ -185,11 +225,13 @@ infoWindow.setContent('You are here');
 
 
 <% end %>
-
 <% end %>
 
-<!-- for admin only: update or download the challenge picture
--->
+
+
+
+
+<!-- for admin only: update or download the challenge picture-->
 <div>
  <% if current_user.admin? %>
  <%= simple_form_for [@team, @challenge], url:  team_challenge_path(@team, @challenge) do |c| %>
