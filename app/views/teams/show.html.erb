@@ -13,10 +13,14 @@
   <div class="row">
     <div class="white-block">
       <div class="col-xs-12 text-center team-text-grey">
-        <h2>
-          <%= @team.title.capitalize %>
-          <%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "color: grey; width: 10px", method: :get %>
-        </h2>
+        <div class="inline-team">
+          <h2>
+            <%= @team.title.capitalize %>
+          </h2>
+            <p><%= link_to "", edit_team_path(@team), class: "fa fa-pencil edit-button", style: "top: 28px;
+position: relative;
+right: -7px; color: grey; width: 10px", method: :get %></p>
+        </div>
         <div class="teamscore cross-challenge-team">
         <p><%= @total_score %> <sup>PT</sup></p>
         </div>
@@ -43,10 +47,7 @@
             <%= render "card", member: member %>
           <% end %>
           <div class="col-xs-3", style="margin-top: 10px;">
-            <%= cl_image_tag("addmember.png") %>
-            <%= link_to "+",  new_team_member_path(@team), class: "add-member", method: :get %>
-            <br>
-            <br>
+            <%= link_to image_tag("addmember.png", height: "60px", width: "60px"), {url: new_team_member_path(@team)}, {class: "btn-add-member"} %>
           </div>
         </div>
       </div>
