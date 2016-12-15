@@ -20,7 +20,7 @@
 
   select {
     margin: 0 auto;
-    color: #516DAC;
+    color: #3C3D72;
     width: 310px;
     padding: 15px;
     height: 50px;
@@ -30,13 +30,13 @@
 
   select:hover {
     background-color: transparent;
-    color: #516DAC;
+    color: #3C3D72;
     padding: 15px 5px 15px 25px;
   }
 
   select option {
     background-color: white;
-    color: #516DAC;
+    color: #3C3D72;
     width: 310px;
     padding: 10px 15px;
     height: 45px;
@@ -46,6 +46,6 @@
   select option:hover {
     padding-left: 25px;
     width: 270px;
-    color: #516DAC;
+    color: #3C3D72;
   }
 }

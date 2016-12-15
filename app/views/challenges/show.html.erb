@@ -41,14 +41,14 @@
 
       <div class="row">
         <h3>SCORE</h3>
-        <div class="inside text-center">
+        <div class="inside text-center bigger">
         <strong><%= @challenge.score %><sup>PT</sup></strong>
       </div>
       </div>
 
       <div class="row">
         <h3>COST</h3>
-                <div class="inside text-center">
+                <div class="inside text-center bigger">
 
         <div class="p-inline">
           <% if @challenge.cost == 0 %>
@@ -81,7 +81,7 @@
       </div>
       <div class="row">
             <h3>WIFI</h3>
-              <div class="inside text-center">
+              <div class="inside text-center bigger">
 
         <%= link_to "#js-wifi", "data-toggle" => "modal" do %>
         <p class="typo_white">   <i class="fa fa-wifi typo_white"" aria-hidden="true"></i></p>
@@ -149,9 +149,11 @@
     <%= simple_form_for [@team, @challenge, @answer], defaults: { input_html: { class: 'input-container' } } do |f| %>
     <%= f.error_notification %>
     <% if @challenge.answer_text? %>
+    <div class="bottom-space">
     <%= f.input :text, input_html: {value: @answer.text}, label: 'Type your answer', wrapper: :p_wrapper %>
+    </div>
     <% elsif @challenge.answer_picture? %>
-    <%= f.input :picture, label: 'Send picture' %>
+    <%= f.input :picture, label: 'Take a picture', label_html: { class: "btn-picture"} %>
     <%= f.input :picture_cache, as: :hidden %>
     <% elsif @challenge.answer_auto? %>
     <%= f.input :text, label: false,
