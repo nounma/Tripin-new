@@ -5,9 +5,9 @@
 //= require gmaps/google
 //= require select2-full
 //= require jquery-ui
-
+//= require moment
+//= require bootstrap-datetimepicker
+//= require pickers
 //= require_tree .
 
-$(document).on("page:load ready", function(){
-    $("input.datepicker").datepicker();
-});
+
