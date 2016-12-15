@@ -24,7 +24,9 @@
     <% end %>
   </div>
   <p>in <%= @team.city.name %> <%= link_to "", city_path(@team.city_id), class: "fa fa-info-circle edit-button", style: "color: #E0E0E0;", method: :get %>
+   <%= link_to "", city_members_path(@team.city_id), class: "fa fa-sun-o edit-button", style: "color: #E0E0E0;", method: :get %>
    </p>
+
 </div>
 
 
