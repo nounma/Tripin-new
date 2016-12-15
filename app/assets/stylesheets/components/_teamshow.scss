@@ -20,13 +20,28 @@
   zoom: 1;
 }
 
+.teammate {
+  background-color: violettresclair;
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+  zoom: 1;
+}
+
 .members-team{
   padding-left: 10px;
   margin-top: 20px;
 }
 
-.white-block p {
+.members-team h3{
+  padding-left: 27px;
+  margin-top: 20px;
+  color: #565C8B;
   font-size: 20px;
+}
+
+.white-block p {
+  font-size: 15px;
 }
 
 .white-block h2 {
@@ -47,8 +62,7 @@
 }
 
 .inline-team p {
-  padding: 0px 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .member {
@@ -73,15 +87,20 @@
   opacity: 0;
 }
 
+.teammate-pic {
+  padding-left: 23px;
+}
 .members-picture{
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
 
-.button-team {
-  background-color: grey;
+.button-team p {
   color: white;
+  font-size: 14px;
+  padding-top: 10px;
+
 }
 
 .add-member {
@@ -100,4 +119,60 @@
 
 .add-member:hover {
   text-decoration: none;
+}
+
+.team-text-grey {
+  color: grey;
+}
+
+.card-link-challenge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+
+.card-link-challenge p {
+  font-size: 12px;
+}
+
+.card-link-answer p {
+  font-size: 12px;
+}
+.card-link-answer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+
+.teamscore {
+  font-size: 15px;
+  color: #696992;
+
+}
+
+.cross-challenge-team {
+  top: 6px;
+  right: -21px;
+  margin-right: 26px;
+  text-decoration: none;
+  position: absolute;
+}
+
+.answer-btn {
+  background-color: #696992;
+}
+
+.challenge-btn {
+  background-color: #565C8B;
+
 }
