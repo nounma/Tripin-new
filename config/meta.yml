@@ -1,5 +1,5 @@
 # config/meta.yml
 meta_title: "Tripin - Dare to discover ?"
 meta_description: "Tripin is a mobile application that proposes a list of challenges to help you discover a city ! You will even win some discounts !"
-meta_image: "LOGO-BLEU" # Une image dans votre dossier app/assets/images/
+meta_image: "LOGO-BLEU.png" # Une image dans votre dossier app/assets/images/
 twitter_account: "@nounma" # indispensable pour les Twitter Cards
