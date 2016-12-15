@@ -8,11 +8,14 @@ class CitiesController < ApplicationController
   end
 
   def show
+
     @city = City.find(params[:id])
     authorize @city
   end
 
  def weather
+  session[:return_to] ||= request.referer
+
     @city = City.find(params[:city_id])
     authorize @city
   end

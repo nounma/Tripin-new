@@ -1,22 +1,27 @@
- <h1>WEATHER</h1>
+ <div class="container text-center">
+  <div class="row answer-title">
+    <h1> Week's Weather</h1>
+    <%= link_to '', session[:return_to], class: "fa fa-times fa-lg cross-challenge-answer", style: "color: #blue;" %>
 
+    <div class= "text-center-weather">
+    <% if @city.name == "Brussels" %>
+      <p><%= @city.name %></p>
+     <div id="cont_OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/belgique/bruxelles_v96307/" target="_blank" style="color:#333;text-decoration:none;">Météo Bruxelles</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
 
-<% if @city.name == "Brussels" %>
-  <h1><%= @city.name %></h1>
- <div id="cont_OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/belgique/bruxelles_v96307/" target="_blank" style="color:#333;text-decoration:none;">Météo Bruxelles</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/OTYzMDd8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
+    <%elsif @city.name == "Paris" %>
+      <p><%= @city.name %></p>
+      <div id="cont_NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/france/paris_v75056/" target="_blank" style="color:#333;text-decoration:none;">Météo Paris</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
 
-<%elsif @city.name == "Paris" %>
-  <h1><%= @city.name %></h1>
-  <div id="cont_NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/france/paris_v75056/" target="_blank" style="color:#333;text-decoration:none;">Météo Paris</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
+    <%elsif @city.name == "Amsterdam" %>
+      <p><%= @city.name %></p>
+      <div id="cont_OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/pays-bas/amsterdam_v96594/" target="_blank" style="color:#333;text-decoration:none;">Météo Amsterdam</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
 
-<%elsif @city.name == "Amsterdam" %>
-  <h1><%= @city.name %></h1>
-  <div id="cont_OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/pays-bas/amsterdam_v96594/" target="_blank" style="color:#333;text-decoration:none;">Météo Amsterdam</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/OTY1OTR8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
-
-<%else @city.name == "London" %>
-  <h1><%= @city.name %></h1>
-  <div id="cont_OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/royaume-uni/londres_v96835/" target="_blank" style="color:#333;text-decoration:none;">Météo Londres</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
-
-<%end%>
+    <%else @city.name == "London" %>
+      <p><%= @city.name %></p>
+      <div id="cont_OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><div id="spa_OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"><a id="a_OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx" href="http://www.meteocity.com/royaume-uni/londres_v96835/" target="_blank" style="color:#333;text-decoration:none;">Météo Londres</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/OTY4MzV8NXwxfDF8MXxGRkZGRkZ8M3xGRkZGRkZ8Y3wx"></script></div>
+    <%end%>
+    </div>
+  </div>
+</div>
 
 
