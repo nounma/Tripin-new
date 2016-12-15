@@ -2,12 +2,11 @@
 
   <h3>Edit your team:</h3>
   <%= simple_form_for @team, url: team_path, defaults: { input_html: { class: 'input-container' } } do |f| %>
-<div class="bottomspace">
-
+  <div class="bottomspace">
     <%= f.input :title, placeholder: "Your team name", label: 'Team name', wrapper: :p_wrapper%>
-    </div>
-    <%= f.input :start_date, as: :date, placeholder: "Start date"%>
-    <%= f.input :end_date, as: :date, placeholder: "End date"%>
+   </div>
+    <%= f.input :start_date, :as => :date_picker, placeholder: "Start date"%>
+    <%= f.input :end_date, :as => :date_picker, placeholder: "End date"%>
     <%= f.input :team_picture %>
     <%= f.input :team_picture_cache, as: :hidden %>
     <%= f.submit %>
