@@ -34,11 +34,13 @@
 <div class="col-xs-12">
 
 <% @team_answers.each do |team_answer| %>
-    <div class="img">
-      <% if  !team_answer.picture.nil? %>
+
+      <% unless  team_answer.picture.file.nil? %>
+      <div class="img">
       <%= cl_image_tag team_answer.picture, height: 300, width: 300, crop: :fill%>
+      </div>
       <% end %>
-    </div>
+
 <% end %>
 <br>
 
