@@ -73,11 +73,25 @@
 }
 
 
-
-
-
 .big-btn {
   height: 100px;
   background-color: #3C3D72;
   padding: -60px;
+}
+
+.btn-team {
+  color: blue;
+  height: 100px;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.btn-team-left {
+  border-left: 2px solid #D3D3D3;
+  color: blue;
+  height: 100px;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
 }
