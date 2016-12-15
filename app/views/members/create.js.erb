@@ -1,3 +1,4 @@
 member = $('<%= j render("members/member", user: @user, email: @email) %>').hide();
 member.appendTo($('.members-list'));
+$('#member_email').val('');
 member.fadeIn();
