@@ -1,7 +1,13 @@
-<div class="navbar-wagon">
+<div class="navbar-wagon <% if controller.controller_name == "pages" && controller.action_name == "home" %>navbar-dark<% end %>">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-  <%= cl_image_tag("LOGO-WHITE_xhrvre.png", :width=>5000, :crop=>"scale") %>
+
+    <% if @navbardark %>
+      <%= cl_image_tag("LOGO-WHITE_xhrvre.png", :width=>5000, :crop=>"scale") %>
+    <% else %>
+      <%= cl_image_tag("LOGO-BLEU_mycjfo.png", :width=>5000, :crop=>"scale")
+       %>
+    <% end %>
   <% end %>
 
   <!-- Right Navigation -->
