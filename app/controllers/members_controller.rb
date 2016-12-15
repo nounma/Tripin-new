@@ -4,7 +4,7 @@ class MembersController < ApplicationController
     @member = Member.new
     authorize @team
   end
-  
+
   def create
     @team = Team.find(params[:team_id])
     @user = User.find_by_email(params[:member][:email])

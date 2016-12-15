@@ -4,6 +4,7 @@ class TeamsController < ApplicationController
   end
 
   def show
+    @navbardark = true
 
     @team = Team.find(params[:id])
     authorize @team

@@ -20,6 +20,7 @@
   border-radius: 3px;
   margin-top: 15px;
   line-height: 225%;
+  background-color: transparent;
 }
 
 .btn-blue-log {
@@ -115,4 +116,15 @@
   height: 60px;
   width: 60px;
   opacity: 0.2;
+}
+
+.btn-bottom {
+  height: 120px;
+  background-color: #555B8E;
+  color: white;
+  padding-top: 50px;
+  text-decoration: none;
+  a {
+    color: white;
+  }
 }
