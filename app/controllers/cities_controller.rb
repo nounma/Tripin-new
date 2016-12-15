@@ -12,12 +12,10 @@ class CitiesController < ApplicationController
     authorize @city
   end
 
-
-# def meteo
-
-# @city = City.find(params[:id])
-# authorize @city
-# end
+ def weather
+    @city = City.find(params[:city_id])
+    authorize @city
+  end
 
   private
   def city_params
