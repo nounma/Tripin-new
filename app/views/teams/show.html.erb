@@ -34,7 +34,7 @@ right: -7px; color: grey; width: 10px", method: :get %></p>
           <% else %>
             <p>CONGRATULATIONS, you're done :)</p>
           <% end %>
-          <p>  in <%= @team.city.name %> <%= link_to "", city_path(@team.city), class: "fa fa-info-circle edit-button", style: "color: grey;", method: :get %>
+          <p>  in <%= @team.city.name %> <%= link_to "", city_path(@team.city), class: "fa fa-info-circle edit-button", style: "color: grey;", method: :get %><%= link_to "", city_members_path(@team.city), class: "fa fa-thermometer-full  edit-button", style: "color: grey;", method: :get %>
         </p>
         </div>
 
