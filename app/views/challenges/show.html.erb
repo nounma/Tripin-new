@@ -128,15 +128,18 @@
       </div>
     </div>
 
-<!--     <div class="row p-inline">
- --><!--           <h3>LOCATION</h3>
- --><!--         <div class="inside">
- -->
-<!--       <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
- --><!--       <p><div class="distance" id="total-distance"></div></p><p>away</p>
- -->    <!-- </div> -->
-<!-- </div>
- -->  </div>
+  <div class="row ">
+    <h3>LOCATION</h3>
+    <div class="inside p-inline" style="display: flex;">
+      <div>
+        <span id="total-distance">
+          <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 5px;"></i>
+
+        </span>
+      </div>
+    </div>
+  </div>
+ </div>
 </div>
 
 <div class="row input-things">
@@ -150,7 +153,7 @@
     <%= f.error_notification %>
     <% if @challenge.answer_text? %>
     <div class="bottom-space">
-    <%= f.input :text, input_html: {value: @answer.text}, label: 'Type your answer', wrapper: :p_wrapper %>
+    <%= f.input :text, input_html: {value: @answer.text}, label: 'Type your answer', wrapper: :p_wrapper, wrapper_html: {class: "animation animation-color"} %>
     </div>
     <% elsif @challenge.answer_picture? %>
     <%= f.input :picture, label: 'Take a picture', label_html: { class: "btn-picture"} %>
