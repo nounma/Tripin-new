@@ -86,7 +86,7 @@
         <h3>WIFI</h3>
         <div class="inside text-center bigger">
           <%= link_to "#js-wifi", "data-toggle" => "modal" do %>
-          <p class="typo_white">   <i class="fa fa-wifi typo_white"" aria-hidden="true"></i></p>
+          <p class="typo_white">   <i class="fa fa-wifi fa-lg typo_white"" aria-hidden="true"></i></p>
           <% end %>
           <div id="js-wifi" class="modal fade" role="dialog">
             <div class="modal-dialog">
@@ -123,14 +123,14 @@
 
     <div class="row">
       <h3>ADDRESS</h3>
-      <div class="inside">
+      <div class="inside yo">
         <p><%=@challenge.address%></p>
       </div>
     </div>
 
     <div class="row ">
       <h3>LOCATION</h3>
-      <div class="inside p-inline" style="display: flex;">
+      <div class="inside p-inline yo" style="display: flex;">
         <div class="bottoms-up">
           <span id="total-distance">
             <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 5px;"></i>
