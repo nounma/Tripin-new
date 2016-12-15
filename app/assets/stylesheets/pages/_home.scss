@@ -9,10 +9,20 @@
    width: 100%; /* for IE 6 */
  }
 
+
+.answer-title h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 50px;
+  color: #575D91;
+}
+
+
+
+
  h5 {
   font-family: 'Playfair Display SC', serif;
   font-size: 90px;
-  color: #516DAC;
+  color: #575D91;
   line-height: 80px;
   font-style: bold;
   position: absolute;
@@ -24,7 +34,7 @@
 .bigasscontent h4 {
   font-family: 'Playfair Display SC', serif;
   font-size: 90px;
-  color: #516DAC;
+  color: #575D91;
   line-height: 80px;
   font-style: bold;
   position: absolute;
@@ -38,7 +48,7 @@
 }
 
 .bigasscontent p {
-  color: #516DAC;
+  color: #575D91;
   line-height: 15px;
   font-size: 13px;
   position: absolute;
@@ -51,7 +61,7 @@
   border-color: #516DAC;
   border-width: 1px;
   padding: 15px;
-  color: #516DAC;
+  color: #575D91;
   margin-bottom: 30px;
   border-radius: 2px;
 }
