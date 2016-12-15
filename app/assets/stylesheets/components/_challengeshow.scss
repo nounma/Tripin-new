@@ -14,11 +14,15 @@
     font-family: 'Playfair Display SC', serif;
     font-size: 20px;
   }
+  p {
+    font-size: 18px;
+  }
 }
 
 .back-arrow {
   margin-left: 50px;
   margin-top: 30px;
+  z-index: 15
 }
 
 .content-link {
@@ -66,4 +70,28 @@
 .inside {
   padding-right: 0px;
   padding-left: 10px;
+}
+
+.bottom-space {
+  margin-bottom: 20px;
+}
+
+.btn-picture {
+  background-color: #555B8E;
+  color: white;
+  padding-bottom: 15px;
+}
+
+
+#answer_picture {
+  display: none;
+}
+
+.bigger {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.sup {
+  font-size: 52%;
 }
