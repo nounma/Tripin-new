@@ -47,7 +47,7 @@ right: -7px; color: grey; width: 10px", method: :get %></p>
             <%= render "card", member: member %>
           <% end %>
           <div class="col-xs-3", style="margin-top: 10px;">
-            <%= link_to image_tag("addmember.png", height: "60px", width: "60px"), {url: new_team_member_path(@team)}, {class: "btn-add-member"} %>
+            <%= link_to image_tag("addmember.png", height: "60px", width: "60px"), new_team_member_path(@team), {class: "btn-add-member"} %>
           </div>
         </div>
       </div>
