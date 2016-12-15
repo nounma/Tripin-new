@@ -4,7 +4,7 @@
   <%= link_to '', team_path(@team), class: "fa fa-times fa-lg cross-back-back", style: "color: #484846;"%>
 
   <h2>Add team members</h2>
-  <%= simple_form_for @member , url: team_members_path(@team), method: :post, remote: true, defaults: { input_html: { class: 'input-container' } } do |f| %>
+  <%= simple_form_for @member , url: team_members_path(@team), method: :post, remote: true, defaults: { input_html: { class: 'input-container animation-collor' } } do |f| %>
   <%= f.input :email, placeholder: "Enter the email of your teammate", label: 'Email of your teammate', wrapper: :p_wrapper %>
   <div class="topspace">
     <%= f.button :submit, 'Add member', class: "btn-blue" %>

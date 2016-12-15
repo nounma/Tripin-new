@@ -24,10 +24,24 @@
   background: #3b5998;
 }
 
+.bg-grey-light {
+  background-color: #f3f3f3 !important;;
+}
+
 .text-yellow {
   color: white;
 }
 
 .text-grey {
   color: #555B8E;
+}
+
+.point-display {
+  font-size: 20px;
+
+  sup {
+    font-size: 10px;
+    margin-left: 5px;
+    top: -0.7em;
+  }
 }
