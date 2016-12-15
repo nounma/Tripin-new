@@ -1,28 +1,25 @@
 
 <div class="bigcontainer">
 
-      <%= link_to '', team_path(@team), class: "fa fa-times fa-lg cross-back-back", style: "color: #484846;"%>
+  <%= link_to '', team_path(@team), class: "fa fa-times fa-lg cross-back-back", style: "color: #484846;"%>
 
   <h2>Add team members</h2>
   <%= simple_form_for @member , url: team_members_path(@team), method: :post, remote: true, defaults: { input_html: { class: 'input-container' } } do |f| %>
-    <%= f.input :email, placeholder: "Enter the email of your teammate", label: 'Email of your teammate', wrapper: :p_wrapper %>
-    <div class="topspace">
+  <%= f.input :email, placeholder: "Enter the email of your teammate", label: 'Email of your teammate', wrapper: :p_wrapper %>
+  <div class="topspace">
     <%= f.button :submit, 'Add member', class: "btn-blue" %>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 
-<div class="links">
-<div class="liltopspace">
-<ul class="members-list list-unstyled" >
-  <li>
-      <%#= link_to "", team_member_path(@team, @member), method: :delete, class: "fa fa-trash" %></li>
-</ul>
-</div>
-
-
-
-</div>
-</div>
-<div class="btn-bottom text-center">
-<p><%= link_to 'Create your team', team_path(@team) %></p>
-</div>
+  <div class="links">
+    <div class="liltopspace">
+      <ul class="members-list list-unstyled" >
+        <li>
+          <%#= link_to "", team_member_path(@team, @member), method: :delete, class: "fa fa-trash" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="btn-bottom text-center">
+    <p><%= link_to 'Create your team', team_path(@team) %></p>
+  </div>

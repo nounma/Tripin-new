@@ -1,5 +1,5 @@
 .content-show {
-  margin: -30px 30px 30px 30px;
+  margin: -120px 30px 30px 30px;
   background-color: white;
   border-radius: 3px;
 }
@@ -17,9 +17,13 @@
 }
 
 .back-arrow {
-  margin-left: 50px;
-  margin-top: 30px;
-  z-index: 15
+  height: 10px;
+  text-align: right;
+}
+
+.back-arrow a {
+  z-index: 2000;
+  text-align: right;
 }
 
 .content-link {
@@ -66,7 +70,9 @@
 }
 
 .bottom-space {
-  margin-bottom: 20px;
+  margin-bottom: 75px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn-picture {
@@ -96,4 +102,12 @@
 .panel-maps {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.bottoms-up {
+  margin-bottom: 20px;
+}
+
+.pushtothetop {
+  margin-top: -50px;
 }
