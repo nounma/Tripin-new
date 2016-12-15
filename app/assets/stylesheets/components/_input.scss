@@ -7,6 +7,7 @@ p.input-container {
 
 }
 
+
 .input-container {
   label {
     color: #CCC;
@@ -47,8 +48,6 @@ p.input-container {
       border-bottom: 1px solid #3C3D72;
     }
   }
-
-
 }
 
   .animation label {
@@ -69,4 +68,13 @@ p.input-container {
 
 .bottomspace {
   margin-bottom: 60px;
+}
+
+
+label.text.optional {
+  color: white;
+}
+
+.pushtothetop .input-container textarea {
+  color: white;
 }

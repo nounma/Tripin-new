@@ -1,7 +1,10 @@
 <div class="row">
   <div class="col-xs-11">
-
+    <% if team_challenge.id.odd? %>
     <div class="card-index">
+    <% else %>
+    <div class="card-index bg-grey-light">
+    <% end %>
       <div class="card-category">
         <div class="challenge-score">
           <h3><strong><%= team_challenge.challenge.score %></h3> <span><sup>PT</sup></span></strong>
@@ -16,52 +19,54 @@
       <%= link_to "", team_challenge_path(@team.id, team_challenge.challenge.id), class: "card-link" %>
 
     </div>
+  </div>
 
+
+
+  <% if !team_challenge.answer.nil? %>
+    <% if team_challenge.id.odd? %>
+    <div class="col-xs-1 status-card">
+    <% else %>
+    <div class="col-xs-1 status-card bg-grey-light">
+    <% end %>
+    <div>
+      <% if team_challenge.answer.status == "completed" && team_challenge.challenge.gift == "" %>
+      <i class="fa fa-check-circle"></i>
+      <% elsif team_challenge.answer.status == "completed" && team_challenge.challenge.gift != "" %>
+      <%= link_to "#myModal", "data-toggle" => "modal" do %>
+      <p> <i class="fa fa-gift"></i> </p>
+      <% end %>
     </div>
 
-
-
-    <% if !team_challenge.answer.nil? %>
-    <div class="col-xs-1 status-card">
-      <div>
-        <% if team_challenge.answer.status == "completed" && team_challenge.challenge.gift == "" %>
-        <i class="fa fa-check-circle"></i>
-
-        <% elsif team_challenge.answer.status == "completed" && team_challenge.challenge.gift != "" %>
-
-        <%= link_to "#myModal", "data-toggle" => "modal" do %>
-        <p> <i class="fa fa-gift"></i><!--+link to promocode page  --></i></p>
-        <% end %>
-
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Your promocode is : </h4>
-              </div>
-              <div class="modal-body">
-                <p>  <%= team_challenge.challenge.gift %>  </p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">
-                  Close
-                </button>
-            </div>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Your promocode is : </h4>
+          </div>
+          <div class="modal-body">
+            <p>  <%= team_challenge.challenge.gift %>  </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
-
-        <% else team_challenge.answer.status == "pending" %>
-        <i class="fa fa-paper-plane"></i>
-        <% end %>
-
-
       </div>
     </div>
-    <% else %>
-    <div class="col-xs-1 status-card"></div>
+    <% else team_challenge.answer.status == "pending" %>
+    <i class="fa fa-paper-plane"></i>
     <% end %>
   </div>
+  <% else %>
+    <% if team_challenge.id.odd? %>
+    <div class="col-xs-1 status-card"></div>
+    <% else %>
+    <div class="col-xs-1 status-card bg-grey-light"></div>
+    <% end %>
+  <% end %>
 </div>
 

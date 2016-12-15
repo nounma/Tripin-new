@@ -16,7 +16,7 @@
               <%= image_tag @user.facebook_picture_url, class: "avatar-user", crop: :fill %>
             <% end %>
             <h2><%= @user.first_name %> <%= @user.last_name %> <%= link_to "", edit_user_path(@user),class: "fa fa-pencil edit-button", style: "color: #516DAC;", method: :get %></h2>
-            <p><%= @user.user_score %> <sup>PT</sup></p>
+            <strong class="point-display"><%= @user.user_score %><sup>PT</sup></strong>
           </div>
         </div>
       </div>
