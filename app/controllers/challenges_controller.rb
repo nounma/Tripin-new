@@ -36,6 +36,8 @@ class ChallengesController < ApplicationController
   end
 
   def show
+    @navbardark = true
+
     @challenge = Challenge.find(params[:id])
     @team = Team.find(params[:team_id])
 
