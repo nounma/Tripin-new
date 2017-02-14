@@ -30,9 +30,9 @@ class ChallengesController < ApplicationController
 
 
     @team_challenges_not_completed = @team_challenges.joins(:answer).where(answers: {status:'not_completed'})
-    @team_challenges_pending = @team_challenges.joins(:answer).where(answers: {status:'pending'})
+    # @team_challenges_pending = @team_challenges.joins(:answer).where(answers: {status:'pending'})
     @team_challenges_completed = @team_challenges.joins(:answer).where(answers: {status:'completed'})
-    @team_challenges_not_answered = @team_challenges - (@team_challenges_not_completed + @team_challenges_pending + @team_challenges_completed)
+    @team_challenges_not_answered = @team_challenges - (@team_challenges_not_completed + @team_challenges_completed) #+@team_challenges_pending)
   end
 
   def show
