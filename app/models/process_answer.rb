@@ -12,9 +12,9 @@ class ProcessAnswer
       else
         @answer.not_completed!
       end
-    else
-      @answer.pending!
-    end
+    # else
+    #   @answer.pending!
+    # end
 
   end
 end
