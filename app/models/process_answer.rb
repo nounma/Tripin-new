@@ -14,7 +14,7 @@ class ProcessAnswer
       end
     # else
     #   @answer.pending!
-    # end
+    end
 
   end
 end
