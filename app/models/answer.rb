@@ -1,9 +1,9 @@
 class Answer < ApplicationRecord
 
-  ANSWERS_TYPE = %w( not_completed completed pending)
+  ANSWERS_TYPE = %w( not_completed completed) #pending)
 
   COMPLETED = "completed"
-  PENDING = "pending"
+  # PENDING = "pending"
   NOT_COMPLETED = "not_completed"
 
   belongs_to :team
@@ -30,10 +30,10 @@ class Answer < ApplicationRecord
     self.save
   end
 
-  def pending!
-    self.status = PENDING
-    self.save
-  end
+  # def pending!
+  #   self.status = PENDING
+  #   self.save
+  # end
 
   def not_completed!
     self.status = NOT_COMPLETED
