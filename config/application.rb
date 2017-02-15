@@ -27,3 +27,4 @@ module Tripin
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+# config.secret_key_base = 'blipblapblup'
